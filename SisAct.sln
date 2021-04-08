@@ -1,0 +1,101 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Claro.SisAct.Common", "Claro.SISACT.Common\Claro.SisAct.Common.csproj", "{932F0FA7-7E64-4664-8029-16FF8529AA49}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Claro.SisAct.DAAB", "Claro.SISACT.DAAB\Claro.SisAct.DAAB.csproj", "{12453CEF-A818-4660-8C17-B313DD3B4998}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Claro.SisAct.Datos", "Claro.SISACT.Datos\Claro.SisAct.Datos.csproj", "{95A18E53-AF87-4389-BDCE-CBFEEC39B033}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Claro.SisAct.Entidades", "Claro.SISACT.Entidades\Claro.SisAct.Entidades.csproj", "{17055C13-66A8-4B6F-97FF-EA6D154C7E64}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Claro.SisAct.Negocios", "Claro.SISACT.Negocios\Claro.SisAct.Negocios.csproj", "{FF022D5D-7583-4160-BE46-67E84D8E7190}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Claro.SisAct.SapGeneral", "Claro.SISACT.SapGeneral\Claro.SisAct.SapGeneral.csproj", "{C9C418C6-0FD5-49A4-B025-A35974800BD1}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "COM_SIC_Activaciones", "COM_SIC_Activaciones\COM_SIC_Activaciones.vbproj", "{036E4776-8EE8-4287-9BFD-2233F65AFD1C}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "WEB_SISACT_POS", "http://localhost/WEB_SISACT_POS_MC3/WEB_SISACT_POS.vbproj", "{A4A8F1CC-78EF-4B0F-A5E4-DF957254876B}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Claro.SisAct.Configuracion", "Claro.SISACT.Configuracion\Claro.SisAct.Configuracion.csproj", "{E979B977-0A16-4C09-B94F-7FE92E50E12B}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Claro.Base", "Claro.Base\Claro.Base.csproj", "{8CFC5BC5-E2E0-4E77-B93D-761A5FD9DDA9}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Claro.Seguridad", "Claro.Seguridad\Claro.Seguridad.csproj", "{C5D1DEE5-11AE-4E8B-A9EE-DF19854B82CD}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{932F0FA7-7E64-4664-8029-16FF8529AA49}.Debug.ActiveCfg = Debug|.NET
+		{932F0FA7-7E64-4664-8029-16FF8529AA49}.Debug.Build.0 = Debug|.NET
+		{932F0FA7-7E64-4664-8029-16FF8529AA49}.Release.ActiveCfg = Release|.NET
+		{932F0FA7-7E64-4664-8029-16FF8529AA49}.Release.Build.0 = Release|.NET
+		{12453CEF-A818-4660-8C17-B313DD3B4998}.Debug.ActiveCfg = Debug|.NET
+		{12453CEF-A818-4660-8C17-B313DD3B4998}.Debug.Build.0 = Debug|.NET
+		{12453CEF-A818-4660-8C17-B313DD3B4998}.Release.ActiveCfg = Release|.NET
+		{12453CEF-A818-4660-8C17-B313DD3B4998}.Release.Build.0 = Release|.NET
+		{95A18E53-AF87-4389-BDCE-CBFEEC39B033}.Debug.ActiveCfg = Debug|.NET
+		{95A18E53-AF87-4389-BDCE-CBFEEC39B033}.Debug.Build.0 = Debug|.NET
+		{95A18E53-AF87-4389-BDCE-CBFEEC39B033}.Release.ActiveCfg = Release|.NET
+		{95A18E53-AF87-4389-BDCE-CBFEEC39B033}.Release.Build.0 = Release|.NET
+		{17055C13-66A8-4B6F-97FF-EA6D154C7E64}.Debug.ActiveCfg = Debug|.NET
+		{17055C13-66A8-4B6F-97FF-EA6D154C7E64}.Debug.Build.0 = Debug|.NET
+		{17055C13-66A8-4B6F-97FF-EA6D154C7E64}.Release.ActiveCfg = Release|.NET
+		{17055C13-66A8-4B6F-97FF-EA6D154C7E64}.Release.Build.0 = Release|.NET
+		{FF022D5D-7583-4160-BE46-67E84D8E7190}.Debug.ActiveCfg = Debug|.NET
+		{FF022D5D-7583-4160-BE46-67E84D8E7190}.Debug.Build.0 = Debug|.NET
+		{FF022D5D-7583-4160-BE46-67E84D8E7190}.Release.ActiveCfg = Release|.NET
+		{FF022D5D-7583-4160-BE46-67E84D8E7190}.Release.Build.0 = Release|.NET
+		{C9C418C6-0FD5-49A4-B025-A35974800BD1}.Debug.ActiveCfg = Debug|.NET
+		{C9C418C6-0FD5-49A4-B025-A35974800BD1}.Debug.Build.0 = Debug|.NET
+		{C9C418C6-0FD5-49A4-B025-A35974800BD1}.Release.ActiveCfg = Release|.NET
+		{C9C418C6-0FD5-49A4-B025-A35974800BD1}.Release.Build.0 = Release|.NET
+		{036E4776-8EE8-4287-9BFD-2233F65AFD1C}.Debug.ActiveCfg = Debug|.NET
+		{036E4776-8EE8-4287-9BFD-2233F65AFD1C}.Debug.Build.0 = Debug|.NET
+		{036E4776-8EE8-4287-9BFD-2233F65AFD1C}.Release.ActiveCfg = Release|.NET
+		{036E4776-8EE8-4287-9BFD-2233F65AFD1C}.Release.Build.0 = Release|.NET
+		{A4A8F1CC-78EF-4B0F-A5E4-DF957254876B}.Debug.ActiveCfg = Debug|.NET
+		{A4A8F1CC-78EF-4B0F-A5E4-DF957254876B}.Debug.Build.0 = Debug|.NET
+		{A4A8F1CC-78EF-4B0F-A5E4-DF957254876B}.Release.ActiveCfg = Release|.NET
+		{A4A8F1CC-78EF-4B0F-A5E4-DF957254876B}.Release.Build.0 = Release|.NET
+		{E979B977-0A16-4C09-B94F-7FE92E50E12B}.Debug.ActiveCfg = Debug|.NET
+		{E979B977-0A16-4C09-B94F-7FE92E50E12B}.Debug.Build.0 = Debug|.NET
+		{E979B977-0A16-4C09-B94F-7FE92E50E12B}.Release.ActiveCfg = Release|.NET
+		{E979B977-0A16-4C09-B94F-7FE92E50E12B}.Release.Build.0 = Release|.NET
+		{8CFC5BC5-E2E0-4E77-B93D-761A5FD9DDA9}.Debug.ActiveCfg = Debug|.NET
+		{8CFC5BC5-E2E0-4E77-B93D-761A5FD9DDA9}.Debug.Build.0 = Debug|.NET
+		{8CFC5BC5-E2E0-4E77-B93D-761A5FD9DDA9}.Release.ActiveCfg = Release|.NET
+		{8CFC5BC5-E2E0-4E77-B93D-761A5FD9DDA9}.Release.Build.0 = Release|.NET
+		{C5D1DEE5-11AE-4E8B-A9EE-DF19854B82CD}.Debug.ActiveCfg = Debug|.NET
+		{C5D1DEE5-11AE-4E8B-A9EE-DF19854B82CD}.Debug.Build.0 = Debug|.NET
+		{C5D1DEE5-11AE-4E8B-A9EE-DF19854B82CD}.Release.ActiveCfg = Release|.NET
+		{C5D1DEE5-11AE-4E8B-A9EE-DF19854B82CD}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

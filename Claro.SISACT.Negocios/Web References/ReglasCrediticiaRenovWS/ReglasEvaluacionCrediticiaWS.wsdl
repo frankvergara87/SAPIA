@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://claro.com.pe/eai/ebs/ws/ReglasEvaluacionCrediticia" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" targetNamespace="http://claro.com.pe/eai/ebs/ws/ReglasEvaluacionCrediticia" name="ReglasEvaluacionCrediticiaWS" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://claro.com.pe/eai/ebs/ws/ReglasEvaluacionCrediticia">
+      <s:element name="consultarReglasRequest">
+        <s:complexType>
+          <s:sequence>
+            <s:element name="idTransaccion" type="s:string" />
+            <s:element name="ipAplicacion" type="s:string" />
+            <s:element name="aplicacion" type="s:string" />
+            <s:element name="usrApp" type="s:string" />
+            <s:element name="tipoDespacho" type="s:string" />
+            <s:element name="tipoProducto" type="s:string" />
+            <s:element name="canal" type="s:string" />
+            <s:element name="pdv" type="s:string" />
+            <s:element name="tipoCliente" type="s:string" />
+            <s:element name="tipoDocumento" type="s:string" />
+            <s:element name="departamento" type="s:string" />
+            <s:element name="provincia" type="s:string" />
+            <s:element name="distrito" type="s:string" />
+            <s:element name="casoEspecial" type="s:string" />
+            <s:element name="factorEndeudamiento" type="s:string" />
+            <s:element name="tipoOperacion" type="s:string" />
+            <s:element name="oferta" type="s:string" />
+            <s:element name="grupoPlanTarifario" type="s:string" />
+            <s:element name="cargoFijo" type="s:double" />
+            <s:element name="plazoAcuerdo" type="s:string" />
+            <s:element name="campania" type="s:string" />
+            <s:element name="control" type="s:string" />
+            <s:element name="factorSubsidio" type="s:string" />
+            <s:element name="porcentajeCuotaInicial" type="s:string" />
+            <s:element name="cuotas" type="s:string" />
+            <s:element name="kit" type="s:string" />
+            <s:element name="riesgo" type="s:string" />
+            <s:element name="score" type="s:string" />
+            <s:element name="edad" type="s:int" />
+            <s:element name="cantidadRRLL" type="s:string" />
+            <s:element name="publicar" type="s:string" />
+            <s:element name="factorRenovacion" type="s:string" />
+            <s:element name="comportamientoPago" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ReglaType">
+        <s:sequence>
+          <s:element name="restriccion" type="s:string" />
+          <s:element name="tipoGarantia" type="s:string" />
+          <s:element name="absolutoReferencial" type="s:string" />
+          <s:element name="montoGarantia" type="s:string" />
+          <s:element name="costoInstalacion" type="s:string" />
+          <s:element name="cantidadProductoMax" type="s:string" />
+          <s:element name="publicar" type="s:string" />
+          <s:element name="prioridadPublicacion" type="s:string" />
+          <s:element name="factorEndeudamiento" type="s:string" />
+          <s:element name="grupoPlanTarifario" type="s:string" />
+          <s:element name="cargoFijoMinimo" type="s:string" />
+          <s:element name="cargoFijoMaximo" type="s:string" />
+          <s:element name="respuestaRenovacion" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ListaReglaType">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="regla" type="tns:ReglaType" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="consultarReglasResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element name="idTransaccion" type="s:string" />
+            <s:element name="codigoRespuesta" type="s:string" />
+            <s:element name="mensajeRespuesta" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="reglas" type="tns:ListaReglaType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="reglaEvaluacionCrediticiaRequest">
+    <wsdl:part name="parameters" element="tns:consultarReglasRequest" />
+  </wsdl:message>
+  <wsdl:message name="reglaEvaluacionCrediticiaResponse">
+    <wsdl:part name="parameters" element="tns:consultarReglasResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ReglasEvaluacionCrediticiaPortType">
+    <wsdl:operation name="consultarReglas">
+      <wsdl:input message="tns:reglaEvaluacionCrediticiaRequest" />
+      <wsdl:output message="tns:reglaEvaluacionCrediticiaResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ReglasEvaluacionCrediticiaWSBinding" type="tns:ReglasEvaluacionCrediticiaPortType">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document" />
+    <wsdl:operation name="consultarReglas">
+      <soap:operation soapAction="http://claro.com.pe/eai/ebs/ws/ReglasEvaluacionCrediticia/consultarReglas" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ReglasEvaluacionCrediticiaWS">
+    <wsdl:port name="ReglasEvaluacionCrediticiaWSPort" binding="tns:ReglasEvaluacionCrediticiaWSBinding">
+      <soap:address location="http://limdeseaiv13.tim.com.pe:7909/ReglasEvaluacionCrediticiaApp/ReglasEvaluacionCrediticiaWSPort" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

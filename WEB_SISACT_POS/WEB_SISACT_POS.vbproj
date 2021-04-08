@@ -1,0 +1,2501 @@
+<VisualStudioProject>
+    <VisualBasic
+        ProjectType = "Web"
+        ProductVersion = "7.10.3077"
+        SchemaVersion = "2.0"
+        ProjectGuid = "{A4A8F1CC-78EF-4B0F-A5E4-DF957254876B}"
+    >
+        <Build>
+            <Settings
+                ApplicationIcon = ""
+                AssemblyKeyContainerName = ""
+                AssemblyName = "WEB_SISACT_POS"
+                AssemblyOriginatorKeyFile = ""
+                AssemblyOriginatorKeyMode = "None"
+                DefaultClientScript = "JScript"
+                DefaultHTMLPageLayout = "Grid"
+                DefaultTargetSchema = "IE50"
+                DelaySign = "false"
+                OutputType = "Library"
+                OptionCompare = "Binary"
+                OptionExplicit = "On"
+                OptionStrict = "On"
+                RootNamespace = ""
+                StartupObject = ""
+            >
+                <Config
+                    Name = "Debug"
+                    BaseAddress = "285212672"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = ""
+                    DefineDebug = "true"
+                    DefineTrace = "true"
+                    DebugSymbols = "true"
+                    IncrementalBuild = "true"
+                    Optimize = "false"
+                    OutputPath = "bin\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "1"
+                />
+                <Config
+                    Name = "Release"
+                    BaseAddress = "285212672"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = ""
+                    DefineDebug = "false"
+                    DefineTrace = "true"
+                    DebugSymbols = "false"
+                    IncrementalBuild = "false"
+                    Optimize = "true"
+                    OutputPath = "bin\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "1"
+                />
+            </Settings>
+            <References>
+                <Reference
+                    Name = "System"
+                    AssemblyName = "System"
+                />
+                <Reference
+                    Name = "System.Data"
+                    AssemblyName = "System.Data"
+                />
+                <Reference
+                    Name = "System.Drawing"
+                    AssemblyName = "System.Drawing"
+                />
+                <Reference
+                    Name = "System.Web"
+                    AssemblyName = "System.Web"
+                />
+                <Reference
+                    Name = "System.XML"
+                    AssemblyName = "System.Xml"
+                />
+                <Reference
+                    Name = "adodb"
+                    AssemblyName = "ADODB"
+                    HintPath = "lib\adodb.dll"
+                />
+                <Reference
+                    Name = "IWshRuntimeLibrary"
+                    Guid = "{F935DC20-1CF0-11D0-ADB9-00C04FD58A0B}"
+                    VersionMajor = "1"
+                    VersionMinor = "0"
+                    Lcid = "0"
+                    WrapperTool = "tlbimp"
+                />
+                <Reference
+                    Name = "Claro.SisAct.Common"
+                    Project = "{932F0FA7-7E64-4664-8029-16FF8529AA49}"
+                    Package = "{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"
+                />
+                <Reference
+                    Name = "System.DirectoryServices"
+                    AssemblyName = "System.DirectoryServices"
+                    HintPath = "C:\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.DirectoryServices.dll"
+                />
+                <Reference
+                    Name = "System.Web.Services"
+                    AssemblyName = "System.Web.Services"
+                    HintPath = "C:\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.Web.Services.dll"
+                />
+                <Reference
+                    Name = "Claro.SisAct.Entidades"
+                    Project = "{17055C13-66A8-4B6F-97FF-EA6D154C7E64}"
+                    Package = "{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"
+                />
+                <Reference
+                    Name = "AnthemExtensions"
+                    AssemblyName = "AnthemExtensions"
+                    HintPath = "bin\AnthemExtensions.dll"
+                />
+                <Reference
+                    Name = "Anthem"
+                    AssemblyName = "Anthem"
+                    HintPath = "bin\Anthem.dll"
+                />
+                <Reference
+                    Name = "Interop.Scripting"
+                    AssemblyName = "Interop.Scripting"
+                    HintPath = "bin\Interop.Scripting.dll"
+                />
+                <Reference
+                    Name = "Interop.ABCUpload4"
+                    AssemblyName = "Interop.ABCUpload4"
+                    HintPath = "bin\Interop.ABCUpload4.dll"
+                />
+                <Reference
+                    Name = "System.EnterpriseServices"
+                    AssemblyName = "System.EnterpriseServices"
+                    HintPath = "C:\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.EnterpriseServices.dll"
+                />
+                <Reference
+                    Name = "Claro.SisAct.Negocios"
+                    Project = "{FF022D5D-7583-4160-BE46-67E84D8E7190}"
+                    Package = "{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"
+                />
+                <Reference
+                    Name = "COM_SIC_Activaciones"
+                    Project = "{036E4776-8EE8-4287-9BFD-2233F65AFD1C}"
+                    Package = "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}"
+                />
+                <Reference
+                    Name = "Claro.SisAct.SapGeneral"
+                    Project = "{C9C418C6-0FD5-49A4-B025-A35974800BD1}"
+                    Package = "{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"
+                />
+                <Reference
+                    Name = "Claro.SisAct.Datos"
+                    Project = "{95A18E53-AF87-4389-BDCE-CBFEEC39B033}"
+                    Package = "{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"
+                />
+                <Reference
+                    Name = "Claro.SisAct.Configuracion"
+                    Project = "{E979B977-0A16-4C09-B94F-7FE92E50E12B}"
+                    Package = "{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"
+                />
+            </References>
+            <Imports>
+                <Import Namespace = "Microsoft.VisualBasic" />
+                <Import Namespace = "System" />
+                <Import Namespace = "System.Collections" />
+                <Import Namespace = "System.Configuration" />
+                <Import Namespace = "System.Data" />
+                <Import Namespace = "System.Drawing" />
+                <Import Namespace = "System.Web" />
+                <Import Namespace = "System.Web.UI" />
+                <Import Namespace = "System.Web.UI.HtmlControls" />
+                <Import Namespace = "System.Web.UI.WebControls" />
+            </Imports>
+        </Build>
+        <Files>
+            <Include>
+                <File
+                    RelPath = "Acceso.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Acceso.aspx.vb"
+                    DependentUpon = "Acceso.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Acceso.aspx.resx"
+                    DependentUpon = "Acceso.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "AssemblyInfo.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Blank.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Global.asax"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Global.asax.vb"
+                    DependentUpon = "Global.asax"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Global.asax.resx"
+                    DependentUpon = "Global.asax.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Index.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Index.aspx.vb"
+                    DependentUpon = "Index.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Index.aspx.resx"
+                    DependentUpon = "Index.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Inicio.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Inicio.aspx.vb"
+                    DependentUpon = "Inicio.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Inicio.aspx.resx"
+                    DependentUpon = "Inicio.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "inicio.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "SisAct.config"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "SISACTDatos.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Web.config"
+                    BuildAction = "Content"
+                />
+                <Folder RelPath = "AppLog\" />
+                <Folder RelPath = "bin\" />
+                <File
+                    RelPath = "Comun\AuditoriaPagina.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Comun\ConfiguracionAcuerdos.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Comun\harvest.sig"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "controles\ctr_Menu.ascx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "controles\ctr_Menu.ascx.vb"
+                    DependentUpon = "ctr_Menu.ascx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "controles\ctr_Menu.ascx.resx"
+                    DependentUpon = "ctr_Menu.ascx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "controles\usc_direccion.ascx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "controles\usc_direccion.ascx.vb"
+                    DependentUpon = "usc_direccion.ascx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "controles\usc_direccion.ascx.resx"
+                    DependentUpon = "usc_direccion.ascx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "estilos\bsa2.css"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "estilos\calendar-blue.css"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "estilos\calendar-win2k-1.css"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "estilos\general.css"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "funciones\AccesoUsuario.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "funciones\Comunes.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "funciones\ControlProxyFTP.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "funciones\Convert2010.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "funciones\CuentaSeguridad.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "funciones\LoginUsuario.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "funciones\ResSrvHandler.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "funciones\sisact webbase.vb"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "funciones\sisact_auditoria.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "funciones\SISACT_Log.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "funciones\sisact_Mail.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "funciones\sisact_session.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "funciones\WebComunes.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "images\activar.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\bg.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\btn_Calendario.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\btn_edit.jpg"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\btn_regresar_a.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\btn_seleccionar.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\calendario.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\error.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\fondoTab.jpg"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\graf_ico_error.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\gray.png"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\honey.png"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\ico_Eliminar.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\ico_lupa.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\img_marca.jpg"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\LogoAM.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\mnu_cuadrado.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\mnu_flecha_abajo.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\rechazar.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\sq_pie01.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\sq_pie02.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\sq_top01.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\sq_top02.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\titulo.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\toolgrad.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\toolgrad_largo.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\calendario\cal_1.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\calendario\cal_2.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\calendario\cal_3.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\calendario\cal_4.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\calendario\cal_Avanzar1.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\calendario\cal_Avanzar2.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\calendario\cal_retroceder1.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\calendario\cal_retroceder2.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\principal\hm_ingreso.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "images\principal\hm_tim.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "include\Erroringreso.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "include\incScriptDOM.js"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "include\incScriptIE4.js"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "include\incScriptNS4.js"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "include\Top.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "include\Top.aspx.vb"
+                    DependentUpon = "Top.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "include\Top.aspx.resx"
+                    DependentUpon = "Top.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "lib\ABCUpload4.dll"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "lib\adodb.dll"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "lib\MagicAjax.dll"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "librerias\DATE-PICKER.JS"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "librerias\funciones_express.js"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "librerias\funciones_generales.js"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "librerias\jquery_ultimate.js"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "librerias\json2.js"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "librerias\Lib_FuncValidacion.js"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "librerias\validaciones.js"
+                    BuildAction = "Content"
+                />
+                <Folder RelPath = "logs\" />
+                <File
+                    RelPath = "paginas\maestro\DownloadCasosEspeciales.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\maestro\DownloadCasosEspeciales.aspx.vb"
+                    DependentUpon = "DownloadCasosEspeciales.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\maestro\DownloadCasosEspeciales.aspx.resx"
+                    DependentUpon = "DownloadCasosEspeciales.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\maestro\DownloadFiles.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\maestro\DownloadFiles.aspx.vb"
+                    DependentUpon = "DownloadFiles.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\maestro\DownloadFiles.aspx.resx"
+                    DependentUpon = "DownloadFiles.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_activar_bolsa_masiva.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_activar_bolsa_masiva.aspx.vb"
+                    DependentUpon = "sisact_activar_bolsa_masiva.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_activar_bolsa_masiva.aspx.resx"
+                    DependentUpon = "sisact_activar_bolsa_masiva.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_consulta_venta_cuotas.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_consulta_venta_cuotas.aspx.vb"
+                    DependentUpon = "sisact_consulta_venta_cuotas.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_consulta_venta_cuotas.aspx.resx"
+                    DependentUpon = "sisact_consulta_venta_cuotas.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_mant_agregar_grupo.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_mant_agregar_grupo.aspx.vb"
+                    DependentUpon = "sisact_mant_agregar_grupo.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_mant_agregar_grupo.aspx.resx"
+                    DependentUpon = "sisact_mant_agregar_grupo.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_mant_blacklist_canalpdv.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_mant_blacklist_canalpdv.aspx.vb"
+                    DependentUpon = "sisact_mant_blacklist_canalpdv.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_mant_blacklist_canalpdv.aspx.resx"
+                    DependentUpon = "sisact_mant_blacklist_canalpdv.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_mant_blacklist_clienruc.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_mant_blacklist_clienruc.aspx.vb"
+                    DependentUpon = "sisact_mant_blacklist_clienruc.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_mant_blacklist_clienruc.aspx.resx"
+                    DependentUpon = "sisact_mant_blacklist_clienruc.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_mant_blacklist_dac.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_mant_blacklist_dac.aspx.vb"
+                    DependentUpon = "sisact_mant_blacklist_dac.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_mant_blacklist_dac.aspx.resx"
+                    DependentUpon = "sisact_mant_blacklist_dac.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_mant_buro_crediticio.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_mant_buro_crediticio.aspx.vb"
+                    DependentUpon = "sisact_mant_buro_crediticio.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_mant_buro_crediticio.aspx.resx"
+                    DependentUpon = "sisact_mant_buro_crediticio.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_mant_buro_crediticio_config.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_mant_buro_crediticio_config.aspx.vb"
+                    DependentUpon = "sisact_mant_buro_crediticio_config.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_mant_buro_crediticio_config.aspx.resx"
+                    DependentUpon = "sisact_mant_buro_crediticio_config.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_mant_camp_kits.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_mant_camp_kits.aspx.vb"
+                    DependentUpon = "sisact_mant_camp_kits.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_mant_camp_kits.aspx.resx"
+                    DependentUpon = "sisact_mant_camp_kits.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_mant_campana.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_mant_campana.aspx.vb"
+                    DependentUpon = "sisact_mant_campana.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_mant_campana.aspx.resx"
+                    DependentUpon = "sisact_mant_campana.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_mant_campanas.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_mant_campanas.aspx.vb"
+                    DependentUpon = "sisact_mant_campanas.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_mant_campanas.aspx.resx"
+                    DependentUpon = "sisact_mant_campanas.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_mant_casos_especiales2.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_mant_casos_especiales2.aspx.vb"
+                    DependentUpon = "sisact_mant_casos_especiales2.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_mant_casos_especiales2.aspx.resx"
+                    DependentUpon = "sisact_mant_casos_especiales2.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_mant_config_planes.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_mant_config_planes.aspx.vb"
+                    DependentUpon = "sisact_mant_config_planes.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_mant_config_planes.aspx.resx"
+                    DependentUpon = "sisact_mant_config_planes.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_mant_empresa_top.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_mant_empresa_top.aspx.vb"
+                    DependentUpon = "sisact_mant_empresa_top.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_mant_empresa_top.aspx.resx"
+                    DependentUpon = "sisact_mant_empresa_top.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_mant_factor_x_riesgo.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_mant_factor_x_riesgo.aspx.vb"
+                    DependentUpon = "sisact_mant_factor_x_riesgo.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_mant_factor_x_riesgo.aspx.resx"
+                    DependentUpon = "sisact_mant_factor_x_riesgo.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_mant_HFC_Masivo.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_mant_HFC_Masivo.aspx.vb"
+                    DependentUpon = "sisact_mant_HFC_Masivo.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_mant_HFC_Masivo.aspx.resx"
+                    DependentUpon = "sisact_mant_HFC_Masivo.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_mant_idvalidator.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_mant_idvalidator.aspx.vb"
+                    DependentUpon = "sisact_mant_idvalidator.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_mant_idvalidator.aspx.resx"
+                    DependentUpon = "sisact_mant_idvalidator.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_mant_kits.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_mant_kits.aspx.vb"
+                    DependentUpon = "sisact_mant_kits.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_mant_kits.aspx.resx"
+                    DependentUpon = "sisact_mant_kits.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_mant_materiales.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_mant_materiales.aspx.vb"
+                    DependentUpon = "sisact_mant_materiales.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_mant_materiales.aspx.resx"
+                    DependentUpon = "sisact_mant_materiales.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_mant_motivos_linea_desactiva.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_mant_motivos_linea_desactiva.aspx.vb"
+                    DependentUpon = "sisact_mant_motivos_linea_desactiva.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_mant_motivos_linea_desactiva.aspx.resx"
+                    DependentUpon = "sisact_mant_motivos_linea_desactiva.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_mant_plan_tarifario.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_mant_plan_tarifario.aspx.vb"
+                    DependentUpon = "sisact_mant_plan_tarifario.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_mant_plan_tarifario.aspx.resx"
+                    DependentUpon = "sisact_mant_plan_tarifario.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_mant_porcentaje_facturacion.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_mant_porcentaje_facturacion.aspx.vb"
+                    DependentUpon = "sisact_mant_porcentaje_facturacion.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_mant_porcentaje_facturacion.aspx.resx"
+                    DependentUpon = "sisact_mant_porcentaje_facturacion.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_mant_rangos_lcdisponible.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_mant_rangos_lcdisponible.aspx.vb"
+                    DependentUpon = "sisact_mant_rangos_lcdisponible.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_mant_rangos_lcdisponible.aspx.resx"
+                    DependentUpon = "sisact_mant_rangos_lcdisponible.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_mant_restriccion_cuota.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_mant_restriccion_cuota.aspx.vb"
+                    DependentUpon = "sisact_mant_restriccion_cuota.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_mant_restriccion_cuota.aspx.resx"
+                    DependentUpon = "sisact_mant_restriccion_cuota.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_mant_restriccion_riesgo.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_mant_restriccion_riesgo.aspx.vb"
+                    DependentUpon = "sisact_mant_restriccion_riesgo.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_mant_restriccion_riesgo.aspx.resx"
+                    DependentUpon = "sisact_mant_restriccion_riesgo.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_mant_servicio_equipos.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_mant_servicio_equipos.aspx.vb"
+                    DependentUpon = "sisact_mant_servicio_equipos.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_mant_servicio_equipos.aspx.resx"
+                    DependentUpon = "sisact_mant_servicio_equipos.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_mant_servicios.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_mant_servicios.aspx.vb"
+                    DependentUpon = "sisact_mant_servicios.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_mant_servicios.aspx.resx"
+                    DependentUpon = "sisact_mant_servicios.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_mant_TipoProducto_Msjs.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_mant_TipoProducto_Msjs.aspx.vb"
+                    DependentUpon = "sisact_mant_TipoProducto_Msjs.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_mant_TipoProducto_Msjs.aspx.resx"
+                    DependentUpon = "sisact_mant_TipoProducto_Msjs.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_mant_vendedor_clave.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_mant_vendedor_clave.aspx.vb"
+                    DependentUpon = "sisact_mant_vendedor_clave.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_mant_vendedor_clave.aspx.resx"
+                    DependentUpon = "sisact_mant_vendedor_clave.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_mant_vendedores_dac.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_mant_vendedores_dac.aspx.vb"
+                    DependentUpon = "sisact_mant_vendedores_dac.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_mant_vendedores_dac.aspx.resx"
+                    DependentUpon = "sisact_mant_vendedores_dac.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_mant_whitelist_asesor.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_mant_whitelist_asesor.aspx.vb"
+                    DependentUpon = "sisact_mant_whitelist_asesor.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_mant_whitelist_asesor.aspx.resx"
+                    DependentUpon = "sisact_mant_whitelist_asesor.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_mant_whitelist_casoesp.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_mant_whitelist_casoesp.aspx.vb"
+                    DependentUpon = "sisact_mant_whitelist_casoesp.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_mant_whitelist_casoesp.aspx.resx"
+                    DependentUpon = "sisact_mant_whitelist_casoesp.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_mant_whitelist_flexi.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_mant_whitelist_flexi.aspx.vb"
+                    DependentUpon = "sisact_mant_whitelist_flexi.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_mant_whitelist_flexi.aspx.resx"
+                    DependentUpon = "sisact_mant_whitelist_flexi.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_pop_cargarCampanias.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_pop_cargarCampanias.aspx.vb"
+                    DependentUpon = "sisact_pop_cargarCampanias.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_pop_cargarCampanias.aspx.resx"
+                    DependentUpon = "sisact_pop_cargarCampanias.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_pop_cargarCanal.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_pop_cargarCanal.aspx.vb"
+                    DependentUpon = "sisact_pop_cargarCanal.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_pop_cargarCanal.aspx.resx"
+                    DependentUpon = "sisact_pop_cargarCanal.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_pop_cargarPdv.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_pop_cargarPdv.aspx.vb"
+                    DependentUpon = "sisact_pop_cargarPdv.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_pop_cargarPdv.aspx.resx"
+                    DependentUpon = "sisact_pop_cargarPdv.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_pop_cargarPdv2.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_pop_cargarPdv2.aspx.vb"
+                    DependentUpon = "sisact_pop_cargarPdv2.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_pop_cargarPdv2.aspx.resx"
+                    DependentUpon = "sisact_pop_cargarPdv2.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_pop_cargarPlanes.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_pop_cargarPlanes.aspx.vb"
+                    DependentUpon = "sisact_pop_cargarPlanes.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_pop_cargarPlanes.aspx.resx"
+                    DependentUpon = "sisact_pop_cargarPlanes.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_pop_cargarRestricciones.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_pop_cargarRestricciones.aspx.vb"
+                    DependentUpon = "sisact_pop_cargarRestricciones.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_pop_cargarRestricciones.aspx.resx"
+                    DependentUpon = "sisact_pop_cargarRestricciones.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_pop_cargarTopeConsumo.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_pop_cargarTopeConsumo.aspx.vb"
+                    DependentUpon = "sisact_pop_cargarTopeConsumo.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_pop_cargarTopeConsumo.aspx.resx"
+                    DependentUpon = "sisact_pop_cargarTopeConsumo.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_pop_detalle_plan.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_pop_detalle_plan.aspx.vb"
+                    DependentUpon = "sisact_pop_detalle_plan.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_pop_detalle_plan.aspx.resx"
+                    DependentUpon = "sisact_pop_detalle_plan.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_pop_detalle_plan_tarifario.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_pop_detalle_plan_tarifario.aspx.vb"
+                    DependentUpon = "sisact_pop_detalle_plan_tarifario.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_pop_detalle_plan_tarifario.aspx.resx"
+                    DependentUpon = "sisact_pop_detalle_plan_tarifario.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_pop_varios.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_pop_varios.aspx.vb"
+                    DependentUpon = "sisact_pop_varios.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\maestro\sisact_pop_varios.aspx.resx"
+                    DependentUpon = "sisact_pop_varios.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\maestro\3Play\sisact_mant_campania.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\maestro\3Play\sisact_mant_campania.aspx.vb"
+                    DependentUpon = "sisact_mant_campania.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\maestro\3Play\sisact_mant_campania.aspx.resx"
+                    DependentUpon = "sisact_mant_campania.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\maestro\3Play\sisact_mant_equipos.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\maestro\3Play\sisact_mant_equipos.aspx.vb"
+                    DependentUpon = "sisact_mant_equipos.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\maestro\3Play\sisact_mant_equipos.aspx.resx"
+                    DependentUpon = "sisact_mant_equipos.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\maestro\3Play\sisact_mant_equipos_x_servicio.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\maestro\3Play\sisact_mant_equipos_x_servicio.aspx.vb"
+                    DependentUpon = "sisact_mant_equipos_x_servicio.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\maestro\3Play\sisact_mant_equipos_x_servicio.aspx.resx"
+                    DependentUpon = "sisact_mant_equipos_x_servicio.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\maestro\3Play\sisact_mant_paquetes.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\maestro\3Play\sisact_mant_paquetes.aspx.vb"
+                    DependentUpon = "sisact_mant_paquetes.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\maestro\3Play\sisact_mant_paquetes.aspx.resx"
+                    DependentUpon = "sisact_mant_paquetes.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\maestro\3Play\sisact_mant_planes.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\maestro\3Play\sisact_mant_planes.aspx.vb"
+                    DependentUpon = "sisact_mant_planes.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\maestro\3Play\sisact_mant_planes.aspx.resx"
+                    DependentUpon = "sisact_mant_planes.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\maestro\3Play\sisact_mant_servicio.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\maestro\3Play\sisact_mant_servicio.aspx.vb"
+                    DependentUpon = "sisact_mant_servicio.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\maestro\3Play\sisact_mant_servicio.aspx.resx"
+                    DependentUpon = "sisact_mant_servicio.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\post_venta\sisact_interaccion_dol.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\post_venta\sisact_interaccion_dol.aspx.vb"
+                    DependentUpon = "sisact_interaccion_dol.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\post_venta\sisact_interaccion_dol.aspx.resx"
+                    DependentUpon = "sisact_interaccion_dol.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\post_venta\sisact_registro_dol.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\post_venta\sisact_registro_dol.aspx.vb"
+                    DependentUpon = "sisact_registro_dol.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\post_venta\sisact_registro_dol.aspx.resx"
+                    DependentUpon = "sisact_registro_dol.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\post_venta\sisact_ver_documento.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\post_venta\sisact_ver_documento.aspx.vb"
+                    DependentUpon = "sisact_ver_documento.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\post_venta\sisact_ver_documento.aspx.resx"
+                    DependentUpon = "sisact_ver_documento.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\post_venta\chip_repuesto\sisact_ifr_consulta_iccid.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\post_venta\chip_repuesto\sisact_ifr_consulta_iccid.aspx.vb"
+                    DependentUpon = "sisact_ifr_consulta_iccid.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\post_venta\chip_repuesto\sisact_ifr_consulta_iccid.aspx.resx"
+                    DependentUpon = "sisact_ifr_consulta_iccid.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\post_venta\chip_repuesto\sisact_ifr_consulta_iccid_Postpago.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\post_venta\chip_repuesto\sisact_ifr_consulta_iccid_Postpago.aspx.vb"
+                    DependentUpon = "sisact_ifr_consulta_iccid_Postpago.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\post_venta\chip_repuesto\sisact_ifr_consulta_iccid_Postpago.aspx.resx"
+                    DependentUpon = "sisact_ifr_consulta_iccid_Postpago.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\post_venta\chip_repuesto\sisact_ifr_consulta_IMEI_Postpago.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\post_venta\chip_repuesto\sisact_ifr_consulta_IMEI_Postpago.aspx.vb"
+                    DependentUpon = "sisact_ifr_consulta_IMEI_Postpago.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\post_venta\chip_repuesto\sisact_ifr_consulta_IMEI_Postpago.aspx.resx"
+                    DependentUpon = "sisact_ifr_consulta_IMEI_Postpago.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\post_venta\chip_repuesto\sisact_ifr_consulta_lista_precio_chip.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\post_venta\chip_repuesto\sisact_ifr_consulta_lista_precio_chip.aspx.vb"
+                    DependentUpon = "sisact_ifr_consulta_lista_precio_chip.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\post_venta\chip_repuesto\sisact_ifr_consulta_lista_precio_chip.aspx.resx"
+                    DependentUpon = "sisact_ifr_consulta_lista_precio_chip.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\post_venta\chip_repuesto\sisact_ifr_consulta_lista_precios.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\post_venta\chip_repuesto\sisact_ifr_consulta_lista_precios.aspx.vb"
+                    DependentUpon = "sisact_ifr_consulta_lista_precios.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\post_venta\chip_repuesto\sisact_ifr_consulta_lista_precios.aspx.resx"
+                    DependentUpon = "sisact_ifr_consulta_lista_precios.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\post_venta\chip_repuesto\sisact_ifr_consulta_lista_precios_ICCID.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\post_venta\chip_repuesto\sisact_ifr_consulta_lista_precios_ICCID.aspx.vb"
+                    DependentUpon = "sisact_ifr_consulta_lista_precios_ICCID.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\post_venta\chip_repuesto\sisact_ifr_consulta_lista_precios_ICCID.aspx.resx"
+                    DependentUpon = "sisact_ifr_consulta_lista_precios_ICCID.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\post_venta\chip_repuesto\sisact_ifr_consulta_lista_vendedores.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\post_venta\chip_repuesto\sisact_ifr_consulta_lista_vendedores.aspx.vb"
+                    DependentUpon = "sisact_ifr_consulta_lista_vendedores.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\post_venta\chip_repuesto\sisact_ifr_consulta_lista_vendedores.aspx.resx"
+                    DependentUpon = "sisact_ifr_consulta_lista_vendedores.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\post_venta\chip_repuesto\sisact_ifr_consulta_precio.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\post_venta\chip_repuesto\sisact_ifr_consulta_precio.aspx.vb"
+                    DependentUpon = "sisact_ifr_consulta_precio.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\post_venta\chip_repuesto\sisact_ifr_consulta_precio.aspx.resx"
+                    DependentUpon = "sisact_ifr_consulta_precio.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\post_venta\chip_repuesto\sisact_venta_postpago.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\post_venta\chip_repuesto\sisact_venta_postpago.aspx.vb"
+                    DependentUpon = "sisact_venta_postpago.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\post_venta\chip_repuesto\sisact_venta_postpago.aspx.resx"
+                    DependentUpon = "sisact_venta_postpago.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\post_venta\chip_repuesto\sisact_venta_prepago.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\post_venta\chip_repuesto\sisact_venta_prepago.aspx.vb"
+                    DependentUpon = "sisact_venta_prepago.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\post_venta\chip_repuesto\sisact_venta_prepago.aspx.resx"
+                    DependentUpon = "sisact_venta_prepago.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\post_venta\Consulta\sisact_consulta_numero_prepago.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\post_venta\Consulta\sisact_consulta_numero_prepago.aspx.vb"
+                    DependentUpon = "sisact_consulta_numero_prepago.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\post_venta\Consulta\sisact_consulta_numero_prepago.aspx.resx"
+                    DependentUpon = "sisact_consulta_numero_prepago.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\post_venta\Consulta\sisact_ifr_consulta_numero.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\post_venta\Consulta\sisact_ifr_consulta_numero.aspx.vb"
+                    DependentUpon = "sisact_ifr_consulta_numero.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\post_venta\Consulta\sisact_ifr_consulta_numero.aspx.resx"
+                    DependentUpon = "sisact_ifr_consulta_numero.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\post_venta\Consulta\sisact_VentasDTHpostpago.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\post_venta\Consulta\sisact_VentasDTHpostpago.aspx.vb"
+                    DependentUpon = "sisact_VentasDTHpostpago.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\post_venta\Consulta\sisact_VentasDTHpostpago.aspx.resx"
+                    DependentUpon = "sisact_VentasDTHpostpago.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\post_venta\documentos\sisact_formato_descuento_especial.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\post_venta\documentos\sisact_formato_descuento_especial.aspx.vb"
+                    DependentUpon = "sisact_formato_descuento_especial.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\post_venta\documentos\sisact_formato_descuento_especial.aspx.resx"
+                    DependentUpon = "sisact_formato_descuento_especial.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\post_venta\documentos\sisact_formato_equipo_cac.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\post_venta\documentos\sisact_formato_equipo_cac.aspx.vb"
+                    DependentUpon = "sisact_formato_equipo_cac.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\post_venta\documentos\sisact_formato_equipo_cac.aspx.resx"
+                    DependentUpon = "sisact_formato_equipo_cac.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\post_venta\documentos\sisact_formato_equipo_dac.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\post_venta\documentos\sisact_formato_equipo_dac.aspx.vb"
+                    DependentUpon = "sisact_formato_equipo_dac.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\post_venta\documentos\sisact_formato_equipo_dac.aspx.resx"
+                    DependentUpon = "sisact_formato_equipo_dac.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\post_venta\documentos\sisact_generacion_acuerdos.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\post_venta\documentos\sisact_generacion_acuerdos.aspx.vb"
+                    DependentUpon = "sisact_generacion_acuerdos.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\post_venta\documentos\sisact_generacion_acuerdos.aspx.resx"
+                    DependentUpon = "sisact_generacion_acuerdos.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\post_venta\documentos\sisact_matrizdocumentos.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\post_venta\documentos\sisact_matrizdocumentos.aspx.vb"
+                    DependentUpon = "sisact_matrizdocumentos.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\post_venta\documentos\sisact_matrizdocumentos.aspx.resx"
+                    DependentUpon = "sisact_matrizdocumentos.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\post_venta\documentos\sisact_recibo_acuerdo.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\post_venta\documentos\sisact_recibo_acuerdo.aspx.vb"
+                    DependentUpon = "sisact_recibo_acuerdo.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\post_venta\documentos\sisact_recibo_acuerdo.aspx.resx"
+                    DependentUpon = "sisact_recibo_acuerdo.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\post_venta\documentos\sisact_subirdocumento.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\post_venta\documentos\sisact_subirdocumento.aspx.vb"
+                    DependentUpon = "sisact_subirdocumento.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\post_venta\documentos\sisact_subirdocumento.aspx.resx"
+                    DependentUpon = "sisact_subirdocumento.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\post_venta\documentos\verDocumento.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\post_venta\documentos\verDocumento.aspx.vb"
+                    DependentUpon = "verDocumento.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\post_venta\documentos\verDocumento.aspx.resx"
+                    DependentUpon = "verDocumento.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\post_venta\iframe\sisact_ifr_consulta_reglas.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\post_venta\iframe\sisact_ifr_consulta_reglas.aspx.vb"
+                    DependentUpon = "sisact_ifr_consulta_reglas.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\post_venta\iframe\sisact_ifr_consulta_reglas.aspx.resx"
+                    DependentUpon = "sisact_ifr_consulta_reglas.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\post_venta\migracion\sisact_carga_masiva_whitelist_televentas.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\post_venta\migracion\sisact_carga_masiva_whitelist_televentas.aspx.vb"
+                    DependentUpon = "sisact_carga_masiva_whitelist_televentas.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\post_venta\migracion\sisact_carga_masiva_whitelist_televentas.aspx.resx"
+                    DependentUpon = "sisact_carga_masiva_whitelist_televentas.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\post_venta\migracion\sisact_migracion_prepago_postpago.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\post_venta\migracion\sisact_migracion_prepago_postpago.aspx.vb"
+                    DependentUpon = "sisact_migracion_prepago_postpago.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\post_venta\migracion\sisact_migracion_prepago_postpago.aspx.resx"
+                    DependentUpon = "sisact_migracion_prepago_postpago.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\post_venta\pack_reposicion\sisact_packprepago.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\post_venta\pack_reposicion\sisact_packprepago.aspx.vb"
+                    DependentUpon = "sisact_packprepago.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\post_venta\pack_reposicion\sisact_packprepago.aspx.resx"
+                    DependentUpon = "sisact_packprepago.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\post_venta\renovacion\ConsultaCreditosEbs.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\post_venta\renovacion\ConsultaCreditosEbs.aspx.vb"
+                    DependentUpon = "ConsultaCreditosEbs.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\post_venta\renovacion\ConsultaCreditosEbs.aspx.resx"
+                    DependentUpon = "ConsultaCreditosEbs.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\post_venta\renovacion\ConsultaDataCredito.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\post_venta\renovacion\ConsultaDataCredito.aspx.vb"
+                    DependentUpon = "ConsultaDataCredito.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\post_venta\renovacion\ConsultaDataCredito.aspx.resx"
+                    DependentUpon = "ConsultaDataCredito.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\post_venta\renovacion\NumeroOperacion.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\post_venta\renovacion\sisact_cargar_archivo_consumer.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\post_venta\renovacion\sisact_cargar_archivo_consumer.aspx.vb"
+                    DependentUpon = "sisact_cargar_archivo_consumer.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\post_venta\renovacion\sisact_cargar_archivo_consumer.aspx.resx"
+                    DependentUpon = "sisact_cargar_archivo_consumer.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\post_venta\renovacion\sisact_cargar_archivo_solicitud_consumer.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\post_venta\renovacion\sisact_cargar_archivo_solicitud_consumer.aspx.vb"
+                    DependentUpon = "sisact_cargar_archivo_solicitud_consumer.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\post_venta\renovacion\sisact_cargar_archivo_solicitud_consumer.aspx.resx"
+                    DependentUpon = "sisact_cargar_archivo_solicitud_consumer.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\post_venta\renovacion\sisact_ifr_condiciones_venta.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\post_venta\renovacion\sisact_ifr_condiciones_venta.aspx.vb"
+                    DependentUpon = "sisact_ifr_condiciones_venta.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\post_venta\renovacion\sisact_ifr_condiciones_venta.aspx.resx"
+                    DependentUpon = "sisact_ifr_condiciones_venta.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\post_venta\renovacion\sisact_ifr_consulta_lista_precios_rp.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\post_venta\renovacion\sisact_ifr_consulta_lista_precios_rp.aspx.vb"
+                    DependentUpon = "sisact_ifr_consulta_lista_precios_rp.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\post_venta\renovacion\sisact_ifr_consulta_lista_precios_rp.aspx.resx"
+                    DependentUpon = "sisact_ifr_consulta_lista_precios_rp.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\post_venta\renovacion\sisact_ifr_consulta_unificada.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\post_venta\renovacion\sisact_ifr_consulta_unificada.aspx.vb"
+                    DependentUpon = "sisact_ifr_consulta_unificada.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\post_venta\renovacion\sisact_ifr_consulta_unificada.aspx.resx"
+                    DependentUpon = "sisact_ifr_consulta_unificada.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\post_venta\renovacion\sisact_ifr_Reintegro.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\post_venta\renovacion\sisact_ifr_Reintegro.aspx.vb"
+                    DependentUpon = "sisact_ifr_Reintegro.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\post_venta\renovacion\sisact_ifr_Reintegro.aspx.resx"
+                    DependentUpon = "sisact_ifr_Reintegro.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\post_venta\renovacion\sisact_ifr_resultado_evaluacion.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\post_venta\renovacion\sisact_ifr_resultado_evaluacion.aspx.vb"
+                    DependentUpon = "sisact_ifr_resultado_evaluacion.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\post_venta\renovacion\sisact_ifr_resultado_evaluacion.aspx.resx"
+                    DependentUpon = "sisact_ifr_resultado_evaluacion.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\post_venta\renovacion\sisact_ifr_ValidarCliente.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\post_venta\renovacion\sisact_ifr_ValidarCliente.aspx.vb"
+                    DependentUpon = "sisact_ifr_ValidarCliente.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\post_venta\renovacion\sisact_ifr_ValidarCliente.aspx.resx"
+                    DependentUpon = "sisact_ifr_ValidarCliente.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\post_venta\renovacion\sisact_listado_representante_legal.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\post_venta\renovacion\sisact_listado_representante_legal.aspx.vb"
+                    DependentUpon = "sisact_listado_representante_legal.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\post_venta\renovacion\sisact_listado_representante_legal.aspx.resx"
+                    DependentUpon = "sisact_listado_representante_legal.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\post_venta\renovacion\sisact_ListadoArchivosAdjuntos.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\post_venta\renovacion\sisact_ListadoArchivosAdjuntos.aspx.vb"
+                    DependentUpon = "sisact_ListadoArchivosAdjuntos.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\post_venta\renovacion\sisact_ListadoArchivosAdjuntos.aspx.resx"
+                    DependentUpon = "sisact_ListadoArchivosAdjuntos.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\post_venta\renovacion\sisact_ListadoArchivosAdjuntos_Consumer.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\post_venta\renovacion\sisact_ListadoArchivosAdjuntos_Consumer.aspx.vb"
+                    DependentUpon = "sisact_ListadoArchivosAdjuntos_Consumer.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\post_venta\renovacion\sisact_ListadoArchivosAdjuntos_Consumer.aspx.resx"
+                    DependentUpon = "sisact_ListadoArchivosAdjuntos_Consumer.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\post_venta\renovacion\sisact_pop_consulta_sec.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\post_venta\renovacion\sisact_pop_consulta_sec.aspx.vb"
+                    DependentUpon = "sisact_pop_consulta_sec.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\post_venta\renovacion\sisact_pop_consulta_sec.aspx.resx"
+                    DependentUpon = "sisact_pop_consulta_sec.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\post_venta\renovacion\sisact_pop_consulta3g.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\post_venta\renovacion\sisact_pop_consulta3g.aspx.vb"
+                    DependentUpon = "sisact_pop_consulta3g.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\post_venta\renovacion\sisact_pop_consulta3g.aspx.resx"
+                    DependentUpon = "sisact_pop_consulta3g.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\post_venta\renovacion\sisact_pop_detalle_linea.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\post_venta\renovacion\sisact_pop_detalle_linea.aspx.vb"
+                    DependentUpon = "sisact_pop_detalle_linea.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\post_venta\renovacion\sisact_pop_detalle_linea.aspx.resx"
+                    DependentUpon = "sisact_pop_detalle_linea.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\post_venta\renovacion\sisact_pop_plan_combo.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\post_venta\renovacion\sisact_pop_plan_combo.aspx.vb"
+                    DependentUpon = "sisact_pop_plan_combo.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\post_venta\renovacion\sisact_pop_plan_combo.aspx.resx"
+                    DependentUpon = "sisact_pop_plan_combo.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\post_venta\renovacion\sisact_pop_seguros.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\post_venta\renovacion\sisact_pop_seguros.aspx.vb"
+                    DependentUpon = "sisact_pop_seguros.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\post_venta\renovacion\sisact_pop_seguros.aspx.resx"
+                    DependentUpon = "sisact_pop_seguros.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\post_venta\renovacion\sisact_renovacion_detalle_descuento.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\post_venta\renovacion\sisact_renovacion_detalle_descuento.aspx.vb"
+                    DependentUpon = "sisact_renovacion_detalle_descuento.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\post_venta\renovacion\sisact_renovacion_detalle_descuento.aspx.resx"
+                    DependentUpon = "sisact_renovacion_detalle_descuento.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\post_venta\renovacion\sisact_renovacion_equipo_postpago_cac.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\post_venta\renovacion\sisact_renovacion_equipo_postpago_cac.aspx.vb"
+                    DependentUpon = "sisact_renovacion_equipo_postpago_cac.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\post_venta\renovacion\sisact_renovacion_equipo_postpago_cac.aspx.resx"
+                    DependentUpon = "sisact_renovacion_equipo_postpago_cac.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\post_venta\renovacion\sisact_renovacion_postpago.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\post_venta\renovacion\sisact_renovacion_postpago.aspx.vb"
+                    DependentUpon = "sisact_renovacion_postpago.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\post_venta\renovacion\sisact_renovacion_postpago.aspx.resx"
+                    DependentUpon = "sisact_renovacion_postpago.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\post_venta\renovacion\sisact_upload_consumer.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\post_venta\renovacion\sisact_upload_consumer.aspx.vb"
+                    DependentUpon = "sisact_upload_consumer.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\post_venta\renovacion\sisact_upload_consumer.aspx.resx"
+                    DependentUpon = "sisact_upload_consumer.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\post_venta\renovacion\sisact_valida_vendedor.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\post_venta\renovacion\sisact_valida_vendedor.aspx.vb"
+                    DependentUpon = "sisact_valida_vendedor.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\post_venta\renovacion\sisact_valida_vendedor.aspx.resx"
+                    DependentUpon = "sisact_valida_vendedor.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\post_venta\renovacion\sisact_verifica_evaluacion_consumer.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\post_venta\renovacion\sisact_verifica_evaluacion_consumer.aspx.vb"
+                    DependentUpon = "sisact_verifica_evaluacion_consumer.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\post_venta\renovacion\sisact_verifica_evaluacion_consumer.aspx.resx"
+                    DependentUpon = "sisact_verifica_evaluacion_consumer.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\post_venta\vas\sisact_activacion_vas.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\post_venta\vas\sisact_activacion_vas.aspx.vb"
+                    DependentUpon = "sisact_activacion_vas.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\post_venta\vas\sisact_activacion_vas.aspx.resx"
+                    DependentUpon = "sisact_activacion_vas.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\soporte\sisact_validar.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\soporte\sisact_validar.aspx.vb"
+                    DependentUpon = "sisact_validar.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\soporte\sisact_validar.aspx.resx"
+                    DependentUpon = "sisact_validar.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <Folder RelPath = "paginas\upload\" />
+                <File
+                    RelPath = "paginas\venta\mantenimiento\sisact_carga_masiva_lprecio_pacuerdo.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\venta\mantenimiento\sisact_carga_masiva_lprecio_pacuerdo.aspx.vb"
+                    DependentUpon = "sisact_carga_masiva_lprecio_pacuerdo.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\venta\mantenimiento\sisact_carga_masiva_lprecio_pacuerdo.aspx.resx"
+                    DependentUpon = "sisact_carga_masiva_lprecio_pacuerdo.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\venta\mantenimiento\sisact_mant_renovaciones.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\venta\mantenimiento\sisact_mant_renovaciones.aspx.vb"
+                    DependentUpon = "sisact_mant_renovaciones.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\venta\mantenimiento\sisact_mant_renovaciones.aspx.resx"
+                    DependentUpon = "sisact_mant_renovaciones.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\venta\mantenimiento\sisact_nivel_aprobacion_meses.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\venta\mantenimiento\sisact_nivel_aprobacion_meses.aspx.vb"
+                    DependentUpon = "sisact_nivel_aprobacion_meses.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\venta\mantenimiento\sisact_nivel_aprobacion_meses.aspx.resx"
+                    DependentUpon = "sisact_nivel_aprobacion_meses.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\venta\mantenimiento\sisact_nivel_aprobacion_soles.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\venta\mantenimiento\sisact_nivel_aprobacion_soles.aspx.vb"
+                    DependentUpon = "sisact_nivel_aprobacion_soles.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\venta\mantenimiento\sisact_nivel_aprobacion_soles.aspx.resx"
+                    DependentUpon = "sisact_nivel_aprobacion_soles.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\venta\prepago\sisact_express_prepago_renovacion.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\venta\prepago\sisact_express_prepago_renovacion.aspx.vb"
+                    DependentUpon = "sisact_express_prepago_renovacion.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\venta\prepago\sisact_express_prepago_renovacion.aspx.resx"
+                    DependentUpon = "sisact_express_prepago_renovacion.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\venta\prepago\sisact_ifr_busqueda_prepago.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\venta\prepago\sisact_ifr_busqueda_prepago.aspx.vb"
+                    DependentUpon = "sisact_ifr_busqueda_prepago.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\venta\prepago\sisact_ifr_busqueda_prepago.aspx.resx"
+                    DependentUpon = "sisact_ifr_busqueda_prepago.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\venta\prepago\sisact_ifr_consulta_imei.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\venta\prepago\sisact_ifr_consulta_imei.aspx.vb"
+                    DependentUpon = "sisact_ifr_consulta_imei.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\venta\prepago\sisact_ifr_consulta_imei.aspx.resx"
+                    DependentUpon = "sisact_ifr_consulta_imei.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\venta\prepago\sisact_ifr_consulta_lista_precios_.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\venta\prepago\sisact_ifr_consulta_lista_precios_.aspx.vb"
+                    DependentUpon = "sisact_ifr_consulta_lista_precios_.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\venta\prepago\sisact_ifr_consulta_lista_precios_.aspx.resx"
+                    DependentUpon = "sisact_ifr_consulta_lista_precios_.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\venta\prepago\sisact_ifr_consulta_lista_vendedores_.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\venta\prepago\sisact_ifr_consulta_lista_vendedores_.aspx.vb"
+                    DependentUpon = "sisact_ifr_consulta_lista_vendedores_.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\venta\prepago\sisact_ifr_consulta_lista_vendedores_.aspx.resx"
+                    DependentUpon = "sisact_ifr_consulta_lista_vendedores_.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\venta\prepago\sisact_ifr_consulta_precio_.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\venta\prepago\sisact_ifr_consulta_precio_.aspx.vb"
+                    DependentUpon = "sisact_ifr_consulta_precio_.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\venta\prepago\sisact_ifr_consulta_precio_.aspx.resx"
+                    DependentUpon = "sisact_ifr_consulta_precio_.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\venta\prepago\sisact_ifr_detalle_cliente.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\venta\prepago\sisact_ifr_detalle_cliente.aspx.vb"
+                    DependentUpon = "sisact_ifr_detalle_cliente.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\venta\prepago\sisact_ifr_detalle_cliente.aspx.resx"
+                    DependentUpon = "sisact_ifr_detalle_cliente.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\venta\prepago\sisact_ifr_operador149.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\venta\prepago\sisact_ifr_operador149.aspx.vb"
+                    DependentUpon = "sisact_ifr_operador149.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\venta\prepago\sisact_ifr_operador149.aspx.resx"
+                    DependentUpon = "sisact_ifr_operador149.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\venta\prepago\sisact_ifr_venta_prepago.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\venta\prepago\sisact_ifr_venta_prepago.aspx.vb"
+                    DependentUpon = "sisact_ifr_venta_prepago.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\venta\prepago\sisact_ifr_venta_prepago.aspx.resx"
+                    DependentUpon = "sisact_ifr_venta_prepago.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "paginas\venta\prepago\sisact_prepago_renovacion.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "paginas\venta\prepago\sisact_prepago_renovacion.aspx.vb"
+                    DependentUpon = "sisact_prepago_renovacion.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "paginas\venta\prepago\sisact_prepago_renovacion.aspx.resx"
+                    DependentUpon = "sisact_prepago_renovacion.aspx.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "script\browser.js"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "script\DATE-PICKER.JS"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "script\func_usc_direccion.js"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "script\funciones_direccion.js"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "script\funciones_sec.js"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "script\json.js"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "script\MigracionPostpago.js"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "script\Biometria\getParametros.js"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "script\Biometria\sisact_validacion_identidad.js"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "script\calendar\calendar.js"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "script\calendar\calendar_es.js"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "script\calendar\calendar_setup.js"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "script\calendar\calendario_call.js"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "script\calendar\skins\aqua\active-bg.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "script\calendar\skins\aqua\dark-bg.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "script\calendar\skins\aqua\hover-bg.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "script\calendar\skins\aqua\menuarrow.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "script\calendar\skins\aqua\normal-bg.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "script\calendar\skins\aqua\rowhover-bg.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "script\calendar\skins\aqua\status-bg.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "script\calendar\skins\aqua\theme.css"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "script\calendar\skins\aqua\Thumbs.db"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "script\calendar\skins\aqua\title-bg.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "script\calendar\skins\aqua\today-bg.gif"
+                    BuildAction = "Content"
+                />
+                <Folder
+                    RelPath = "Web References\"
+                    WebReferences = "TRUE"
+                />
+            </Include>
+        </Files>
+    </VisualBasic>
+</VisualStudioProject>
+

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:s0="http://claro.com.pe/eai/businessrulesservices/ventas/evaluacioncrediticia/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" targetNamespace="http://claro.com.pe/eai/businessrulesservices/ventas/evaluacioncrediticia/" name="EvaluacionCrediticiaWS" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <s:schema xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://claro.com.pe/eai/businessrulesservices/ventas/evaluacioncrediticia/" xmlns:aud="http://claro.com.pe/eai/servicecommons/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://claro.com.pe/eai/businessrulesservices/ventas/evaluacioncrediticia/">
+      <xsd:import schemaLocation="http://limdesosbv03.tim.com.pe:7909/Business_Rules_Services/Ventas/Inquiry/EvaluacionCrediticia?SCHEMA%2FUtilities%2Fxsd%2FAudit" namespace="http://claro.com.pe/eai/servicecommons/" />
+      <xsd:element name="consultarReglas">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="audit" type="tns:AuditType" />
+            <xsd:element name="tipoDespacho" type="xsd:string" />
+            <xsd:element name="tipoProducto" type="xsd:string" />
+            <xsd:element name="canal" type="xsd:string" />
+            <xsd:element name="pdv" type="xsd:string" />
+            <xsd:element name="tipoCliente" type="xsd:string" />
+            <xsd:element name="tipoDocumento" type="xsd:string" />
+            <xsd:element name="departamento" type="xsd:string" />
+            <xsd:element name="provincia" type="xsd:string" />
+            <xsd:element name="distrito" type="xsd:string" />
+            <xsd:element name="casoEspecial" type="xsd:string" />
+            <xsd:element name="factorEndeudamiento" type="xsd:string" />
+            <xsd:element name="oferta" type="xsd:string" />
+            <xsd:element name="grupoPlanTarifario" type="xsd:string" />
+            <xsd:element name="cargoFijo" type="xsd:string" />
+            <xsd:element name="plazoAcuerdo" type="xsd:string" />
+            <xsd:element name="campania" type="xsd:string" />
+            <xsd:element name="control" type="xsd:string" />
+            <xsd:element name="factorSubsidio" type="xsd:string" />
+            <xsd:element name="porcentajeCuotaInicial" type="xsd:string" />
+            <xsd:element name="cuotas" type="xsd:string" />
+            <xsd:element name="kit" type="xsd:string" />
+            <xsd:element name="riesgo" type="xsd:string" />
+            <xsd:element name="score" type="xsd:string" />
+            <xsd:element name="edad" type="xsd:string" />
+            <xsd:element name="cantidadRRLL" type="xsd:string" />
+            <xsd:element name="publicar" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="consultarReglasResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="audit" type="aud:AuditType" />
+            <xsd:element minOccurs="0" maxOccurs="unbounded" name="regla" type="tns:ReglaType" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:complexType name="AuditType">
+        <xsd:sequence>
+          <xsd:element name="idTransaccion" type="xsd:string" />
+          <xsd:element name="ipAplicacion" type="xsd:string" />
+          <xsd:element name="aplicacion" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ReglaType">
+        <xsd:sequence>
+          <xsd:element name="restriccion" type="xsd:string" />
+          <xsd:element name="tipoGarantia" type="xsd:string" />
+          <xsd:element name="absolutoReferencial" type="xsd:string" />
+          <xsd:element name="montoGarantia" type="xsd:string" />
+          <xsd:element name="costoInstalacion" type="xsd:string" />
+          <xsd:element name="cantidadProductoMax" type="xsd:string" />
+          <xsd:element name="publicar" type="xsd:string" />
+          <xsd:element name="prioridadPublicacion" type="xsd:string" />
+          <xsd:element name="factorEndeudamiento" type="xsd:string" />
+          <xsd:element name="grupoPlanTarifario" type="xsd:string" />
+          <xsd:element name="cargoFijoMinimo" type="xsd:string" />
+          <xsd:element name="cargoFijoMaximo" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+    </s:schema>
+  </types>
+  <message name="reglaEvaluacionCrediticiaRequest">
+    <part name="parameters" element="s0:consultarReglas" />
+  </message>
+  <message name="reglaEvaluacionCrediticiaResponse">
+    <part name="parameters" element="s0:consultarReglasResponse" />
+  </message>
+  <portType name="EvaluacionCrediticiaWSType">
+    <operation name="consultarReglas">
+      <input message="s0:reglaEvaluacionCrediticiaRequest" />
+      <output message="s0:reglaEvaluacionCrediticiaResponse" />
+    </operation>
+  </portType>
+  <binding name="EvaluacionCrediticiaWSBinding" type="s0:EvaluacionCrediticiaWSType">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document" />
+    <operation name="consultarReglas">
+      <soap:operation soapAction="http://claro.com.pe/eai/businessrulesservices/ventas/evaluacioncrediticia/consultarReglas" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="EvaluacionCrediticiaWS">
+    <port name="EvaluacionCrediticiaWSPort" binding="s0:EvaluacionCrediticiaWSBinding">
+      <soap:address location="http://limdesosbv03.tim.com.pe:7909/Business_Rules_Services/Ventas/Inquiry/EvaluacionCrediticia" />
+    </port>
+  </service>
+</definitions>

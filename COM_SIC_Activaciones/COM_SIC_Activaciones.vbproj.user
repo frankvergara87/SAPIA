@@ -1,0 +1,48 @@
+<VisualStudioProject>
+    <VisualBasic LastOpenVersion = "7.10.3077" >
+        <Build>
+            <Settings ReferencePath = "D:\EAI\corporativos\9 - 35367-3 AVM SISACT\WEB_SISACT_EXPRESS\COM_SIC_Activaciones\bin\;D:\Pablo\Sistemas\SISACT_AVM(RMORI_PASE_PROD)\WEB_SISACT_EXPRESS\COM_SIC_Activaciones\bin\;D:\ULTIMO\Pases\Claro_Exacto_Ilimitado\WEB_SISACT_EXPRESS\COM_SIC_Activaciones\bin\;D:\P_FSISACT\WEB_SISACT_EXPRESS\COM_SIC_Activaciones\bin\;D:\EAI\corporativos\03 Express - ChipRepuesto 38142-2\COM_SIC_Activaciones\bin\;D:\Pablo\express cac\SISACT_EXPRESS_CAC\COM_SIC_Activaciones\bin\;D:\gliseth\PP_38696-2_15112010\PP_38696-2_15112010\COM_SIC_Activaciones\bin\;D:\Manuel\PP_38696-2_15112010\COM_SIC_Activaciones\bin\;C:\Documents and Settings\Administrador\Escritorio\MIGRACION PREPAGO-POSTPAGO\Proyecto con mejoras\PP_38696-2_15112010\COM_SIC_Activaciones\bin\;C:\migracion\PP_38696-2_15112010\COM_SIC_Activaciones\bin\;D:\Manuel\sisact\Migracion\QA\PP_38696-2_15112010\COM_SIC_Activaciones\bin\;D:\Pases_Comercial\SISACT\38696-3\Fuentes_Ultimas_Manuel_3101\PP_38696-2_31012011\COM_SIC_Activaciones\bin\;D:\christian\SISACT_POSTVENTA\WEB_SISACT_POSTVENTA_WSEMPLEADO\WEB_SISACT_POSTVENTA\COM_SIC_Activaciones\bin\;D:\WEB_SISACT_POSTVENTA_PROD\COM_SIC_Activaciones\bin\;D:\Proyectos\RenovacionPrepago2\WEB_SISACT_POSTVENTA_REN\COM_SIC_Activaciones\bin\;D:\SISACT\POSTVENTA\PASE\WEB_SISACT_POSTVENTA\COM_SIC_Activaciones\bin\;D:\+[lv!s]+\[1]-EVALUACION_SMS\FUENTES\HVS\WEB_SISACT_POSTVENTA\COM_SIC_Activaciones\bin\;D:\Johnny\Claro\Paquetes\SISACT SD814397\Otras Fuentes\Fuentes Todo\WEB_SISACT_POSTVENTA\COM_SIC_Activaciones\bin\;D:\Johnny\Claro\Paquetes\SISACT PQT-170743-TSK-36772\Otras Fuentes\Fuentes Rollback\WEB_SISACT_POSTVENTA\COM_SIC_Activaciones\bin\;D:\WEB_SISACT_POSTVENTA\COM_SIC_Activaciones\bin\;C:\31122014\pase urgencia\WEB_SISACT_POSTVENTA\COM_SIC_Activaciones\bin\;D:\Alinear_Renovacion\WEB_SISACT_POSTVENTA\WEB_SISACT_POSTVENTA_Prod\WEB_SISACT_POSTVENTA\COM_SIC_Activaciones\bin\;C:\Juan Carlos\PRODUCCION\WEB_SISACT_POSTVENTA\COM_SIC_Activaciones\bin\;D:\Manuel\2015.01.23 Renovacion Unificada\Fuentes\WEB_SISACT_POSTVENTA\COM_SIC_Activaciones\bin\;C:\warner\14082015\postventa_60\harvest\WEB_SISACT_POSTVENTA\COM_SIC_Activaciones\bin\;C:\Sinergia\6.0\2509\WEB_SISACT_POSTVENTA\COM_SIC_Activaciones\bin\;C:\warner\28092015\ultimas_Fuentes\WEB_SISACT_POSTVENTA\COM_SIC_Activaciones\bin\;D:\1. PROYECTOS\PROY-24740\20160701\WEB_SISACT_POSTVENTA\COM_SIC_Activaciones\bin\;C:\Gerhart\Proyecto\BuroMultiple\WEB_SISACT_POSTVENTA_AlineadoProduccion\COM_SIC_Activaciones\bin\" >
+                <Config
+                    Name = "Debug"
+                    EnableASPDebugging = "false"
+                    EnableASPXDebugging = "false"
+                    EnableUnmanagedDebugging = "false"
+                    EnableSQLServerDebugging = "false"
+                    RemoteDebugEnabled = "false"
+                    RemoteDebugMachine = ""
+                    StartAction = "Project"
+                    StartArguments = ""
+                    StartPage = ""
+                    StartProgram = ""
+                    StartURL = ""
+                    StartWorkingDirectory = ""
+                    StartWithIE = "true"
+                />
+                <Config
+                    Name = "Release"
+                    EnableASPDebugging = "false"
+                    EnableASPXDebugging = "false"
+                    EnableUnmanagedDebugging = "false"
+                    EnableSQLServerDebugging = "false"
+                    RemoteDebugEnabled = "false"
+                    RemoteDebugMachine = ""
+                    StartAction = "Project"
+                    StartArguments = ""
+                    StartPage = ""
+                    StartProgram = ""
+                    StartURL = ""
+                    StartWorkingDirectory = ""
+                    StartWithIE = "true"
+                />
+            </Settings>
+        </Build>
+        <OtherProjectSettings
+            CopyProjectDestinationFolder = ""
+            CopyProjectUncPath = ""
+            CopyProjectOption = "0"
+            ProjectView = "ProjectFiles"
+            ProjectTrust = "0"
+        />
+    </VisualBasic>
+</VisualStudioProject>
+

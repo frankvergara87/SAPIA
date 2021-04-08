@@ -1,0 +1,48 @@
+<VisualStudioProject>
+    <CSHARP LastOpenVersion = "7.10.3077" >
+        <Build>
+            <Settings ReferencePath = "D:\PP_38696-2_31012011\Claro.SISACT.Entidades\bin\Debug\;D:\Manuel\sisact\Migracion\incidencia\PP_38696-4_17022011\Claro.SISACT.Entidades\bin\Debug\;D:\Pases_Comercial\SISACT\38696-4\Fuentes\Pase\Claro.SISACT.Entidades\bin\Debug\;D:\1-Luis-Hualtibamba\[PVU]-[PP-XXXXX-X]-WS_Activacion_v8-v10\SISACT_POSTVENTA\Pase_ultimo_jonas\Claro.SISACT.Entidades\bin\Debug\;D:\@Luis_Hualtibamba\WS-8-10\Auditoria\Fuentes\WEB_SISACT_POSTVENTA_REP\Claro.SISACT.Entidades\bin\Debug\;D:\christian\SISACT_POSTVENTA\WEB_SISACT_POSTVENTA_WSEMPLEADO\WEB_SISACT_POSTVENTA\Claro.SISACT.Entidades\bin\Debug\;D:\WEB_SISACT_POSTVENTA_PROD\Claro.SISACT.Entidades\bin\Debug\;D:\Proyectos\RenovacionPrepago2\WEB_SISACT_POSTVENTA_REN\Claro.SISACT.Entidades\bin\Debug\;D:\@Luis_Hualtibamba\Proyectos\A.Funcional\Katty.Barbaron\Chip Repuesto Postpago\Fuentes\WEB_SISACT_POSTVENTA [PRODUCCION]\Claro.SISACT.Entidades\bin\Debug\;D:\SISACT\POSTVENTA\PASE\WEB_SISACT_POSTVENTA\Claro.SISACT.Entidades\bin\Debug\;D:\+[lv!s]+\[1]-EVALUACION_SMS\FUENTES\HVS\WEB_SISACT_POSTVENTA\Claro.SISACT.Entidades\bin\Debug\;D:\warner_final\WEB_SISACT_POSTVENTA\Claro.SISACT.Entidades\bin\Debug\;D:\Johnny\Claro\Paquetes\SISACT PQT-170743-TSK-36772\Otras Fuentes\Fuentes Todo\WEB_SISACT_POSTVENTA\Claro.SISACT.Entidades\bin\Debug\;D:\postventa_harvets\WEB_SISACT_POSTVENTA\Claro.SISACT.Entidades\bin\Debug\;D:\Christian\Produccion\WEB_SISACT_POSTVENTA\Claro.SISACT.Entidades\bin\Debug\;D:\backups\131022\qa\WEB_SISACT_POSTVENTA\Claro.SISACT.Entidades\bin\Debug\;D:\131022\qa\WEB_SISACT_POSTVENTA\Claro.SISACT.Entidades\bin\Debug\;D:\WEB_SISACT_POSTVENTA\Claro.SISACT.Entidades\bin\Debug\;C:\31122014\pase urgencia\WEB_SISACT_POSTVENTA\Claro.SISACT.Entidades\bin\Debug\;D:\Alinear_Renovacion\WEB_SISACT_POSTVENTA\WEB_SISACT_POSTVENTA_Prod\WEB_SISACT_POSTVENTA\Claro.SISACT.Entidades\bin\Debug\;C:\Juan Carlos\PRODUCCION\WEB_SISACT_POSTVENTA\Claro.SISACT.Entidades\bin\Debug\;D:\Manuel\2015.01.23 Renovacion Unificada\Fuentes\WEB_SISACT_POSTVENTA\Claro.SISACT.Entidades\bin\Debug\;C:\warner\14082015\postventa_60\harvest\WEB_SISACT_POSTVENTA\Claro.SISACT.Entidades\bin\Debug\;C:\Sinergia\6.0\2509\WEB_SISACT_POSTVENTA\Claro.SISACT.Entidades\bin\Debug\;C:\warner\28092015\ultimas_Fuentes\WEB_SISACT_POSTVENTA\Claro.SISACT.Entidades\bin\Debug\;D:\1. PROYECTOS\PROY-24740\20160701\WEB_SISACT_POSTVENTA\Claro.SISACT.Entidades\bin\Debug\;C:\Gerhart\Proyecto\BuroMultiple\WEB_SISACT_POSTVENTA_AlineadoProduccion\Claro.SISACT.Entidades\bin\Debug\" >
+                <Config
+                    Name = "Debug"
+                    EnableASPDebugging = "false"
+                    EnableASPXDebugging = "false"
+                    EnableUnmanagedDebugging = "false"
+                    EnableSQLServerDebugging = "false"
+                    RemoteDebugEnabled = "false"
+                    RemoteDebugMachine = ""
+                    StartAction = "Project"
+                    StartArguments = ""
+                    StartPage = ""
+                    StartProgram = ""
+                    StartURL = ""
+                    StartWorkingDirectory = ""
+                    StartWithIE = "true"
+                />
+                <Config
+                    Name = "Release"
+                    EnableASPDebugging = "false"
+                    EnableASPXDebugging = "false"
+                    EnableUnmanagedDebugging = "false"
+                    EnableSQLServerDebugging = "false"
+                    RemoteDebugEnabled = "false"
+                    RemoteDebugMachine = ""
+                    StartAction = "Project"
+                    StartArguments = ""
+                    StartPage = ""
+                    StartProgram = ""
+                    StartURL = ""
+                    StartWorkingDirectory = ""
+                    StartWithIE = "true"
+                />
+            </Settings>
+        </Build>
+        <OtherProjectSettings
+            CopyProjectDestinationFolder = ""
+            CopyProjectUncPath = ""
+            CopyProjectOption = "0"
+            ProjectView = "ShowAllFiles"
+            ProjectTrust = "0"
+        />
+    </CSHARP>
+</VisualStudioProject>
+

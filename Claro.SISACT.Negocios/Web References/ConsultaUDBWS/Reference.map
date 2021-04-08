@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DiscoveryClientResultsFile xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Results>
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://172.19.91.191:8903/UDBConnectorWS/UDBWSSOAP11Port?xsd=1" filename="UDBWSSOAP11Port.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="http://172.19.91.191:8903/UDBConnectorWS/UDBWSSOAP11Port?wsdl=2" filename="UDBWSSOAP11Port.wsdl" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="http://172.19.91.191:8903/UDBConnectorWS/UDBWSSOAP11Port?wsdl=1" filename="UDBWSSOAP11Port0.wsdl" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="http://172.19.91.191:8903/UDBConnectorWS/UDBWSSOAP11Port?WSDL" filename="UDBConnectorWS.wsdl" />
+  </Results>
+</DiscoveryClientResultsFile>

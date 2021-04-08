@@ -1,0 +1,987 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:s0="http://claro.com.pe/eai/ws/sap/simcards/types" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://claro.com.pe/eai/ws/sap/simcards" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" targetNamespace="http://claro.com.pe/eai/ws/sap/simcards" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://claro.com.pe/eai/ws/sap/simcards/types">
+      <s:element name="consultarTelefonoDispRequest">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idTransaccion" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="ipAplicacion" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="nombreAplicacion" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="usuarioAplicacion" type="s:string" />
+            <s:element name="cantidadTelef" type="s:integer" />
+            <s:element name="clasifRed" type="s:string" />
+            <s:element name="tipoCliente" type="s:string" />
+            <s:element name="codigoNacional" type="s:string" />
+            <s:element name="tipoNroTelef" type="s:string" />
+            <s:element name="codigoHlr" type="s:string" />
+            <s:element name="nroTelef" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="consultarTelefonoDispResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idTransaccion" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="codigoResultado" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="mensajeResultado" type="s:string" />
+            <s:element name="itData">
+              <s:complexType>
+                <s:sequence>
+                  <s:element minOccurs="0" maxOccurs="unbounded" name="itDataRow" type="s0:itDataType" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element name="itReturn">
+              <s:complexType>
+                <s:sequence>
+                  <s:element minOccurs="0" maxOccurs="unbounded" name="itReturnRow" type="s0:itReturnType" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="consultarTelefonoTodosRequest">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idTransaccion" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="ipAplicacion" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="nombreAplicacion" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="usuarioAplicacion" type="s:string" />
+            <s:element name="nroTelef" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="consultarTelefonoTodosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idTransaccion" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="codigoResultado" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="mensajeResultado" type="s:string" />
+            <s:element name="itNumTelef">
+              <s:complexType>
+                <s:sequence>
+                  <s:element minOccurs="0" maxOccurs="unbounded" name="itNumTelefRow" type="s0:itNumTelefType" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element name="itReturn">
+              <s:complexType>
+                <s:sequence>
+                  <s:element minOccurs="0" maxOccurs="unbounded" name="itReturnRow" type="s0:itReturnType" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="consultarStatusTelefonoRequest">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idTransaccion" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="ipAplicacion" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="nombreAplicacion" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="usuarioAplicacion" type="s:string" />
+            <s:element name="nroTelef" type="s:string" />
+            <s:element name="nroSerie" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="consultarStatusTelefonoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idTransaccion" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="codigoResultado" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="mensajeResultado" type="s:string" />
+            <s:element name="gtOutTab">
+              <s:complexType>
+                <s:sequence>
+                  <s:element minOccurs="0" maxOccurs="unbounded" name="gtOutTabRow" type="s0:gtOutTabType" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element name="itReturn">
+              <s:complexType>
+                <s:sequence>
+                  <s:element minOccurs="0" maxOccurs="unbounded" name="itReturnRow" type="s0:itReturnType" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="cambiarStatusTelefonoRequest">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idTransaccion" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="ipAplicacion" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="nombreAplicacion" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="usuarioAplicacion" type="s:string" />
+            <s:element name="cantNro" type="s:integer" />
+            <s:element name="region" type="s:string" />
+            <s:element name="clasifRed" type="s:string" />
+            <s:element name="codigoHlr" type="s:string" />
+            <s:element name="tipoCliente" type="s:string" />
+            <s:element name="statusInicial" type="s:string" />
+            <s:element name="statusFinal" type="s:string" />
+            <s:element name="usuario" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="cambiarStatusTelefonoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idTransaccion" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="codigoResultado" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="mensajeResultado" type="s:string" />
+            <s:element name="subRc" type="s:integer" />
+            <s:element name="esResumen">
+              <s:complexType>
+                <s:sequence>
+                  <s:element minOccurs="0" maxOccurs="unbounded" name="esResumenRow" type="s0:esResumenType" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element name="etDetalle">
+              <s:complexType>
+                <s:sequence>
+                  <s:element minOccurs="0" maxOccurs="unbounded" name="etDetalleRow" type="s0:etDetalleType" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element name="itReturn">
+              <s:complexType>
+                <s:sequence>
+                  <s:element minOccurs="0" maxOccurs="unbounded" name="itReturnRow" type="s0:itReturnType" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="cambiarStatusRequest">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idTransaccion" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="ipAplicacion" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="nombreAplicacion" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="usuarioAplicacion" type="s:string" />
+            <s:element name="nroTelef" type="s:string" />
+            <s:element name="status" type="s:string" />
+            <s:element name="usuario" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="cambiarStatusResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idTransaccion" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="codigoResultado" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="mensajeResultado" type="s:string" />
+            <s:element name="itReturn">
+              <s:complexType>
+                <s:sequence>
+                  <s:element minOccurs="0" maxOccurs="unbounded" name="itReturnRow" type="s0:itReturnType" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="reversionCambioNumeroRequest">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idTransaccion" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="ipAplicacion" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="nombreAplicacion" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="usuarioAplicacion" type="s:string" />
+            <s:element name="telefAn" type="s:string" />
+            <s:element name="telefNv" type="s:string" />
+            <s:element name="usuario" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="reversionCambioNumeroResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idTransaccion" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="codigoResultado" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="mensajeResultado" type="s:string" />
+            <s:element name="itReturn">
+              <s:complexType>
+                <s:sequence>
+                  <s:element minOccurs="0" maxOccurs="unbounded" name="itReturnRow" type="s0:itReturnType" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="registroIMSIPortabilidadRequest">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idTransaccion" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="ipAplicacion" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="nombreAplicacion" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="usuarioAplicacion" type="s:string" />
+            <s:element name="nroTelef" type="s:string" />
+            <s:element name="clasifRed" type="s:string" />
+            <s:element name="tipoNroTelef" type="s:string" />
+            <s:element name="nroSerie" type="s:string" />
+            <s:element name="tipoCliente" type="s:string" />
+            <s:element name="region" type="s:string" />
+            <s:element name="material" type="s:string" />
+            <s:element name="usuario" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="registroIMSIPortabilidadResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idTransaccion" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="codigoResultado" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="mensajeResultado" type="s:string" />
+            <s:element name="itReturn">
+              <s:complexType>
+                <s:sequence>
+                  <s:element minOccurs="0" maxOccurs="unbounded" name="itReturnRow" type="s0:itReturnType" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="actualizarNroTelefRequest">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idTransaccion" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="ipAplicacion" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="nombreAplicacion" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="usuarioAplicacion" type="s:string" />
+            <s:element name="telefAn" type="s:string" />
+            <s:element name="telefNv" type="s:string" />
+            <s:element name="usuario" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="actualizarNroTelefResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idTransaccion" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="codigoResultado" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="mensajeResultado" type="s:string" />
+            <s:element name="itReturn">
+              <s:complexType>
+                <s:sequence>
+                  <s:element minOccurs="0" maxOccurs="unbounded" name="itReturnRow" type="s0:itReturnType" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="eliminarNroTelefRequest">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idTransaccion" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="ipAplicacion" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="nombreAplicacion" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="usuarioAplicacion" type="s:string" />
+            <s:element name="nroTelef" type="s:string" />
+            <s:element name="usuario" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="eliminarNroTelefResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idTransaccion" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="codigoResultado" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="mensajeResultado" type="s:string" />
+            <s:element name="itReturn">
+              <s:complexType>
+                <s:sequence>
+                  <s:element minOccurs="0" maxOccurs="unbounded" name="itReturnRow" type="s0:itReturnType" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="listarMSISDNreservaRequest">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idTransaccion" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="ipAplicacion" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="nombreAplicacion" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="usuarioAplicacion" type="s:string" />
+            <s:element name="region" type="s:string" />
+            <s:element name="clasifRed" type="s:string" />
+            <s:element name="codigoHlr" type="s:string" />
+            <s:element name="tipoNroTelef" type="s:string" />
+            <s:element name="tipoCliente" type="s:string" />
+            <s:element name="clasifDesti" type="s:string" />
+            <s:element name="cantidadBuscar" type="s:integer" />
+            <s:element name="status" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="listarMSISDNreservaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idTransaccion" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="codigoResultado" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="mensajeResultado" type="s:string" />
+            <s:element name="itReturn">
+              <s:complexType>
+                <s:sequence>
+                  <s:element minOccurs="0" maxOccurs="unbounded" name="itReturnRow" type="s0:itReturnType" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element name="itWork">
+              <s:complexType>
+                <s:sequence>
+                  <s:element minOccurs="0" maxOccurs="unbounded" name="itWorkRow" type="s0:itWorkType" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element name="itNroTel">
+              <s:complexType>
+                <s:sequence>
+                  <s:element minOccurs="0" maxOccurs="unbounded" name="itNroTelRow" type="s0:itNroTelType" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="rollbackPelVendidoRequest">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idTransaccion" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="ipAplicacion" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="nombreAplicacion" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="usuarioAplicacion" type="s:string" />
+            <s:element name="nroSerie" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="rollbackPelVendidoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idTransaccion" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="codigoResultado" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="mensajeResultado" type="s:string" />
+            <s:element name="subRc" type="s:integer" />
+            <s:element name="itReturn">
+              <s:complexType>
+                <s:sequence>
+                  <s:element minOccurs="0" maxOccurs="unbounded" name="itReturnRow" type="s0:itReturnType" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="cambiarStatusVendidoRequest">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idTransaccion" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="ipAplicacion" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="nombreAplicacion" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="usuarioAplicacion" type="s:string" />
+            <s:element name="nroTelef" type="s:string" />
+            <s:element name="usuario" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="cambiarStatusVendidoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idTransaccion" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="codigoResultado" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="mensajeResultado" type="s:string" />
+            <s:element name="subRc" type="s:integer" />
+            <s:element name="itReturn">
+              <s:complexType>
+                <s:sequence>
+                  <s:element minOccurs="0" maxOccurs="unbounded" name="itReturnRow" type="s0:itReturnType" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="obtenerDatosNroTelefRequest">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idTransaccion" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="ipAplicacion" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="nombreAplicacion" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="usuarioAplicacion" type="s:string" />
+            <s:element name="nroTelef" type="s:string" />
+            <s:element name="material" type="s:string" />
+            <s:element name="nroSerie" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="obtenerDatosNroTelefResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idTransaccion" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="codigoResultado" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="mensajeResultado" type="s:string" />
+            <s:element minOccurs="1" name="nroSimcardsData">
+              <s:complexType>
+                <s:sequence>
+                  <s:element minOccurs="0" maxOccurs="unbounded" name="nroSimcardsDataRow" type="s0:nroSimcardsDataType" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element name="itReturn">
+              <s:complexType>
+                <s:sequence>
+                  <s:element minOccurs="0" maxOccurs="unbounded" name="itReturnRow" type="s0:itReturnType" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="obtenerNroTelefSerieRequest">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idTransaccion" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="ipAplicacion" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="nombreAplicacion" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="usuarioAplicacion" type="s:string" />
+            <s:element name="nroTelef" type="s:string" />
+            <s:element name="nroSerie" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="obtenerNroTelefSerieResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idTransaccion" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="codigoResultado" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="mensajeResultado" type="s:string" />
+            <s:element name="nroTelef" type="s:string" />
+            <s:element name="nroSerie" type="s:string" />
+            <s:element name="itReturn">
+              <s:complexType>
+                <s:sequence>
+                  <s:element minOccurs="0" maxOccurs="unbounded" name="itReturnRow" type="s0:itReturnType" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="obtenerNroTelefRequest">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idTransaccion" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="ipAplicacion" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="nombreAplicacion" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="usuarioAplicacion" type="s:string" />
+            <s:element name="itInput">
+              <s:complexType>
+                <s:sequence>
+                  <s:element minOccurs="0" maxOccurs="unbounded" name="itInputRow" type="s0:itMatSerType" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="obtenerNroTelefResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idTransaccion" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="codigoResultado" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="mensajeResultado" type="s:string" />
+            <s:element name="itOutput">
+              <s:complexType>
+                <s:sequence>
+                  <s:element minOccurs="0" maxOccurs="unbounded" name="itOutputRow" type="s0:itTelSerType" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element name="itReturn">
+              <s:complexType>
+                <s:sequence>
+                  <s:element minOccurs="0" maxOccurs="unbounded" name="itReturnRow" type="s0:itReturnType" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="obtenerHLRRequest">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idTransaccion" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="ipAplicacion" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="nombreAplicacion" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="usuarioAplicacion" type="s:string" />
+            <s:element name="nroTelef" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="obtenerHLRResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idTransaccion" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="codigoResultado" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="mensajeResultado" type="s:string" />
+            <s:element name="codigoHlr" type="s:string" />
+            <s:element name="itReturn">
+              <s:complexType>
+                <s:sequence>
+                  <s:element minOccurs="0" maxOccurs="unbounded" name="itReturnRow" type="s0:itReturnType" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="itDataType">
+        <s:sequence>
+          <s:element name="nroTelef" type="s:string" />
+          <s:element name="codigoHlr" type="s:string" />
+          <s:element name="descClred" type="s:string" />
+          <s:element name="descRegio" type="s:string" />
+          <s:element name="descTpcli" type="s:string" />
+          <s:element name="descTptlf" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="itReturnType">
+        <s:sequence>
+          <s:element name="tipo" type="s:string" />
+          <s:element name="claseMensaje" type="s:string" />
+          <s:element name="numeroMensaje" type="s:string" />
+          <s:element name="mensaje" type="s:string" />
+          <s:element name="numeroLog" type="s:string" />
+          <s:element name="numeroConsecutivoInterno" type="s:string" />
+          <s:element name="mensajeV1" type="s:string" />
+          <s:element name="mensajeV2" type="s:string" />
+          <s:element name="mensajeV3" type="s:string" />
+          <s:element name="mensajeV4" type="s:string" />
+          <s:element name="parametro" type="s:string" />
+          <s:element name="lineas" type="s:integer" />
+          <s:element name="campo" type="s:string" />
+          <s:element name="sistema" type="s:string" />
+          <s:element name="codigo" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="itNumTelefType">
+        <s:sequence>
+          <s:element name="nroTelef" type="s:string" />
+          <s:element name="marcCorta" type="s:string" />
+          <s:element name="codigRtpe" type="s:string" />
+          <s:element name="pniAbierto" type="s:string" />
+          <s:element name="empresa" type="s:string" />
+          <s:element name="bezei" type="s:string" />
+          <s:element name="descrRed" type="s:string" />
+          <s:element name="codigoHlr" type="s:string" />
+          <s:element name="descrStatus" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="gtOutTabType">
+        <s:sequence>
+          <s:element name="codRet" type="s:integer" />
+          <s:element name="desCod" type="s:string" />
+          <s:element name="texto" type="s:string" />
+          <s:element name="statusSim" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="esResumenType">
+        <s:sequence>
+          <s:element name="cantSol" type="s:integer" />
+          <s:element name="cantCarg" type="s:integer" />
+          <s:element name="codigoHlr" type="s:string" />
+          <s:element name="region" type="s:string" />
+          <s:element name="regionDes" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="etDetalleType">
+        <s:sequence>
+          <s:element name="correl" type="s:integer" />
+          <s:element name="rangoInicial" type="s:string" />
+          <s:element name="rangoFinal" type="s:string" />
+          <s:element name="cantidad" type="s:integer" />
+          <s:element name="region" type="s:string" />
+          <s:element name="inC" type="s:string" />
+          <s:element name="codigoHlr" type="s:string" />
+          <s:element name="regionDes" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="itWorkType">
+        <s:sequence>
+          <s:element name="nroTelef" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="itNroTelType">
+        <s:sequence>
+          <s:element name="nroTelef" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="nroSimcardsDataType">
+        <s:sequence>
+          <s:element name="nroTelef" type="s:string" />
+          <s:element name="region" type="s:string" />
+          <s:element name="codigoRed" type="s:string" />
+          <s:element name="codigoHlr" type="s:string" />
+          <s:element name="status" type="s:string" />
+          <s:element name="fecCarga" type="s:date" />
+          <s:element name="usoCarga" type="s:string" />
+          <s:element name="tipoNro" type="s:string" />
+          <s:element name="loteBscs" type="s:string" />
+          <s:element name="tipoCliente" type="s:string" />
+          <s:element name="codigoDest" type="s:string" />
+          <s:element name="loteDest" type="s:string" />
+          <s:element name="loteMkt" type="s:string" />
+          <s:element name="serNr" type="s:string" />
+          <s:element name="matNr" type="s:string" />
+          <s:element name="kunNr" type="s:string" />
+          <s:element name="matNrAntig" type="s:string" />
+          <s:element name="fecTrafico" type="s:date" />
+          <s:element name="bm" type="s:string" />
+          <s:element name="tipoDocCliente" type="s:string" />
+          <s:element name="cliente" type="s:string" />
+          <s:element name="statusChipRep" type="s:string" />
+          <s:element name="fecCambio" type="s:date" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="itMatSerType">
+        <s:sequence>
+          <s:element name="material" type="s:string" />
+          <s:element name="nroSerie" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="itTelSerType">
+        <s:sequence>
+          <s:element name="nroTelef" type="s:string" />
+          <s:element name="nroSerie" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </types>
+  <message name="consultarTelefonoMsgDispRequest">
+    <part name="parameters" element="s0:consultarTelefonoDispRequest" />
+  </message>
+  <message name="consultarTelefonoDispMsgResponse">
+    <part name="parameters" element="s0:consultarTelefonoDispResponse" />
+  </message>
+  <message name="consultarTelefonoTodosMsgRequest">
+    <part name="parameters" element="s0:consultarTelefonoTodosRequest" />
+  </message>
+  <message name="consultarTelefonoTodosMsgResponse">
+    <part name="parameters" element="s0:consultarTelefonoTodosResponse" />
+  </message>
+  <message name="consultarStatusTelefonoMsgRequest">
+    <part name="parameters" element="s0:consultarStatusTelefonoRequest" />
+  </message>
+  <message name="consultarStatusTelefonoMsgResponse">
+    <part name="parameters" element="s0:consultarStatusTelefonoResponse" />
+  </message>
+  <message name="cambiarStatusTelefonoMsgRequest">
+    <part name="parameters" element="s0:cambiarStatusTelefonoRequest" />
+  </message>
+  <message name="cambiarStatusTelefonoMsgResponse">
+    <part name="parameters" element="s0:cambiarStatusTelefonoResponse" />
+  </message>
+  <message name="cambiarStatusMsgRequest">
+    <part name="parameters" element="s0:cambiarStatusRequest" />
+  </message>
+  <message name="cambiarStatusMsgResponse">
+    <part name="parameters" element="s0:cambiarStatusResponse" />
+  </message>
+  <message name="reversionCambioNumeroMsgRequest">
+    <part name="parameters" element="s0:reversionCambioNumeroRequest" />
+  </message>
+  <message name="reversionCambioNumeroMsgResponse">
+    <part name="parameters" element="s0:reversionCambioNumeroResponse" />
+  </message>
+  <message name="registroIMSIPortabilidadMsgRequest">
+    <part name="parameters" element="s0:registroIMSIPortabilidadRequest" />
+  </message>
+  <message name="registroIMSIPortabilidadMsgResponse">
+    <part name="parameters" element="s0:registroIMSIPortabilidadResponse" />
+  </message>
+  <message name="actualizarNroTelefMsgRequest">
+    <part name="parameters" element="s0:actualizarNroTelefRequest" />
+  </message>
+  <message name="actualizarNroTelefMsgResponse">
+    <part name="parameters" element="s0:actualizarNroTelefResponse" />
+  </message>
+  <message name="eliminarNroTelefMsgRequest">
+    <part name="parameters" element="s0:eliminarNroTelefRequest" />
+  </message>
+  <message name="eliminarNroTelefMsgResponse">
+    <part name="parameters" element="s0:eliminarNroTelefResponse" />
+  </message>
+  <message name="listarMSISDNreservaMsgRequest">
+    <part name="parameters" element="s0:listarMSISDNreservaRequest" />
+  </message>
+  <message name="listarMSISDNreservaMsgResponse">
+    <part name="parameters" element="s0:listarMSISDNreservaResponse" />
+  </message>
+  <message name="rollbackPelVendidoMsgRequest">
+    <part name="parameters" element="s0:rollbackPelVendidoRequest" />
+  </message>
+  <message name="rollbackPelVendidoMsgResponse">
+    <part name="parameters" element="s0:rollbackPelVendidoResponse" />
+  </message>
+  <message name="cambiarStatusVendidoMsgRequest">
+    <part name="parameters" element="s0:cambiarStatusVendidoRequest" />
+  </message>
+  <message name="cambiarStatusVendidoMsgResponse">
+    <part name="parameters" element="s0:cambiarStatusVendidoResponse" />
+  </message>
+  <message name="obtenerDatosNroTelefMsgRequest">
+    <part name="parameters" element="s0:obtenerDatosNroTelefRequest" />
+  </message>
+  <message name="obtenerDatosNroTelefMsgResponse">
+    <part name="parameters" element="s0:obtenerDatosNroTelefResponse" />
+  </message>
+  <message name="obtenerNroTelefSerieMsgRequest">
+    <part name="parameters" element="s0:obtenerNroTelefSerieRequest" />
+  </message>
+  <message name="obtenerNroTelefSerieMsgResponse">
+    <part name="parameters" element="s0:obtenerNroTelefSerieResponse" />
+  </message>
+  <message name="obtenerNroTelefMsgRequest">
+    <part name="parameters" element="s0:obtenerNroTelefRequest" />
+  </message>
+  <message name="obtenerNroTelefMsgResponse">
+    <part name="parameters" element="s0:obtenerNroTelefResponse" />
+  </message>
+  <message name="obtenerHLRMsgRequest">
+    <part name="parameters" element="s0:obtenerHLRRequest" />
+  </message>
+  <message name="obtenerHLRMsgResponse">
+    <part name="parameters" element="s0:obtenerHLRResponse" />
+  </message>
+  <portType name="SimcardsPortType">
+    <operation name="consultarTelefonoDisp">
+      <input message="tns:consultarTelefonoMsgDispRequest" />
+      <output message="tns:consultarTelefonoDispMsgResponse" />
+    </operation>
+    <operation name="consultarTelefonoTodos">
+      <input message="tns:consultarTelefonoTodosMsgRequest" />
+      <output message="tns:consultarTelefonoTodosMsgResponse" />
+    </operation>
+    <operation name="consultarStatusTelefono">
+      <input message="tns:consultarStatusTelefonoMsgRequest" />
+      <output message="tns:consultarStatusTelefonoMsgResponse" />
+    </operation>
+    <operation name="cambiarStatusTelefono">
+      <input message="tns:cambiarStatusTelefonoMsgRequest" />
+      <output message="tns:cambiarStatusTelefonoMsgResponse" />
+    </operation>
+    <operation name="cambiarStatus">
+      <input message="tns:cambiarStatusMsgRequest" />
+      <output message="tns:cambiarStatusMsgResponse" />
+    </operation>
+    <operation name="reversionCambioNumero">
+      <input message="tns:reversionCambioNumeroMsgRequest" />
+      <output message="tns:reversionCambioNumeroMsgResponse" />
+    </operation>
+    <operation name="registroIMSIPortabilidad">
+      <input message="tns:registroIMSIPortabilidadMsgRequest" />
+      <output message="tns:registroIMSIPortabilidadMsgResponse" />
+    </operation>
+    <operation name="actualizarNroTelef">
+      <input message="tns:actualizarNroTelefMsgRequest" />
+      <output message="tns:actualizarNroTelefMsgResponse" />
+    </operation>
+    <operation name="eliminarNroTelef">
+      <input message="tns:eliminarNroTelefMsgRequest" />
+      <output message="tns:eliminarNroTelefMsgResponse" />
+    </operation>
+    <operation name="listarMSISDNreserva">
+      <input message="tns:listarMSISDNreservaMsgRequest" />
+      <output message="tns:listarMSISDNreservaMsgResponse" />
+    </operation>
+    <operation name="rollbackPelVendido">
+      <input message="tns:rollbackPelVendidoMsgRequest" />
+      <output message="tns:rollbackPelVendidoMsgResponse" />
+    </operation>
+    <operation name="cambiarStatusVendido">
+      <input message="tns:cambiarStatusVendidoMsgRequest" />
+      <output message="tns:cambiarStatusVendidoMsgResponse" />
+    </operation>
+    <operation name="obtenerDatosNroTelef">
+      <input message="tns:obtenerDatosNroTelefMsgRequest" />
+      <output message="tns:obtenerDatosNroTelefMsgResponse" />
+    </operation>
+    <operation name="obtenerNroTelefSerie">
+      <input message="tns:obtenerNroTelefSerieMsgRequest" />
+      <output message="tns:obtenerNroTelefSerieMsgResponse" />
+    </operation>
+    <operation name="obtenerNroTelef">
+      <input message="tns:obtenerNroTelefMsgRequest" />
+      <output message="tns:obtenerNroTelefMsgResponse" />
+    </operation>
+    <operation name="obtenerHLR">
+      <input message="tns:obtenerHLRMsgRequest" />
+      <output message="tns:obtenerHLRMsgResponse" />
+    </operation>
+  </portType>
+  <binding name="SimcardsPortTypeSOAP11Binding" type="tns:SimcardsPortType">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document" />
+    <operation name="consultarTelefonoDisp">
+      <soap:operation soapAction="http://claro.com.pe/eai/ws/sap/simcards/consultarTelefonoDisp" style="document" />
+      <input>
+        <soap:body use="literal" parts="parameters" />
+      </input>
+      <output>
+        <soap:body use="literal" parts="parameters" />
+      </output>
+    </operation>
+    <operation name="consultarTelefonoTodos">
+      <soap:operation soapAction="http://claro.com.pe/eai/ws/sap/simcards/consultarTelefonoTodos" style="document" />
+      <input>
+        <soap:body use="literal" parts="parameters" />
+      </input>
+      <output>
+        <soap:body use="literal" parts="parameters" />
+      </output>
+    </operation>
+    <operation name="consultarStatusTelefono">
+      <soap:operation soapAction="http://claro.com.pe/eai/ws/sap/simcards/consultarStatusTelefono" style="document" />
+      <input>
+        <soap:body use="literal" parts="parameters" />
+      </input>
+      <output>
+        <soap:body use="literal" parts="parameters" />
+      </output>
+    </operation>
+    <operation name="cambiarStatusTelefono">
+      <soap:operation soapAction="http://claro.com.pe/eai/ws/sap/simcards/cambiarStatusTelefono" style="document" />
+      <input>
+        <soap:body use="literal" parts="parameters" />
+      </input>
+      <output>
+        <soap:body use="literal" parts="parameters" />
+      </output>
+    </operation>
+    <operation name="cambiarStatus">
+      <soap:operation soapAction="http://claro.com.pe/eai/ws/sap/simcards/cambiarStatus" style="document" />
+      <input>
+        <soap:body use="literal" parts="parameters" />
+      </input>
+      <output>
+        <soap:body use="literal" parts="parameters" />
+      </output>
+    </operation>
+    <operation name="reversionCambioNumero">
+      <soap:operation soapAction="http://claro.com.pe/eai/ws/sap/simcards/reversionCambioNumero" style="document" />
+      <input>
+        <soap:body use="literal" parts="parameters" />
+      </input>
+      <output>
+        <soap:body use="literal" parts="parameters" />
+      </output>
+    </operation>
+    <operation name="registroIMSIPortabilidad">
+      <soap:operation soapAction="http://claro.com.pe/eai/ws/sap/simcards/registroIMSIPortabilidad" style="document" />
+      <input>
+        <soap:body use="literal" parts="parameters" />
+      </input>
+      <output>
+        <soap:body use="literal" parts="parameters" />
+      </output>
+    </operation>
+    <operation name="actualizarNroTelef">
+      <soap:operation soapAction="http://claro.com.pe/eai/ws/sap/simcards/actualizarNroTelef" style="document" />
+      <input>
+        <soap:body use="literal" parts="parameters" />
+      </input>
+      <output>
+        <soap:body use="literal" parts="parameters" />
+      </output>
+    </operation>
+    <operation name="eliminarNroTelef">
+      <soap:operation soapAction="http://claro.com.pe/eai/ws/sap/simcards/eliminarNroTelef" style="document" />
+      <input>
+        <soap:body use="literal" parts="parameters" />
+      </input>
+      <output>
+        <soap:body use="literal" parts="parameters" />
+      </output>
+    </operation>
+    <operation name="listarMSISDNreserva">
+      <soap:operation soapAction="http://claro.com.pe/eai/ws/sap/simcards/listarMSISDNreserva" style="document" />
+      <input>
+        <soap:body use="literal" parts="parameters" />
+      </input>
+      <output>
+        <soap:body use="literal" parts="parameters" />
+      </output>
+    </operation>
+    <operation name="rollbackPelVendido">
+      <soap:operation soapAction="http://claro.com.pe/eai/ws/sap/simcards/rollbackPelVendido" style="document" />
+      <input>
+        <soap:body use="literal" parts="parameters" />
+      </input>
+      <output>
+        <soap:body use="literal" parts="parameters" />
+      </output>
+    </operation>
+    <operation name="cambiarStatusVendido">
+      <soap:operation soapAction="http://claro.com.pe/eai/ws/sap/simcards/cambiarStatusVendido" style="document" />
+      <input>
+        <soap:body use="literal" parts="parameters" />
+      </input>
+      <output>
+        <soap:body use="literal" parts="parameters" />
+      </output>
+    </operation>
+    <operation name="obtenerDatosNroTelef">
+      <soap:operation soapAction="http://claro.com.pe/eai/ws/sap/simcards/obtenerDatosNroTelef" style="document" />
+      <input>
+        <soap:body use="literal" parts="parameters" />
+      </input>
+      <output>
+        <soap:body use="literal" parts="parameters" />
+      </output>
+    </operation>
+    <operation name="obtenerNroTelefSerie">
+      <soap:operation soapAction="http://claro.com.pe/eai/ws/sap/simcards/obtenerNroTelefSerie" style="document" />
+      <input>
+        <soap:body use="literal" parts="parameters" />
+      </input>
+      <output>
+        <soap:body use="literal" parts="parameters" />
+      </output>
+    </operation>
+    <operation name="obtenerNroTelef">
+      <soap:operation soapAction="http://claro.com.pe/eai/ws/sap/simcards/obtenerNroTelef" style="document" />
+      <input>
+        <soap:body use="literal" parts="parameters" />
+      </input>
+      <output>
+        <soap:body use="literal" parts="parameters" />
+      </output>
+    </operation>
+    <operation name="obtenerHLR">
+      <soap:operation soapAction="http://claro.com.pe/eai/ws/sap/simcards/obtenerNroTelef" style="document" />
+      <input>
+        <soap:body use="literal" parts="parameters" />
+      </input>
+      <output>
+        <soap:body use="literal" parts="parameters" />
+      </output>
+    </operation>
+  </binding>
+  <service name="ebsSimcards">
+    <port name="ebsSimcards" binding="tns:SimcardsPortTypeSOAP11Binding">
+      <soap:address location="http://172.19.74.68:8909/SimcardsWS/ebsSimcards" />
+    </port>
+  </service>
+</definitions>

@@ -1,0 +1,48 @@
+<VisualStudioProject>
+    <CSHARP LastOpenVersion = "7.10.3077" >
+        <Build>
+            <Settings ReferencePath = "D:\Johnny\Claro\Paquetes\SISACT PQT-170743-TSK-36772\Otras Fuentes\Fuentes Todo\WEB_SISACT_POSTVENTA\Claro.SISACT.Negocios\bin\Release\;D:\+[lv!s]+\[x]-IBM\[X]-FUENTES_DESARROLLO\WEB_SISACT_POSTVENTA\Claro.SISACT.Negocios\bin\Release\;D:\+[2014]+\5.Portabilidad-Fija\PASE_PROD_FINAL\FUENTES_2003\Fuentes\WEB_SISACT_POSTVENTA\Claro.SISACT.Negocios\bin\Release\;D:\WEB_SISACT_POSTVENTA\Claro.SISACT.Negocios\bin\Release\;C:\31122014\pase urgencia\WEB_SISACT_POSTVENTA\Claro.SISACT.Negocios\bin\Release\;D:\Alinear_Renovacion\WEB_SISACT_POSTVENTA\WEB_SISACT_POSTVENTA_Prod\WEB_SISACT_POSTVENTA\Claro.SISACT.Negocios\bin\Release\;C:\Juan Carlos\PRODUCCION\WEB_SISACT_POSTVENTA\Claro.SISACT.Negocios\bin\Release\;D:\Manuel\2015.01.23 Renovacion Unificada\Fuentes\WEB_SISACT_POSTVENTA\Claro.SISACT.Negocios\bin\Release\;C:\warner\14082015\postventa_60\harvest\WEB_SISACT_POSTVENTA\Claro.SISACT.Negocios\bin\Release\;C:\Sinergia\6.0\2509\WEB_SISACT_POSTVENTA\Claro.SISACT.Negocios\bin\Release\;C:\warner\28092015\ultimas_Fuentes\WEB_SISACT_POSTVENTA\Claro.SISACT.Negocios\bin\Release\;D:\1. PROYECTOS\PROY-24740\20160701\WEB_SISACT_POSTVENTA\Claro.SISACT.Negocios\bin\Release\;C:\Gerhart\Proyecto\BuroMultiple\WEB_SISACT_POSTVENTA_AlineadoProduccion\Claro.SISACT.Negocios\bin\Release\" >
+                <Config
+                    Name = "Debug"
+                    EnableASPDebugging = "false"
+                    EnableASPXDebugging = "false"
+                    EnableUnmanagedDebugging = "false"
+                    EnableSQLServerDebugging = "false"
+                    RemoteDebugEnabled = "false"
+                    RemoteDebugMachine = ""
+                    StartAction = "Project"
+                    StartArguments = ""
+                    StartPage = ""
+                    StartProgram = ""
+                    StartURL = ""
+                    StartWorkingDirectory = ""
+                    StartWithIE = "true"
+                />
+                <Config
+                    Name = "Release"
+                    EnableASPDebugging = "false"
+                    EnableASPXDebugging = "false"
+                    EnableUnmanagedDebugging = "false"
+                    EnableSQLServerDebugging = "false"
+                    RemoteDebugEnabled = "false"
+                    RemoteDebugMachine = ""
+                    StartAction = "Project"
+                    StartArguments = ""
+                    StartPage = ""
+                    StartProgram = ""
+                    StartURL = ""
+                    StartWorkingDirectory = ""
+                    StartWithIE = "true"
+                />
+            </Settings>
+        </Build>
+        <OtherProjectSettings
+            CopyProjectDestinationFolder = ""
+            CopyProjectUncPath = ""
+            CopyProjectOption = "0"
+            ProjectView = "ShowAllFiles"
+            ProjectTrust = "0"
+        />
+    </CSHARP>
+</VisualStudioProject>
+

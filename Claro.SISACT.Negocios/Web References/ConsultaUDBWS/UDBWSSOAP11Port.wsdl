@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://claro.com.pe/eai/ConnectorUdb/ws/Ejecucion" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" targetNamespace="http://claro.com.pe/eai/ConnectorUdb/ws/Ejecucion" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema xmlns:types="http://claro.com.pe/eai/ConnectorUdb/ws/types" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://claro.com.pe/eai/ConnectorUdb/ws/Ejecucion">
+      <s:import schemaLocation="http://172.19.91.191:8903/UDBConnectorWS/UDBWSSOAP11Port?xsd=1" namespace="http://claro.com.pe/eai/ConnectorUdb/ws/types" />
+      <s:complexType name="ejecutarRequest">
+        <s:sequence>
+          <s:element name="auditRequest" type="types:parametrosAuditRequest" />
+          <s:element name="accionRequest" type="types:accionType" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ejecutarResponse">
+        <s:sequence>
+          <s:element name="auditResponse" type="types:parametrosAuditResponse" />
+          <s:element name="accionResponse" type="types:accionType" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ejecutarRequest" type="tns:ejecutarRequest" />
+      <s:element name="ejecutarResponse" type="tns:ejecutarResponse" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="BaseInput">
+    <wsdl:part name="ejecutarRequest" element="tns:ejecutarRequest" />
+  </wsdl:message>
+  <wsdl:message name="BaseOutput">
+    <wsdl:part name="ejecutarResponse" element="tns:ejecutarResponse" />
+  </wsdl:message>
+</wsdl:definitions>

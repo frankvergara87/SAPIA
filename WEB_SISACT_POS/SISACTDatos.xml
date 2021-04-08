@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<ListaValores>	
+	<ListaMotivoRegistroDOL>
+		<item>
+			<codigo>-1</codigo>
+			<descripcion>-- Seleccionar --</descripcion>
+		</item>
+		<item>
+			<codigo>Registro Manual</codigo>
+			<descripcion>Registro Manual</descripcion>
+		</item>
+	</ListaMotivoRegistroDOL>	
+	<ListaTipoDocumentoExperto>
+		<item>
+			<codigo>1</codigo>
+			<codigo2>01</codigo2>
+			<descripcion>DNI</descripcion>
+		</item>
+		<item>
+			<codigo>2</codigo>
+			<codigo2>02</codigo2>
+			<descripcion>CIP</descripcion>
+		</item>
+		<item>
+			<codigo>3</codigo>
+			<codigo2>04</codigo2>
+			<descripcion>CE</descripcion>
+		</item>
+		<item>
+			<codigo>4</codigo>
+			<codigo2>07</codigo2>
+			<descripcion>PASAPORTE</descripcion>
+		</item>
+		<item>
+			<codigo>6</codigo>
+			<codigo2>06</codigo2>
+			<descripcion>RUC</descripcion>
+		</item>
+	</ListaTipoDocumentoExperto>
+	<ListaTipoOperacion>	
+		<item>
+			<codigo>01</codigo>
+			<descripcion>VENTA NORMAL/ALTA</descripcion>
+		</item>		
+	</ListaTipoOperacion>	
+	<ListaTipoContenidoArchivo>
+		<item>
+			<extension>TIF</extension>
+			<contenido>image/tiff</contenido>
+		</item>
+		<item>
+			<extension>TIFF</extension>
+			<contenido>image/tiff</contenido>
+		</item>
+	</ListaTipoContenidoArchivo>	
+	<ListaPlazosGPRSBlackBerry>
+		<item>
+			<codigo>1</codigo>
+			<descripcion>Plazo fijo (6 Meses)</descripcion>
+		</item>
+		<item>
+			<codigo>2</codigo>
+			<descripcion>Plazo indeterminado</descripcion>
+		</item>
+	</ListaPlazosGPRSBlackBerry>
+	<ListaCicloFact3Play>
+		<item>
+			<codigo>11</codigo>
+			<descripcion>Ciclo 11</descripcion>
+		</item>	
+		<item>
+			<codigo>20</codigo>
+			<descripcion>Ciclo 20</descripcion>
+		</item>		
+	</ListaCicloFact3Play>	
+</ListaValores>

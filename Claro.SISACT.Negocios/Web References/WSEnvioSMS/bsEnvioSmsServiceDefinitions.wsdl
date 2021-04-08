@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:s0="http://claro.com.pe/eai/bs/xsd/postventa/EnvioSms" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://pe/com/claro/eai/ws/postventa/enviosms" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" targetNamespace="http://pe/com/claro/eai/ws/postventa/enviosms" name="bsEnvioSmsServiceDefinitions" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema xmlns:tns="http://claro.com.pe/eai/bs/xsd/postventa/EnvioSms" xmlns:s1="http://pe/com/claro/eai/ws/postventa/enviosms" xmlns:s0="http://schemas.xmlsoap.org/wsdl/" xmlns:s2="http://schemas.xmlsoap.org/wsdl/soap/" xmlns="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://claro.com.pe/eai/bs/xsd/postventa/EnvioSms">
+      <s:complexType name="EnvioSMSRequestType">
+        <s:sequence>
+          <s:element name="idTransaccion" type="s:string" />
+          <s:element name="ipAplicacion" type="s:string" />
+          <s:element name="usuarioApp" type="s:string" />
+          <s:element name="mensaje" type="s:string" />
+          <s:element name="identificadorMAS" type="s:string" />
+          <s:element name="msisdn" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="EnvioSMSResponseType">
+        <s:sequence>
+          <s:element name="idTransaccion" type="s:string" />
+          <s:element name="codigoError" type="s:string" />
+          <s:element name="mensajeError" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="EnvioSMSRequest" type="tns:EnvioSMSRequestType" />
+      <s:element name="EnvioSMSResponse" type="tns:EnvioSMSResponseType" />
+    </s:schema>
+    <s:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:s1="http://pe/com/claro/eai/ws/postventa/enviosms" xmlns:s0="http://schemas.xmlsoap.org/wsdl/" xmlns:s2="http://schemas.xmlsoap.org/wsdl/soap/" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://pe/com/claro/eai/ws/postventa/enviosms">
+      <xs:import namespace="http://claro.com.pe/eai/bs/xsd/postventa/EnvioSms" />
+      <xs:element name="enviarSms">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:env="http://claro.com.pe/eai/bs/xsd/postventa/EnvioSms" ref="env:EnvioSMSRequest" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="enviarSmsResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:env="http://claro.com.pe/eai/bs/xsd/postventa/EnvioSms" ref="env:EnvioSMSResponse" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="enviarSms">
+    <wsdl:part name="parameters" element="tns:enviarSms" />
+  </wsdl:message>
+  <wsdl:message name="enviarSmsResponse">
+    <wsdl:part name="parameters" element="tns:enviarSmsResponse" />
+  </wsdl:message>
+  <wsdl:portType name="bsEnvioSms">
+    <wsdl:operation name="enviarSms" parameterOrder="parameters">
+      <wsdl:input message="tns:enviarSms" />
+      <wsdl:output message="tns:enviarSmsResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="bsEnvioSmsServiceSoapBinding" type="tns:bsEnvioSms">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document" />
+    <wsdl:operation name="enviarSms">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" parts="parameters" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" parts="parameters" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="bsEnvioSmsService">
+    <wsdl:port name="bsEnvioSmsSoapPort" binding="tns:bsEnvioSmsServiceSoapBinding">
+      <soap:address location="http://172.19.74.141:8901/Messaging_Services/SMSC/Transaction/proxy_services/EnvioSms" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

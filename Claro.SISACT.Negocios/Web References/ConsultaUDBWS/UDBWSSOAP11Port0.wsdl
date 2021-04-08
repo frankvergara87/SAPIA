@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://claro.com.pe/eai/ConnectorUdb/ws/Consulta" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" targetNamespace="http://claro.com.pe/eai/ConnectorUdb/ws/Consulta" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema xmlns:types="http://claro.com.pe/eai/ConnectorUdb/ws/types" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://claro.com.pe/eai/ConnectorUdb/ws/Consulta">
+      <s:import schemaLocation="http://172.19.91.191:8903/UDBConnectorWS/UDBWSSOAP11Port?xsd=1" namespace="http://claro.com.pe/eai/ConnectorUdb/ws/types" />
+      <s:complexType name="consultarRequest">
+        <s:sequence>
+          <s:element name="auditRequest" type="types:parametrosAuditRequest" />
+          <s:element name="accionRequest" type="types:accionType" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="consultarResponse">
+        <s:sequence>
+          <s:element name="auditResponse" type="types:parametrosAuditResponse" />
+          <s:element name="accionResponse" type="types:accionType" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="consultarRequest" type="tns:consultarRequest" />
+      <s:element name="consultarResponse" type="tns:consultarResponse" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="BaseInput">
+    <wsdl:part name="consultarRequest" element="tns:consultarRequest" />
+  </wsdl:message>
+  <wsdl:message name="BaseOutput">
+    <wsdl:part name="consultarResponse" element="tns:consultarResponse" />
+  </wsdl:message>
+</wsdl:definitions>

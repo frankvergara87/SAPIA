@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:s0="http://claro.com.pe/eai/ebs/ws/vas/ActivacionVAS" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" targetNamespace="http://claro.com.pe/eai/ebs/ws/vas/ActivacionVAS" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://claro.com.pe/eai/ebs/ws/vas/ActivacionVAS">
+      <s:element name="ActivacionVASRequest">
+        <s:complexType>
+          <s:sequence>
+            <s:element name="idTransaccion" type="s:string" />
+            <s:element name="ipAplicacion" type="s:string" />
+            <s:element name="nombreAplicacion" type="s:string" />
+            <s:element name="msisdn" type="s:string" />
+            <s:element name="imsi" type="s:string" />
+            <s:element name="servicio" type="s:string" />
+            <s:element name="tipoLinea" type="s:string" />
+            <s:element name="nombreGrupo" type="s:string" />
+            <s:element name="trama" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ActivacionVASResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element name="idTransaccion" type="s:string" />
+            <s:element name="codigoRespuesta" type="s:string" />
+            <s:element name="mensajeRespuesta" type="s:string" />
+            <s:element name="estado" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </types>
+  <message name="ActivacionVASRequestMsg">
+    <part name="parameters" element="s0:ActivacionVASRequest" />
+  </message>
+  <message name="ActivacionVASResponseMsg">
+    <part name="parameters" element="s0:ActivacionVASResponse" />
+  </message>
+  <portType name="ebsActivacionVASPortType">
+    <operation name="activarServiciosVAS">
+      <input message="s0:ActivacionVASRequestMsg" />
+      <output message="s0:ActivacionVASResponseMsg" />
+    </operation>
+  </portType>
+  <binding name="ActivacionVASPortTypeSOAP11Binding" type="s0:ebsActivacionVASPortType">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document" />
+    <operation name="activarServiciosVAS">
+      <soap:operation soapAction="http://claro.com.pe/eai/ebs/ws/vas/ActivacionVAS/activarServiciosVAS" style="document" />
+      <input>
+        <soap:body use="literal" parts="parameters" />
+      </input>
+      <output>
+        <soap:body use="literal" parts="parameters" />
+      </output>
+    </operation>
+  </binding>
+  <service name="ebsActivacionVASService">
+    <port name="ebsActivacionVAS" binding="s0:ActivacionVASPortTypeSOAP11Binding">
+      <soap:address location="http://limdeseaiocsv02.tim.com.pe:8909/ActivacionVASApp/ebsActivacionVAS" />
+    </port>
+  </service>
+</definitions>

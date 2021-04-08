@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://claro.com.pe/eai/messagingservices/mail/enviomail/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" targetNamespace="http://claro.com.pe/eai/messagingservices/mail/enviomail/" name="EnvioMail" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema xmlns:Q1="http://claro.com.pe/eai/servicecommons/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://claro.com.pe/eai/messagingservices/mail/enviomail/">
+      <xsd:import schemaLocation="http://172.19.74.141:8901/Messaging_Services/MAIL/Transaction/EnvioMail?SCHEMA%2FUtilities%2Fxsd%2FAudit" namespace="http://claro.com.pe/eai/servicecommons/" />
+      <xsd:element name="envioMail">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="txId" type="xsd:string" />
+            <xsd:element minOccurs="0" maxOccurs="1" name="ipApp" type="xsd:string" />
+            <xsd:element minOccurs="0" maxOccurs="1" name="usrApp" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="remitente" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="destinatario" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="asunto" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="mensaje" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="flagHtml">
+              <xsd:simpleType>
+                <xsd:restriction base="xsd:int">
+                  <xsd:enumeration value="0" />
+                  <xsd:enumeration value="1" />
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="envioMailResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="audit" type="Q1:AuditType" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="envioMailRequest">
+    <wsdl:part name="parameters" element="tns:envioMail" />
+  </wsdl:message>
+  <wsdl:message name="envioMailResponse">
+    <wsdl:part name="parameters" element="tns:envioMailResponse" />
+  </wsdl:message>
+  <wsdl:portType name="EnvioMail">
+    <wsdl:operation name="envioMail">
+      <wsdl:input message="tns:envioMailRequest" />
+      <wsdl:output message="tns:envioMailResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="EnvioMailSOAP" type="tns:EnvioMail">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document" />
+    <wsdl:operation name="envioMail">
+      <soap:operation soapAction="http://claro.com.pe/eai/messagingservices/mail/enviomail/envioMail" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="EnvioMail">
+    <wsdl:port name="EnvioMailSOAP" binding="tns:EnvioMailSOAP">
+      <soap:address location="http://172.19.74.141:8901/Messaging_Services/MAIL/Transaction/EnvioMail" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

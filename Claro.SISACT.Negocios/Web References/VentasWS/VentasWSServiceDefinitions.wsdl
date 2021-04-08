@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:s1="http://pe/com/claro/esb/services/sap/ventas/ws" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:s0="http://pe/com/claro/esb/services/sap/ventas/schemas/telefono/estadoTelefono.xsd" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" targetNamespace="http://pe/com/claro/esb/services/sap/ventas/ws" name="VentasWSServiceDefinitions" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <s:schema xmlns:tns="http://pe/com/claro/esb/services/sap/ventas/schemas/telefono/estadoTelefono.xsd" xmlns:s0="http://schemas.xmlsoap.org/wsdl/" xmlns:s2="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://pe/com/claro/esb/services/sap/ventas/schemas/telefono/estadoTelefono.xsd">
+      <xsd:complexType name="EstadoTelefonoRequestType">
+        <xsd:sequence>
+          <xsd:element name="numero" type="xsd:string" />
+          <xsd:element name="iccid" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="EstadoTelefonoInfoType">
+        <xsd:sequence>
+          <xsd:element name="transaccion" type="xsd:string" />
+          <xsd:element name="resultado" type="xsd:string" />
+          <xsd:element name="codigoEstado" type="xsd:string" />
+          <xsd:element name="mensaje" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="EstadoTelefonoResponseType">
+        <xsd:sequence>
+          <xsd:element name="retorno" type="tns:EstadoTelefonoInfoType" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="EstadoTelefonoRequest" type="tns:EstadoTelefonoRequestType" />
+      <xsd:element name="EstadoTelefonoResponse" type="tns:EstadoTelefonoResponseType" />
+    </s:schema>
+    <s:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:s0="http://schemas.xmlsoap.org/wsdl/" xmlns:s2="http://schemas.xmlsoap.org/wsdl/soap/" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://pe/com/claro/esb/services/sap/ventas/ws">
+      <xs:import namespace="http://pe/com/claro/esb/services/sap/ventas/schemas/telefono/estadoTelefono.xsd" />
+      <xs:element name="validaTelefonoDisponible">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:est="http://pe/com/claro/esb/services/sap/ventas/schemas/telefono/estadoTelefono.xsd" ref="est:EstadoTelefonoRequest" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="validaTelefonoDisponibleResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:est="http://pe/com/claro/esb/services/sap/ventas/schemas/telefono/estadoTelefono.xsd" ref="est:EstadoTelefonoResponse" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </s:schema>
+  </types>
+  <message name="validaTelefonoDisponible">
+    <part name="parameters" element="s1:validaTelefonoDisponible" />
+  </message>
+  <message name="validaTelefonoDisponibleResponse">
+    <part name="parameters" element="s1:validaTelefonoDisponibleResponse" />
+  </message>
+  <portType name="VentasWS">
+    <operation name="validaTelefonoDisponible" parameterOrder="parameters">
+      <input message="s1:validaTelefonoDisponible" />
+      <output message="s1:validaTelefonoDisponibleResponse" />
+    </operation>
+  </portType>
+  <binding name="VentasWSServiceSoapBinding" type="s1:VentasWS">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document" />
+    <operation name="validaTelefonoDisponible">
+      <soap:operation soapAction="" style="document" />
+      <input>
+        <soap:body use="literal" parts="parameters" />
+      </input>
+      <output>
+        <soap:body use="literal" parts="parameters" />
+      </output>
+    </operation>
+  </binding>
+  <service name="VentasWSService">
+    <port name="VentasWSSoapPort" binding="s1:VentasWSServiceSoapBinding">
+      <soap:address location="http://limdeseaiv03.tim.com.pe:8909/SapWS/VentasWS" />
+    </port>
+  </service>
+</definitions>

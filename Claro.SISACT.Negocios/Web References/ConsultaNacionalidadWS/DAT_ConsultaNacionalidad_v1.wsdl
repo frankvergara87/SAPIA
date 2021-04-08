@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://claro.com.pe/esb/ventas/DAT_ConsultaNacionalidad/v1/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" targetNamespace="http://claro.com.pe/esb/ventas/DAT_ConsultaNacionalidad/v1/" name="DAT_ConsultaNacionalidad_v1" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema>
+      <s:import schemaLocation="mockDAT_ConsultaNacionalidadSOAP11Binding?WSDL&amp;interface=DAT_ConsultaNacionalidadSOAP11Binding&amp;part=consultarNacionalidad_v1.xsd" namespace="http://claro.com.pe/esb/data/ventas/consultaNacionalidad/sec/v1/consultarNacionalidad/" />
+      <s:import schemaLocation="mockDAT_ConsultaNacionalidadSOAP11Binding?WSDL&amp;interface=DAT_ConsultaNacionalidadSOAP11Binding&amp;part=claroGenericHeaders_v2.xsd" namespace="http://claro.com.pe/esb/data/commonBusinessEntities/claroGenericHeaders/v2/" />
+      <s:import schemaLocation="mockDAT_ConsultaNacionalidadSOAP11Binding?WSDL&amp;interface=DAT_ConsultaNacionalidadSOAP11Binding&amp;part=HeaderGeneric_v1.0.xsd" namespace="http://claro.com.pe/generic/messageFormat/v1.0/" />
+      <s:import schemaLocation="mockDAT_ConsultaNacionalidadSOAP11Binding?WSDL&amp;interface=DAT_ConsultaNacionalidadSOAP11Binding&amp;part=CommonsException.xsd" namespace="http://claro.com.pe/eai/ebs/xsd/CommonsException" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="headerRequest">
+    <wsdl:part name="headerRequest" xmlns:q1="http://claro.com.pe/generic/messageFormat/v1.0/" element="q1:HeaderRequest" />
+    <wsdl:part name="headerRequest1" xmlns:q2="http://claro.com.pe/esb/data/commonBusinessEntities/claroGenericHeaders/v2/" element="q2:headerRequest" />
+  </wsdl:message>
+  <wsdl:message name="ConsultarNacionalidadRequestMessage">
+    <wsdl:part name="consultarNacionalidadReq" xmlns:q3="http://claro.com.pe/esb/data/ventas/consultaNacionalidad/sec/v1/consultarNacionalidad/" element="q3:consultarNacionalidadRequest" />
+  </wsdl:message>
+  <wsdl:message name="ConsultarNacionalidadResponseMessage">
+    <wsdl:part name="consultarNacionalidadRes" xmlns:q4="http://claro.com.pe/esb/data/ventas/consultaNacionalidad/sec/v1/consultarNacionalidad/" element="q4:consultarNacionalidadResponse" />
+  </wsdl:message>
+  <wsdl:message name="Fault">
+    <wsdl:part name="Fault" xmlns:q5="http://claro.com.pe/eai/ebs/xsd/CommonsException" element="q5:IntegrationError" />
+  </wsdl:message>
+  <wsdl:message name="headerResponse">
+    <wsdl:part name="headerResponse1" xmlns:q6="http://claro.com.pe/generic/messageFormat/v1.0/" element="q6:HeaderResponse" />
+    <wsdl:part name="headerResponse" xmlns:q7="http://claro.com.pe/esb/data/commonBusinessEntities/claroGenericHeaders/v2/" element="q7:headerResponse" />
+  </wsdl:message>
+  <wsdl:portType name="DAT_ConsultaNacionalidadPort">
+    <wsdl:operation name="consultarNacionalidad">
+      <wsdl:input message="tns:ConsultarNacionalidadRequestMessage" />
+      <wsdl:output message="tns:ConsultarNacionalidadResponseMessage" />
+      <wsdl:fault name="Fault" message="tns:Fault" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="DAT_ConsultaNacionalidadSOAP12Binding" type="tns:DAT_ConsultaNacionalidadPort">
+    <soap12:binding style="document" transport="http://www.w3.org/2003/05/soap/bindings/HTTP/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+    <wsdl:operation name="consultarNacionalidad">
+      <soap12:operation soapAction="http://claro.com.pe/esb/ventas/DAT_ConsultaNacionalidad/v1/consultarNacionalidad" soapActionRequired="false" style="document" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      <wsdl:input>
+        <soap12:header message="client:headerRequest" part="headerRequest" use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/">
+        </soap12:header>
+        <soap12:header message="client:headerRequest" part="headerRequest1" use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/">
+        </soap12:header>
+        <soap12:body parts="consultarNacionalidadReq" use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:header message="client:headerResponse" part="headerResponse" use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/">
+        </soap12:header>
+        <soap12:header message="client:headerResponse" part="headerResponse1" use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/">
+        </soap12:header>
+        <soap12:body parts="consultarNacionalidadRes" use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </wsdl:output>
+      <wsdl:fault name="Fault">
+        <soap12:fault name="Fault" use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="DAT_ConsultaNacionalidadSOAP11Binding" type="tns:DAT_ConsultaNacionalidadPort">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document" />
+    <wsdl:operation name="consultarNacionalidad">
+      <soap:operation soapAction="http://claro.com.pe/esb/ventas/DAT_ConsultaNacionalidad/v1/consultarNacionalidad" style="document" />
+      <wsdl:input>
+        <soap:header message="tns:headerRequest" part="headerRequest" use="literal" />
+        <soap:header message="tns:headerRequest" part="headerRequest1" use="literal" />
+        <soap:body use="literal" parts="consultarNacionalidadReq" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:header message="tns:headerResponse" part="headerResponse" use="literal" />
+        <soap:header message="tns:headerResponse" part="headerResponse1" use="literal" />
+        <soap:body use="literal" parts="consultarNacionalidadRes" />
+      </wsdl:output>
+      <wsdl:fault name="Fault">
+        <soap:fault use="literal" namespace="" encodingStyle="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="DAT_ConsultaNacionalidad_v1">
+    <wsdl:port name="DAT_ConsultaNacionalidadSB12" binding="tns:DAT_ConsultaNacionalidadSOAP12Binding">
+      <soap12:address location="http://127.0.0.1:7001/DAT_ConsultaNacionalidad/DAT_ConsultaNacionalidadSB12" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+    </wsdl:port>
+    <wsdl:port name="DAT_ConsultaNacionalidadSB11" binding="tns:DAT_ConsultaNacionalidadSOAP11Binding">
+      <soap:address location="http://localhost:8088/mockDAT_ConsultaNacionalidadSOAP11Binding" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

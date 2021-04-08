@@ -1,0 +1,1532 @@
+<VisualStudioProject>
+    <CSHARP
+        ProjectType = "Local"
+        ProductVersion = "7.10.3077"
+        SchemaVersion = "2.0"
+        ProjectGuid = "{FF022D5D-7583-4160-BE46-67E84D8E7190}"
+    >
+        <Build>
+            <Settings
+                ApplicationIcon = ""
+                AssemblyKeyContainerName = ""
+                AssemblyName = "Claro.SisAct.Negocios"
+                AssemblyOriginatorKeyFile = ""
+                DefaultClientScript = "JScript"
+                DefaultHTMLPageLayout = "Grid"
+                DefaultTargetSchema = "IE50"
+                DelaySign = "false"
+                OutputType = "Library"
+                PreBuildEvent = ""
+                PostBuildEvent = ""
+                RootNamespace = "Claro.SisAct.Negocios"
+                RunPostBuildEvent = "OnBuildSuccess"
+                StartupObject = ""
+            >
+                <Config
+                    Name = "Debug"
+                    AllowUnsafeBlocks = "false"
+                    BaseAddress = "285212672"
+                    CheckForOverflowUnderflow = "false"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = "DEBUG;TRACE"
+                    DocumentationFile = ""
+                    DebugSymbols = "true"
+                    FileAlignment = "4096"
+                    IncrementalBuild = "false"
+                    NoStdLib = "false"
+                    NoWarn = ""
+                    Optimize = "false"
+                    OutputPath = "bin\Debug\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "4"
+                />
+                <Config
+                    Name = "Release"
+                    AllowUnsafeBlocks = "false"
+                    BaseAddress = "285212672"
+                    CheckForOverflowUnderflow = "false"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = "TRACE"
+                    DocumentationFile = ""
+                    DebugSymbols = "false"
+                    FileAlignment = "4096"
+                    IncrementalBuild = "false"
+                    NoStdLib = "false"
+                    NoWarn = ""
+                    Optimize = "true"
+                    OutputPath = "bin\Release\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "4"
+                />
+            </Settings>
+            <References>
+                <Reference
+                    Name = "System"
+                    AssemblyName = "System"
+                    HintPath = "C:\WINNT\Microsoft.NET\Framework\v1.1.4322\System.dll"
+                />
+                <Reference
+                    Name = "System.Data"
+                    AssemblyName = "System.Data"
+                    HintPath = "C:\WINNT\Microsoft.NET\Framework\v1.1.4322\System.Data.dll"
+                />
+                <Reference
+                    Name = "System.XML"
+                    AssemblyName = "System.Xml"
+                    HintPath = "C:\WINNT\Microsoft.NET\Framework\v1.1.4322\System.XML.dll"
+                />
+                <Reference
+                    Name = "Claro.SisAct.Datos"
+                    Project = "{95A18E53-AF87-4389-BDCE-CBFEEC39B033}"
+                    Package = "{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"
+                />
+                <Reference
+                    Name = "Claro.SisAct.Entidades"
+                    Project = "{17055C13-66A8-4B6F-97FF-EA6D154C7E64}"
+                    Package = "{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"
+                />
+                <Reference
+                    Name = "Claro.SisAct.Common"
+                    Project = "{932F0FA7-7E64-4664-8029-16FF8529AA49}"
+                    Package = "{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"
+                />
+                <Reference
+                    Name = "System.Web.Services"
+                    AssemblyName = "System.Web.Services"
+                    HintPath = "C:\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.Web.Services.dll"
+                />
+                <Reference
+                    Name = "System.Drawing"
+                    AssemblyName = "System.Drawing"
+                    HintPath = "C:\WINNT\Microsoft.NET\Framework\v1.1.4322\System.Drawing.dll"
+                />
+                <Reference
+                    Name = "System.Windows.Forms"
+                    AssemblyName = "System.Windows.Forms"
+                    HintPath = "C:\WINNT\Microsoft.NET\Framework\v1.1.4322\System.Windows.Forms.dll"
+                />
+                <Reference
+                    Name = "Claro.SisAct.SapGeneral"
+                    Project = "{C9C418C6-0FD5-49A4-B025-A35974800BD1}"
+                    Package = "{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"
+                />
+                <Reference
+                    Name = "ProxyFileServer"
+                    AssemblyName = "ProxyFileServer"
+                    HintPath = "bin\Release\ProxyFileServer.dll"
+                />
+                <Reference
+                    Name = "Claro.SisAct.Configuracion"
+                    Project = "{E979B977-0A16-4C09-B94F-7FE92E50E12B}"
+                    Package = "{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"
+                />
+                <Reference
+                    Name = "Microsoft.Web.Services2"
+                    AssemblyName = "Microsoft.Web.Services2"
+                    HintPath = "bin\Release\Microsoft.Web.Services2.dll"
+                />
+            </References>
+        </Build>
+        <Files>
+            <Include>
+                <File
+                    RelPath = "AcuerdoNegocios.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ArchivoPortabilidadNegocio.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "AssemblyInfo.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "AuditoriaNegocio.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "BLCasoEspecial.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "BLConsulta.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "BLConsultaMssap.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "BLProteccionMovil.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "BLRenoAnticipada.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "BLRentaAdelantada.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "BOValidarClienteClaro.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "BRMSNegocio.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "BWConsultarImeiBloqueado.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "BWConsultaCuotaCliente.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "BWClienteProteccionMovil.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "BWConsultaClaves.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "BWConsultaNacionalidad.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "BWEnvioCorreo.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "BWGestionaProteccionMovil.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "BWReglasCreditica.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "CasoEspecialNegocios.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ChipRepuestoPostpagoNegocio.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Cliente_ConsNegocio.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ClienteNegocio.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "CobranzaNegocios.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ComandoHLRNegocios.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ConsulSeguridad.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ConsultaDWHNegocio.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ConsultaLinea.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ConsultaLineasTecnologiaNegocio.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ConsultaMsSapNegocio.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ConsultaSIACNegocios.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ConsultaVentaPrepagoNegocios.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ConsumerNegocio.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ControlFileTransfer.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "CreditosWSNegocios.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "DataCreditoCorpNegocios.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "DataCreditoNegocios.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "DatosClienteNegocio.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "DatosPostpagoNegocios.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "DatosPrepagoNegocios.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "DocumentoNegocios.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "DocumentoSECNegocio.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "EvaluacionNegocio.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "GeneralNegocios.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "GestionAcuerdoNegocio.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "InteraccionNegocios.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "LBilletera.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "LBlacklist.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "LBlacklistDAC.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "LBuroCrediticio.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "LCampana.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "LCampana3Play.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "LCampanaKit.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "LConfiguracionPlan.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "LEmpresaTop.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "LEquipos3Play.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "LHFCMasivo.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "LineaNegocios.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "LKit.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "LMaterial.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "LoginUsuarioNegocios.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "LRestriccionPDV.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "LServicio.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "LServicio3Play.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "LTipoClientePlan.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "LValidacionLinea.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "LWhiLstCasoEspecial.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "LWhitelist.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "LWhitelistAsesor.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "MaestroNegocio.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "MantMaestroNegocio.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "MesaPortabilidadNegocio.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "MigracionNegocios.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "NivelAprobacionNegocio.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "NumeroPortabilidadNegocio.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "OACNegocio.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Paquete3PlayNegocios.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "PaquetePlan3PlayNegocios.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Plan3PlayNegocios.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "PlanAcuerdo3PlayNegocios.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "PlanDetalleConsNegocio.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "PlanServ3PlayNegocios.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "PlanTarifarioBusinessLogic.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "PlantillaNegocios.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "PuntosClaroClubNegocio.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ReglaCrediticiaNegocio.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ReglasCrediticiaRenovNegocio.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ReglasEvaluacionNegocio.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "RenovacionesDecisionNegocio.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "RenovacionNegocio.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "RespuestaDataCreditoNegocio.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "RestChipRepuestoNegocio.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "RestriccionCanalBusinessLogic.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "RestriccionPdvBusinessLogic.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "SansNegocio.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "SapGeneralNegocios.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Servicio3PlayNegocios.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ServicioVasNegocios.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "SimCardRepoNegocios.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "sisact_auditoria.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "SolicitudDC_HistoricoNegocio.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "SolicitudDC_ReporteNegocio.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "SolicitudNegocios.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "TablaNegocio.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "TipoDocumentoNegocio.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "TipoOperacionNegocio.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "VentaExpressNegocios.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "VentaNegocios.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Web References\ActivacionVasWS\ebsActivacionVAS.wsdl"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Web References\ActivacionVasWS\Reference.map"
+                    BuildAction = "None"
+                    Generator = "MSDiscoCodeGenerator"
+                    LastGenOutput = "Reference.cs"
+                />
+                <File
+                    RelPath = "Web References\ActivacionVasWS\Reference.cs"
+                    DependentUpon = "Reference.map"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <Folder
+                    RelPath = "Web References\ActivacionVasWS\"
+                    WebReferenceUrl = "http://limdeseaiocsv02.tim.com.pe:8909/ActivacionVASApp/ebsActivacionVAS?wsdl"
+                    UrlBehavior = "Static"
+                />
+                <File
+                    RelPath = "Web References\AuditoriaWS\EbsAuditoriaServiceDefinitions.wsdl"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Web References\AuditoriaWS\Reference.map"
+                    BuildAction = "None"
+                    Generator = "MSDiscoCodeGenerator"
+                    LastGenOutput = "Reference.cs"
+                />
+                <File
+                    RelPath = "Web References\AuditoriaWS\Reference.cs"
+                    DependentUpon = "Reference.map"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <Folder
+                    RelPath = "Web References\AuditoriaWS\"
+                    WebReferenceUrl = "http://172.19.73.62:8909/AuditoriaWS/EbsAuditoria?WSDL"
+                    UrlBehavior = "Static"
+                />
+                <File
+                    RelPath = "Web References\ClienteProteccionMovilWS\ClienteProteccionMovilWS.wsdl"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Web References\ClienteProteccionMovilWS\ClienteProteccionMovilWSSB11.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Web References\ClienteProteccionMovilWS\ClienteProteccionMovilWSSB110.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Web References\ClienteProteccionMovilWS\Reference.map"
+                    BuildAction = "None"
+                    Generator = "MSDiscoCodeGenerator"
+                    LastGenOutput = "Reference.cs"
+                />
+                <File
+                    RelPath = "Web References\ClienteProteccionMovilWS\Reference.cs"
+                    DependentUpon = "Reference.map"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <Folder
+                    RelPath = "Web References\ClienteProteccionMovilWS\"
+                    WebReferenceUrl = "http://172.19.74.222:8903/ClienteProteccionMovilWS/ClienteProteccionMovilWSSB11?WSDL"
+                    UrlBehavior = "Static"
+                />
+                <File
+                    RelPath = "Web References\ConsultaHLR\HlrSiacWSServiceDefinitions.wsdl"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Web References\ConsultaHLR\Reference.map"
+                    BuildAction = "None"
+                    Generator = "MSDiscoCodeGenerator"
+                    LastGenOutput = "Reference.cs"
+                />
+                <File
+                    RelPath = "Web References\ConsultaHLR\Reference.cs"
+                    DependentUpon = "Reference.map"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <Folder
+                    RelPath = "Web References\ConsultaHLR\"
+                    WebReferenceUrl = "http://limdeseaiv03.tim.com.pe:8909/HLRSiacWS/HlrSiacWS?WSDL"
+                    UrlBehavior = "Static"
+                />
+                <File
+                    RelPath = "Web References\ConsultaNacionalidadWS\DAT_ConsultaNacionalidad_v1.wsdl"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Web References\ConsultaNacionalidadWS\mockDAT_ConsultaNacionalidadSOAP11Binding.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Web References\ConsultaNacionalidadWS\mockDAT_ConsultaNacionalidadSOAP11Binding0.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Web References\ConsultaNacionalidadWS\mockDAT_ConsultaNacionalidadSOAP11Binding1.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Web References\ConsultaNacionalidadWS\mockDAT_ConsultaNacionalidadSOAP11Binding2.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Web References\ConsultaNacionalidadWS\mockDAT_ConsultaNacionalidadSOAP11Binding3.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Web References\ConsultaNacionalidadWS\mockDAT_ConsultaNacionalidadSOAP11Binding4.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Web References\ConsultaNacionalidadWS\Reference.map"
+                    BuildAction = "None"
+                    Generator = "MSDiscoCodeGenerator"
+                    LastGenOutput = "Reference.cs"
+                />
+                <File
+                    RelPath = "Web References\ConsultaNacionalidadWS\Reference.cs"
+                    DependentUpon = "Reference.map"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <Folder
+                    RelPath = "Web References\ConsultaNacionalidadWS\"
+                    WebReferenceUrl = "http://localhost:8088/mockDAT_ConsultaNacionalidadSOAP11Binding?WSDL"
+                    UrlBehavior = "Static"
+                />
+                <File
+                    RelPath = "Web References\ConsultaPostpagoWS\Reference.map"
+                    BuildAction = "None"
+                    Generator = "MSDiscoCodeGenerator"
+                    LastGenOutput = "Reference.cs"
+                />
+                <File
+                    RelPath = "Web References\ConsultaPostpagoWS\Reference.cs"
+                    DependentUpon = "Reference.map"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "Web References\ConsultaPostpagoWS\SIACPostpagoConsultasWSServiceDefinitions.wsdl"
+                    BuildAction = "None"
+                />
+                <Folder
+                    RelPath = "Web References\ConsultaPostpagoWS\"
+                    WebReferenceUrl = "http://limdeseaiv03.tim.com.pe:8903/SIACPostpagoWS/SIACPostpagoConsultasWS?WSDL"
+                    UrlBehavior = "Static"
+                />
+                <File
+                    RelPath = "Web References\ConsultarImeiBloqueadoWS\ConsultarImeiBloqueadoWS.wsdl"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Web References\ConsultarImeiBloqueadoWS\ebsConsultarImeiBloqueadoWSSB11.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Web References\ConsultarImeiBloqueadoWS\ebsConsultarImeiBloqueadoWSSB110.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Web References\ConsultarImeiBloqueadoWS\Reference.map"
+                    BuildAction = "None"
+                    Generator = "MSDiscoCodeGenerator"
+                    LastGenOutput = "Reference.cs"
+                />
+                <File
+                    RelPath = "Web References\ConsultarImeiBloqueadoWS\Reference.cs"
+                    DependentUpon = "Reference.map"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <Folder
+                    RelPath = "Web References\ConsultarImeiBloqueadoWS\"
+                    WebReferenceUrl = "http://172.19.74.31:8903/ConsultarImeiBloqueadoWS/ebsConsultarImeiBloqueadoWSSB11?WSDL"
+                    UrlBehavior = "Static"
+                />
+                <File
+                    RelPath = "Web References\ConsultarPuntosWS\Audit.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Web References\ConsultarPuntosWS\ConsPuntosClaroClub.wsdl"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Web References\ConsultarPuntosWS\Reference.map"
+                    BuildAction = "None"
+                    Generator = "MSDiscoCodeGenerator"
+                    LastGenOutput = "Reference.cs"
+                />
+                <File
+                    RelPath = "Web References\ConsultarPuntosWS\Reference.cs"
+                    DependentUpon = "Reference.map"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <Folder
+                    RelPath = "Web References\ConsultarPuntosWS\"
+                    WebReferenceUrl = "http://172.19.74.141:8901/ClaroClub_Services/Inquiry/ConsultaPuntos/Inquiry/ConsultarPuntosClaroClub/proxy_services/ConsPuntosClaroClub.proxy?wsdl"
+                    UrlBehavior = "Static"
+                />
+                <File
+                    RelPath = "Web References\ConsultaSeguridad\ConsultaSeguridad.wsdl"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Web References\ConsultaSeguridad\Reference.map"
+                    BuildAction = "None"
+                    Generator = "MSDiscoCodeGenerator"
+                    LastGenOutput = "Reference.cs"
+                />
+                <File
+                    RelPath = "Web References\ConsultaSeguridad\Reference.cs"
+                    DependentUpon = "Reference.map"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <Folder
+                    RelPath = "Web References\ConsultaSeguridad\"
+                    WebReferenceUrl = "http://172.19.74.125:7909/Utilities_Services/Seguridad/Inquiry/ConsultaSeguridad?WSDL"
+                    UrlBehavior = "Static"
+                />
+                <File
+                    RelPath = "Web References\ConsultaUDBWS\Reference.map"
+                    BuildAction = "None"
+                    Generator = "MSDiscoCodeGenerator"
+                    LastGenOutput = "Reference.cs"
+                />
+                <File
+                    RelPath = "Web References\ConsultaUDBWS\Reference.cs"
+                    DependentUpon = "Reference.map"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "Web References\ConsultaUDBWS\UDBConnectorWS.wsdl"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Web References\ConsultaUDBWS\UDBWSSOAP11Port.wsdl"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Web References\ConsultaUDBWS\UDBWSSOAP11Port.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Web References\ConsultaUDBWS\UDBWSSOAP11Port0.wsdl"
+                    BuildAction = "None"
+                />
+                <Folder
+                    RelPath = "Web References\ConsultaUDBWS\"
+                    WebReferenceUrl = "http://172.19.91.191:8903/UDBConnectorWS/UDBWSSOAP11Port?WSDL"
+                    UrlBehavior = "Static"
+                />
+                <File
+                    RelPath = "Web References\DataCredito\ClaroService.wsdl"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Web References\DataCredito\Reference.cs"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Web References\DataCredito\Reference.map"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Web References\DataCreditoCorp\Reference.cs"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Web References\DataCreditoCorp\Reference.map"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Web References\DataCreditoCorp\ServicioClaroCorporativo.wsdl"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Web References\DatosEmpleadoWS\EbsDatosEmpleadoServiceDefinitions.wsdl"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Web References\DatosEmpleadoWS\Reference.map"
+                    BuildAction = "None"
+                    Generator = "MSDiscoCodeGenerator"
+                    LastGenOutput = "Reference.cs"
+                />
+                <File
+                    RelPath = "Web References\DatosEmpleadoWS\Reference.cs"
+                    DependentUpon = "Reference.map"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <Folder
+                    RelPath = "Web References\DatosEmpleadoWS\"
+                    WebReferenceUrl = "http://172.19.74.66:8909/DatosEmpleadoWS/EbsDatosEmpleado?WSDL"
+                    UrlBehavior = "Static"
+                />
+                <File
+                    RelPath = "Web References\DatosPrepagoWS\EbsDatosPrepagoServiceDefinitions.wsdl"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Web References\DatosPrepagoWS\Reference.map"
+                    BuildAction = "None"
+                    Generator = "MSDiscoCodeGenerator"
+                    LastGenOutput = "Reference.cs"
+                />
+                <File
+                    RelPath = "Web References\DatosPrepagoWS\Reference.cs"
+                    DependentUpon = "Reference.map"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <Folder
+                    RelPath = "Web References\DatosPrepagoWS\"
+                    WebReferenceUrl = "http://limdeseaiv03.tim.com.pe:8909/ConsultaDatosPrepagoWS/EbsDatosPrepago?WSDL"
+                    UrlBehavior = "Static"
+                />
+                <File
+                    RelPath = "Web References\DolWS\EbsDolWSDefinitions.wsdl"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Web References\DolWS\Reference.map"
+                    BuildAction = "None"
+                    Generator = "MSDiscoCodeGenerator"
+                    LastGenOutput = "Reference.cs"
+                />
+                <File
+                    RelPath = "Web References\DolWS\Reference.cs"
+                    DependentUpon = "Reference.map"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <Folder
+                    RelPath = "Web References\DolWS\"
+                    WebReferenceUrl = "http://limdeseaiv03.tim.com.pe:8909/ServiceDolWS/EbsDolWS?WSDL"
+                    UrlBehavior = "Static"
+                />
+                <File
+                    RelPath = "Web References\DTHPostpagoWS\Audit.xsd"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Web References\DTHPostpagoWS\harvest.sig"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Web References\DTHPostpagoWS\Reference.cs"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Web References\DTHPostpagoWS\Reference.map"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Web References\DTHPostpagoWS\VentaDTH.wsdl"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Web References\EbsCreditosWS\ebsCreditosSB12.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Web References\EbsCreditosWS\EbsCreditosWS.wsdl"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Web References\EbsCreditosWS\Reference.map"
+                    BuildAction = "None"
+                    Generator = "MSDiscoCodeGenerator"
+                    LastGenOutput = "Reference.cs"
+                />
+                <File
+                    RelPath = "Web References\EbsCreditosWS\Reference.cs"
+                    DependentUpon = "Reference.map"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <Folder
+                    RelPath = "Web References\EbsCreditosWS\"
+                    WebReferenceUrl = "http://172.19.74.189:7903/EbsCreditosWS/ebsCreditosSB12?WSDL"
+                    UrlBehavior = "Static"
+                />
+                <File
+                    RelPath = "Web References\EnvioCorreoWS\envioCorreoWSPortSB11.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Web References\EnvioCorreoWS\envioCorreoWSService.wsdl"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Web References\EnvioCorreoWS\Reference.map"
+                    BuildAction = "None"
+                    Generator = "MSDiscoCodeGenerator"
+                    LastGenOutput = "Reference.cs"
+                />
+                <File
+                    RelPath = "Web References\EnvioCorreoWS\Reference.cs"
+                    DependentUpon = "Reference.map"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <Folder
+                    RelPath = "Web References\EnvioCorreoWS\"
+                    WebReferenceUrl = "http://172.19.74.223:8909/EnvioCorreoWS/envioCorreoWSPortSB11?WSDL"
+                    UrlBehavior = "Static"
+                />
+                <File
+                    RelPath = "Web References\GestionaProteccionMovilWS\GestionaProteccionMovilWS.wsdl"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Web References\GestionaProteccionMovilWS\GestionaProteccionMovilWSSB11.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Web References\GestionaProteccionMovilWS\GestionaProteccionMovilWSSB110.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Web References\GestionaProteccionMovilWS\Reference.map"
+                    BuildAction = "None"
+                    Generator = "MSDiscoCodeGenerator"
+                    LastGenOutput = "Reference.cs"
+                />
+                <File
+                    RelPath = "Web References\GestionaProteccionMovilWS\Reference.cs"
+                    DependentUpon = "Reference.map"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <Folder
+                    RelPath = "Web References\GestionaProteccionMovilWS\"
+                    WebReferenceUrl = "http://172.19.74.222:8903/GestionaProteccionMovilWS/GestionaProteccionMovilWSSB11?WSDL"
+                    UrlBehavior = "Static"
+                />
+                <File
+                    RelPath = "Web References\GestionarPuntosClaroClubWS\Audit.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Web References\GestionarPuntosClaroClubWS\GestionarPuntosClaroClubLocal.wsdl"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Web References\GestionarPuntosClaroClubWS\Reference.map"
+                    BuildAction = "None"
+                    Generator = "MSDiscoCodeGenerator"
+                    LastGenOutput = "Reference.cs"
+                />
+                <File
+                    RelPath = "Web References\GestionarPuntosClaroClubWS\Reference.cs"
+                    DependentUpon = "Reference.map"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <Folder
+                    RelPath = "Web References\GestionarPuntosClaroClubWS\"
+                    WebReferenceUrl = "http://limdesosbv03.tim.com.pe:7909/ClaroClub_Services/Transaction/GPCC/Transaction/GestionarPuntosClaroClub/proxy_services/GestionarPuntosClaroClubLocal?wsdl"
+                    UrlBehavior = "Static"
+                />
+                <File
+                    RelPath = "Web References\LineasTecnologiaClienteWS\ClaroFault_v1.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Web References\LineasTecnologiaClienteWS\ClaroFault_v1.xsx"
+                    DependentUpon = "ClaroFault_v1.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Web References\LineasTecnologiaClienteWS\ClaroGenericHeaders_v1.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Web References\LineasTecnologiaClienteWS\consultarLineasPrePost_v1.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Web References\LineasTecnologiaClienteWS\LineasTecnologiaCliente.wsdl"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Web References\LineasTecnologiaClienteWS\Reference.map"
+                    BuildAction = "None"
+                    Generator = "MSDiscoCodeGenerator"
+                    LastGenOutput = "Reference.cs"
+                />
+                <File
+                    RelPath = "Web References\LineasTecnologiaClienteWS\Reference.cs"
+                    DependentUpon = "Reference.map"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "Web References\LineasTecnologiaClienteWS\responseDataConsultarLineasPrePost_v1.xsd"
+                    BuildAction = "None"
+                />
+                <Folder
+                    RelPath = "Web References\LineasTecnologiaClienteWS\"
+                    WebReferenceUrl = "http://172.17.26.51:21000/BSS_LineasTecnologiaCliente/SRV_LineasTecnologiaCliente/Service/Mediation/MED_LineasTecnologiaCliente?wsdl"
+                    UrlBehavior = "Static"
+                />
+                <File
+                    RelPath = "Web References\MigracionWS\EbsEjecucionMigracionServiceDefinitions.wsdl"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Web References\MigracionWS\Reference.map"
+                    BuildAction = "None"
+                    Generator = "MSDiscoCodeGenerator"
+                    LastGenOutput = "Reference.cs"
+                />
+                <File
+                    RelPath = "Web References\MigracionWS\Reference.cs"
+                    DependentUpon = "Reference.map"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <Folder
+                    RelPath = "Web References\MigracionWS\"
+                    WebReferenceUrl = "http://172.19.74.66:8909/EjecucionMigracionWS/EbsEjecucionMigracion?WSDL"
+                    UrlBehavior = "Static"
+                />
+                <File
+                    RelPath = "Web References\OACWS\Audit.xsd"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Web References\OACWS\ConsultaDeudaCuenta.wsdl"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Web References\OACWS\Reference.cs"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Web References\OACWS\Reference.map"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Web References\ReglasCrediticiaRenovWS\Reference.cs"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Web References\ReglasCrediticiaRenovWS\Reference.map"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Web References\ReglasCrediticiaRenovWS\ReglasEvaluacionCrediticiaWS.wsdl"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Web References\ReglasCrediticiaWS\Audit.xsd"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Web References\ReglasCrediticiaWS\EvaluacionCrediticiaWS.wsdl"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Web References\ReglasCrediticiaWS\Reference.cs"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Web References\ReglasCrediticiaWS\Reference.map"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Web References\ReglasCrediticiaWS\ReglasEvaluacionCrediticiaWS.wsdl"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Web References\ReglasEvaluacionWS\ClaroEvalClientesReglasDecisionService.wsdl"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Web References\ReglasEvaluacionWS\Reference.map"
+                    BuildAction = "None"
+                    Generator = "MSDiscoCodeGenerator"
+                    LastGenOutput = "Reference.cs"
+                />
+                <File
+                    RelPath = "Web References\ReglasEvaluacionWS\Reference.cs"
+                    DependentUpon = "Reference.map"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <Folder
+                    RelPath = "Web References\ReglasEvaluacionWS\"
+                    WebReferenceUrl = "http://172.19.74.231/DecisionService/ws/ClaroEvalClienteApp/ClaroEvalClientesReglas/1.0?WSDL"
+                    UrlBehavior = "Static"
+                />
+                <File
+                    RelPath = "Web References\RenovacionesDecisionService\Reference.map"
+                    BuildAction = "None"
+                    Generator = "MSDiscoCodeGenerator"
+                    LastGenOutput = "Reference.cs"
+                />
+                <File
+                    RelPath = "Web References\RenovacionesDecisionService\Reference.cs"
+                    DependentUpon = "Reference.map"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "Web References\RenovacionesDecisionService\RenovacionesClaroConsumerRulesDecisionService.wsdl"
+                    BuildAction = "None"
+                />
+                <Folder
+                    RelPath = "Web References\RenovacionesDecisionService\"
+                    WebReferenceUrl = "http://172.19.74.231/DecisionService/ws/RenovacionesClaroConsumerRuleApp/1.0/RenovacionesClaroConsumerRules/1.0?WSDL"
+                    UrlBehavior = "Static"
+                />
+                <File
+                    RelPath = "Web References\RestriccionChipRepuesto\EsbRestriccionReposicionSimCard.wsdl"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Web References\RestriccionChipRepuesto\Reference.map"
+                    BuildAction = "None"
+                    Generator = "MSDiscoCodeGenerator"
+                    LastGenOutput = "Reference.cs"
+                />
+                <File
+                    RelPath = "Web References\RestriccionChipRepuesto\Reference.cs"
+                    DependentUpon = "Reference.map"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <Folder
+                    RelPath = "Web References\RestriccionChipRepuesto\"
+                    WebReferenceUrl = "http://172.19.74.117:7903/RestriccionReposicionSimCardApp/EsbRestriccionReposicionSimCard?wsdl"
+                    UrlBehavior = "Static"
+                />
+                <File
+                    RelPath = "Web References\SimCardsWS\ebsSimcards.wsdl"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Web References\SimCardsWS\Reference.map"
+                    BuildAction = "None"
+                    Generator = "MSDiscoCodeGenerator"
+                    LastGenOutput = "Reference.cs"
+                />
+                <File
+                    RelPath = "Web References\SimCardsWS\Reference.cs"
+                    DependentUpon = "Reference.map"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <Folder
+                    RelPath = "Web References\SimCardsWS\"
+                    WebReferenceUrl = "http://172.19.74.68:8903/SimcardsWS/ebsSimcards?wsdl"
+                    UrlBehavior = "Static"
+                />
+                <File
+                    RelPath = "Web References\VentasWS\Reference.map"
+                    BuildAction = "None"
+                    Generator = "MSDiscoCodeGenerator"
+                    LastGenOutput = "Reference.cs"
+                />
+                <File
+                    RelPath = "Web References\VentasWS\Reference.cs"
+                    DependentUpon = "Reference.map"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "Web References\VentasWS\VentasWSServiceDefinitions.wsdl"
+                    BuildAction = "None"
+                />
+                <Folder
+                    RelPath = "Web References\VentasWS\"
+                    WebReferenceUrl = "http://limdeseaiv03.tim.com.pe:8909/SapWS/VentasWS?WSDL"
+                    UrlBehavior = "Static"
+                />
+                <File
+                    RelPath = "Web References\WSConsultaCuotaCliente\consultaCuotaCliente.wsdl"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Web References\WSConsultaCuotaCliente\Reference.map"
+                    BuildAction = "None"
+                    Generator = "MSDiscoCodeGenerator"
+                    LastGenOutput = "Reference.cs"
+                />
+                <File
+                    RelPath = "Web References\WSConsultaCuotaCliente\Reference.cs"
+                    DependentUpon = "Reference.map"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <Folder
+                    RelPath = "Web References\WSConsultaCuotaCliente\"
+                    WebReferenceUrl = "http://172.19.74.141:8901/OAC_Services/Inquiry/ConsultaCuotaCliente?wsdl"
+                    UrlBehavior = "Static"
+                />
+                <File
+                    RelPath = "Web References\WSConsultaClaves\ebsConsultaClavesSB11.wsdl"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Web References\WSConsultaClaves\Reference.map"
+                    BuildAction = "None"
+                    Generator = "MSDiscoCodeGenerator"
+                    LastGenOutput = "Reference.cs"
+                />
+                <File
+                    RelPath = "Web References\WSConsultaClaves\Reference.cs"
+                    DependentUpon = "Reference.map"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <Folder
+                    RelPath = "Web References\WSConsultaClaves\"
+                    WebReferenceUrl = "http://172.19.74.225:8909/ConsultaClavesWS/ebsConsultaClavesSB11?wsdl"
+                    UrlBehavior = "Static"
+                />
+                <File
+                    RelPath = "Web References\WSEnvioSMS\bsEnvioSmsServiceDefinitions.wsdl"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Web References\WSEnvioSMS\Reference.map"
+                    BuildAction = "None"
+                    Generator = "MSDiscoCodeGenerator"
+                    LastGenOutput = "Reference.cs"
+                />
+                <File
+                    RelPath = "Web References\WSEnvioSMS\Reference.cs"
+                    DependentUpon = "Reference.map"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <Folder
+                    RelPath = "Web References\WSEnvioSMS\"
+                    WebReferenceUrl = "http://172.19.74.141:8901/Messaging_Services/SMSC/Transaction/proxy_services/EnvioSms?wsdl"
+                    UrlBehavior = "Static"
+                />
+                <File
+                    RelPath = "Web References\WSMail\Audit.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Web References\WSMail\EnvioMail.wsdl"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Web References\WSMail\Reference.map"
+                    BuildAction = "None"
+                    Generator = "MSDiscoCodeGenerator"
+                    LastGenOutput = "Reference.cs"
+                />
+                <File
+                    RelPath = "Web References\WSMail\Reference.cs"
+                    DependentUpon = "Reference.map"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <Folder
+                    RelPath = "Web References\WSMail\"
+                    WebReferenceUrl = "http://172.19.74.141:8901/Messaging_Services/MAIL/Transaction/EnvioMail?wsdl"
+                    UrlBehavior = "Static"
+                />
+                <Folder
+                    RelPath = "Web References\"
+                    WebReferences = "TRUE"
+                />
+            </Include>
+        </Files>
+    </CSHARP>
+</VisualStudioProject>
+

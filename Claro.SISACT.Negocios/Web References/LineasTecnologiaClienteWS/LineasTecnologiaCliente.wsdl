@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://claro.com.pe/esb/venta/lineastecnologiacliente/v1/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" targetNamespace="http://claro.com.pe/esb/venta/lineastecnologiacliente/v1/" name="LineasTecnologiaCliente" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <s:schema xmlns:header="http://claro.com.pe/esb/data/generico/claroGenericHeader/v1/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soap11="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:WL5G3N6="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:fault="http://claro.com.pe/esb/data/generico/claroFault/v1/" xmlns:ns1="http://claro.com.pe/esb/message/lineastecnologiacliente/consultarLineasPrePost/v1/">
+      <xsd:import schemaLocation="http://172.17.26.51:21000/BSS_LineasTecnologiaCliente/SRV_LineasTecnologiaCliente/Service/Mediation/MED_LineasTecnologiaCliente?SCHEMA%2FBSS_LineasTecnologiaCliente%2FSRV_LineasTecnologiaCliente%2FResources%2FXSD%2FconsultarLineasPrePost_v1" namespace="http://claro.com.pe/esb/message/lineastecnologiacliente/consultarLineasPrePost/v1/" />
+      <xsd:import schemaLocation="http://172.17.26.51:21000/BSS_LineasTecnologiaCliente/SRV_LineasTecnologiaCliente/Service/Mediation/MED_LineasTecnologiaCliente?SCHEMA%2FBSS_LineasTecnologiaCliente%2FSRV_LineasTecnologiaCliente%2FResources%2FXSD%2FClaroGenericHeaders_v1" namespace="http://claro.com.pe/esb/data/generico/claroGenericHeader/v1/" />
+      <xsd:import schemaLocation="http://172.17.26.51:21000/BSS_LineasTecnologiaCliente/SRV_LineasTecnologiaCliente/Service/Mediation/MED_LineasTecnologiaCliente?SCHEMA%2FBSS_LineasTecnologiaCliente%2FSRV_LineasTecnologiaCliente%2FResources%2FXSD%2FClaroFault_v1" namespace="http://claro.com.pe/esb/data/generico/claroFault/v1/" />
+    </s:schema>
+  </types>
+  <message name="consultarLineasPrePostRequestMessage">
+    <part name="consultarLineasPrePostRequest" xmlns:q1="http://claro.com.pe/esb/message/lineastecnologiacliente/consultarLineasPrePost/v1/" element="q1:consultarLineasPrePostRequest" />
+  </message>
+  <message name="consultarLineasPrePostResponseMessage">
+    <part name="consultarLineasPrePostResponse" xmlns:q2="http://claro.com.pe/esb/message/lineastecnologiacliente/consultarLineasPrePost/v1/" element="q2:consultarLineasPrePostResponse" />
+  </message>
+  <message name="claroFault">
+    <part name="claroFault" xmlns:q3="http://claro.com.pe/esb/data/generico/claroFault/v1/" element="q3:claroFault" />
+  </message>
+  <message name="requestHeaderMessage">
+    <part name="header" xmlns:q4="http://claro.com.pe/esb/data/generico/claroGenericHeader/v1/" element="q4:headerRequest" />
+  </message>
+  <message name="responseHeaderMessage">
+    <part name="header" xmlns:q5="http://claro.com.pe/esb/data/generico/claroGenericHeader/v1/" element="q5:headerResponse" />
+  </message>
+  <portType name="consultarLineasPrePostPort">
+    <operation name="consultarLineasPrePost">
+      <input message="tns:consultarLineasPrePostRequestMessage" />
+      <output message="tns:consultarLineasPrePostResponseMessage" />
+      <fault name="fault" message="tns:claroFault" />
+    </operation>
+  </portType>
+  <binding name="consultarLineasPrePostSOAP11Binding" type="tns:consultarLineasPrePostPort">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document" />
+    <operation name="consultarLineasPrePost">
+      <soap:operation soapAction="http://claro.com.pe/esb/venta/lineastecnologiacliente/v1/consultarLineasPrePost" style="document" />
+      <input>
+        <soap:body use="literal" parts="consultarLineasPrePostRequest" />
+        <soap:header message="tns:requestHeaderMessage" part="header" use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" parts="consultarLineasPrePostResponse" />
+        <soap:header message="tns:responseHeaderMessage" part="header" use="literal" />
+      </output>
+      <fault name="fault">
+        <soap:fault use="literal" namespace="" encodingStyle="" />
+      </fault>
+    </operation>
+  </binding>
+  <service name="MED_LineasTecnologiaCliente">
+    <documentation>OSB Service</documentation>
+    <port name="MED_LineasTecnologiaCliente_SOAP11" binding="tns:consultarLineasPrePostSOAP11Binding">
+      <soap:address location="http://172.17.26.51:21000/BSS_LineasTecnologiaCliente/SRV_LineasTecnologiaCliente/Service/Mediation/MED_LineasTecnologiaCliente" />
+    </port>
+  </service>
+</definitions>

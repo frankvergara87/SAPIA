@@ -1,0 +1,23 @@
+#adpack{
+	position:absolute;
+	top:70px;
+	right:10px;
+	width:165px;
+	z-index:99999;
+}
+
+	#adpack .bsa_it_ad {
+		padding-bottom:20px;
+		border:1px solid #eee;
+		background-color:transparent;
+		background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABhJREFUeNpi/P///wYGNMDEgAVQKAgQYAB7wAO39I2dfgAAAABJRU5ErkJggg==);
+	}
+
+
+@media only screen and (min-width: 200px) and (max-width: 767px) {
+
+	#adpack {
+		display:none;
+	}  
+
+}

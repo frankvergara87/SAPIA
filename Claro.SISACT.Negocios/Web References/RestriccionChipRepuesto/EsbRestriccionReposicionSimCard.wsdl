@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://claro.com.pe/eai/venta/RestriccionReposicionSIMCARD" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" targetNamespace="http://claro.com.pe/eai/venta/RestriccionReposicionSIMCARD" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://claro.com.pe/eai/venta/RestriccionReposicionSIMCARD">
+      <s:element name="validarBloqueoPrepagoInput">
+        <s:complexType>
+          <s:sequence>
+            <s:element name="idTransaccion" type="s:string" />
+            <s:element name="ipAplicacion" type="s:string" />
+            <s:element name="nombreAplicacion" type="s:string" />
+            <s:element name="usuarioAplicacion" type="s:string" />
+            <s:element name="MSISDN" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="validarBloqueoPrepagoOutput">
+        <s:complexType>
+          <s:sequence>
+            <s:element name="idTransaccion" type="s:string" />
+            <s:element name="codigoRespuesta" type="s:string" />
+            <s:element name="mensajeRespuesta" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="validarBloqueoPostpagoInput">
+        <s:complexType>
+          <s:sequence>
+            <s:element name="idTransaccion" type="s:string" />
+            <s:element name="ipAplicacion" type="s:string" />
+            <s:element name="nombreAplicacion" type="s:string" />
+            <s:element name="MSISDN" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="validarBloqueoPostpagoOutput">
+        <s:complexType>
+          <s:sequence>
+            <s:element name="idTransaccion" type="s:string" />
+            <s:element name="codigoRespuesta" type="s:string" />
+            <s:element name="mensajeRespuesta" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="validarBloqueoPrepagoRequestMSG">
+    <wsdl:part name="parameters" element="tns:validarBloqueoPrepagoInput" />
+  </wsdl:message>
+  <wsdl:message name="validarBloqueoPrepagoResponseMSG">
+    <wsdl:part name="parameters" element="tns:validarBloqueoPrepagoOutput" />
+  </wsdl:message>
+  <wsdl:message name="validarBloqueoPostpagoRequestMSG">
+    <wsdl:part name="parameters" element="tns:validarBloqueoPostpagoInput" />
+  </wsdl:message>
+  <wsdl:message name="validarBloqueoPostpagoResponseMSG">
+    <wsdl:part name="parameters" element="tns:validarBloqueoPostpagoOutput" />
+  </wsdl:message>
+  <wsdl:portType name="EsbRestriccionReposicionSIMCARD">
+    <wsdl:operation name="validarBloqueoPrepago">
+      <wsdl:input message="tns:validarBloqueoPrepagoRequestMSG" />
+      <wsdl:output message="tns:validarBloqueoPrepagoResponseMSG" />
+    </wsdl:operation>
+    <wsdl:operation name="validarBloqueoPostpago">
+      <wsdl:input message="tns:validarBloqueoPostpagoRequestMSG" />
+      <wsdl:output message="tns:validarBloqueoPostpagoResponseMSG" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="EsbRestriccionReposicionSIMCARDSOAPBinding" type="tns:EsbRestriccionReposicionSIMCARD">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document" />
+    <wsdl:operation name="validarBloqueoPrepago">
+      <soap:operation soapAction="http://claro.com.pe/eai/venta/RestriccionReposicionSIMCARD/validarBloqueoPrepago" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" parts="parameters" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" parts="parameters" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="validarBloqueoPostpago">
+      <soap:operation soapAction="http://claro.com.pe/eai/venta/RestriccionReposicionSIMCARD/validarBloqueoPostpago" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" parts="parameters" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" parts="parameters" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="EsbRestriccionReposicionSIMCARDService">
+    <wsdl:port name="EsbRestriccionReposicionSIMCARDSoapPort" binding="tns:EsbRestriccionReposicionSIMCARDSOAPBinding">
+      <soap:address location="http://limdeseaiv13.tim.com.pe:7909/RestriccionReposicionSimCardApp/EsbRestriccionReposicionSimCard" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://claro.com.pe/eai/oacservices/inquiry/consultacuotacliente/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" targetNamespace="http://claro.com.pe/eai/oacservices/inquiry/consultacuotacliente/" name="consultaCuotaCliente" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" elementFormDefault="qualified" targetNamespace="http://claro.com.pe/eai/oacservices/inquiry/consultacuotacliente/">
+      <xsd:element name="consultaCuotaClienteRequest">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="auditRequest" type="tns:AuditTypeRequest" />
+            <xsd:element name="tipoDocumento" type="xsd:string" />
+            <xsd:element name="numeroDocumento" type="xsd:string" />
+            <xsd:element minOccurs="0" maxOccurs="1" name="lineaDelCliente" type="xsd:string" />
+            <xsd:element name="listaRequestOpcional" type="tns:RequestOpcionalType" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="consultaCuotaClienteResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="auditResponse" type="tns:AuditTypeResponse" />
+            <xsd:element name="totalPendCuo" type="xsd:string" />
+            <xsd:element name="CantLineasCuoPend" type="xsd:string" />
+            <xsd:element name="CantCuoPend" type="xsd:string" />
+            <xsd:element name="CantCuoPendLinea" type="xsd:string" />
+            <xsd:element name="MontoPendCuoLinea" type="xsd:string" />
+            <xsd:element name="estado" type="xsd:string" />
+            <xsd:element name="mensaje" type="xsd:string" />
+            <xsd:element name="listaResponseOpcional" type="tns:ResponseOpcionalType" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:complexType name="AuditTypeRequest">
+        <xsd:sequence>
+          <xsd:element name="idTransaccion" type="xsd:string" />
+          <xsd:element name="ipAplicacion" type="xsd:string" />
+          <xsd:element name="aplicacion" type="xsd:string" />
+          <xsd:element name="usrAplicacion" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ListaRequestOpcional">
+        <xsd:attribute name="campo" type="xsd:string" />
+        <xsd:attribute name="valor" type="xsd:string" />
+      </xsd:complexType>
+      <xsd:complexType name="RequestOpcionalType">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="requestOpcional" type="tns:ListaRequestOpcional" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="AuditTypeResponse">
+        <xsd:sequence>
+          <xsd:element name="idTransaccion" type="xsd:string" />
+          <xsd:element name="codigoRespuesta" type="xsd:string" />
+          <xsd:element name="mensajeRespuesta" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ResponseOpcionalType">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="responseOpcional" type="tns:ListaResponseOpcional" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ListaResponseOpcional">
+        <xsd:attribute name="campo" type="xsd:string" />
+        <xsd:attribute name="valor" type="xsd:string" />
+      </xsd:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="consultaCuotaClienteRequest">
+    <wsdl:part name="parameters" element="tns:consultaCuotaClienteRequest" />
+  </wsdl:message>
+  <wsdl:message name="consultaCuotaClienteResponse">
+    <wsdl:part name="parameters" element="tns:consultaCuotaClienteResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ConsultarCuotaClientePorType">
+    <wsdl:operation name="consultarCuotaCliente">
+      <wsdl:input message="tns:consultaCuotaClienteRequest" />
+      <wsdl:output message="tns:consultaCuotaClienteResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ConsultarCuotaClienteSOAP" type="tns:ConsultarCuotaClientePorType">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document" />
+    <wsdl:operation name="consultarCuotaCliente">
+      <soap:operation soapAction="http://claro.com.pe/eai/oacservices/inquiry/consultacuotacliente/consultarCuotaCliente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" parts="parameters" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" parts="parameters" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ConsultaCuotaCliente">
+    <wsdl:port name="ConsultarCuotaClienteSOAP" binding="tns:ConsultarCuotaClienteSOAP">
+      <soap:address location="http://172.19.74.141:8901/OAC_Services2/Inquiry/ConsultaCuotaCliente/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

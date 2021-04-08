@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Settings xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ClassName="SapGeneral" TargetDirectory="D:\JSandoval\POSTVENTA_ORIGINAL\WEB_SISACT_POSTVENTA\Claro.SISACT.SapGeneral" Namespace="Claro.SisAct.SapGeneral" Type="JavaMetaDataProvider" ToolsDir="C:\Archivos de programa\SAP\SAP .NET Connector for VisualStudio 2003\" xmlns="http://tempuri.org/ProxyAppInput.xsd">
+  <Destination>
+    <Client>200</Client>
+    <AppServerHost>172.19.43.34</AppServerHost>
+    <Language />
+    <Username>T11498</Username>
+    <SystemNumber>0</SystemNumber>
+    <LogonGroup />
+    <MsgServerHost />
+    <SAPSystemName />
+    <Type>3</Type>
+    <DestinationName>DES : CLARO Development</DestinationName>
+  </Destination>
+  <Modules Name="ZPVU_RFC_CON_ACUERDO" />
+  <Modules Name="ZPVU_RFC_VAL_SER_TLF_PRE" />
+  <Modules Name="ZPVU_RFC_CON_UBIGEO" />
+  <Modules Name="ZPVU_RFC_MAE_PLAZO_ACUERDO" />
+  <Modules Name="ZPVU_RFC_MAE_EST_CIVIL" />
+  <Modules Name="ZSISA_RFC_CON_MATERIAL" />
+  <Modules Name="ZPVU_RFC_CON_DEP_GARAN" />
+  <Modules Name="ZPVU_RFC_CON_PREFIJO" />
+  <Modules Name="ZPVU_RFC_CON_CLIENTE" />
+  <Modules Name="ZPVU_RFC_TRS_POOL_FACTURAS" />
+  <Modules Name="ZPVU_RFC_ADM_PARAM_OF_VTA" />
+  <Modules Name="ZPVU_RFC_TRS_PEDIDO" />
+  <Modules Name="ZPVU_RFC_MAE_CLASE_PEDIDO" />
+  <Modules Name="ZPVU_RFC_TRS_CREA_DEP_GARAN" />
+  <Modules Name="ZSISA_RFC_CON_LISTA_PRECIO" />
+  <Modules Name="ZPVU_RFC_TRS_SET_NRO_SUNAT" />
+  <Modules Name="ZPVU_RFC_TRS_PAGOS" />
+  <Modules Name="ZPVU_RFC_TRS_GET_NRO_COR_GARAN" />
+  <Modules Name="ZPVU_RFC_TRS_DEPOS_GARANTIA" />
+  <Modules Name="ZPVU_RFC_TRS_ANUL_DEP_GARANTIA" />
+  <Modules Name="ZPVU_RFC_TRS_MOD_DEP_GARAN" />
+  <Modules Name="ZPVU_RFC_TRS_PAGOS_ANULACION" />
+  <Modules Name="ZPVU_RFC_CON_CUST_BSCS_JER" />
+  <Modules Name="ZPVU_RFC_TRS_ACT_ESTADO_PCS" />
+  <Modules Name="ZPVU_RFC_CON_ESTADO_PCS" />
+  <Modules Name="ZPVU_RFC_MAE_VENDEDOR" />
+  <Modules Name="ZPVU_RFC_TRS_ACT_CONTRATO_ENT" />
+  <Modules Name="ZPVU_RFC_MAE_CAMPANA" />
+  <Modules Name="ZPVU_RFC_TRS_PORT_REG_IMS" />
+  <Modules Name="ZPVU_RFC_TRS_DEL_NRO_TEL" />
+  <Modules Name="ZPVU_RFC_TRS_CLIENTE" />
+  <Modules Name="ZPVU_RFC_MAE_ARTICULO" />
+  <Modules Name="ZPVU_RFC_REP_HISTO_ACUERDO_PCS" />
+  <Modules Name="ZPVU_RFC_CON_IMEIS" />
+  <Modules Name="ZPVU_RFC_TRS_ACTIVACION_CHIP" />
+  <Modules Name="ZPVU_RFC_CON_PEDIDO" />
+  <Modules Name="ZPVU_RFC_CON_TELEFONO_SANS" />
+  <Modules Name="ZPVU_RFC_TRS_CONTRATO_PCS" />
+  <Modules Name="ZPVU_RFC_MAE_MOTIVO_REPOSICION" />
+  <Modules Name="ZPVU_RFC_MAE_ARTICULO" />
+  <Modules Name="ZPVU_RFC_CON_HIST_X_NRO_TELEF" />
+  <Modules Name="ZPVU_RFC_MAE_PLAN_TARIFARIO" />
+  <Modules Name="ZPVU_RFC_TRS_ANULA_PEDIDO_SAP" />
+  <Modules Name="ZPVU_RFC_TRS_ACT_ESTADO_PEDIDO" />
+  <Modules Name="ZPVU_RFC_CON_CAJA_CERRADA" />
+  <Modules Name="ZPVU_MATERIAL_X_CAMPANA" />
+  <Modules Name="ZPVU_CAMPANA_X_PLAN" />
+  <Modules Name="ZSISA_RFC_CON_LISTA_PRECIO_1" />
+  <Modules Name="ZPVU_RFC_MAE_PLAN_X_SERVICIOS" />
+<Modules Name="ZPVU_RFC_MAE_UTILIZACION" />
+  <Modules Name="ZPVU_RFC_CON_TELEFONO_SANS_ZS" />
+</Settings>

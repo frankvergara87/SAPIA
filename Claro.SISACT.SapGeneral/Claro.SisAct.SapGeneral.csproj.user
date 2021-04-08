@@ -1,0 +1,48 @@
+<VisualStudioProject>
+    <CSHARP LastOpenVersion = "7.10.3077" >
+        <Build>
+            <Settings ReferencePath = "C:\Sistema SIAC\Sisact_Parametrico\Claro.SISACT.SapGeneral\bin\Debug\;C:\Archivos de programa\SAP\SAP .NET Connector for VisualStudio 2003\;D:\Proyectos\PP_26352-1_20091113\Claro.SISACT.SapGeneral\bin\Debug\;D:\RF20\Fuentes\RF20\Claro.SISACT.SapGeneral\bin\Debug\;D:\Intranet\Objects_Fuentes\Fuente_SISACT_20091113_24892\Claro.SISACT.SapGeneral\bin\Debug\;E:\SISACT_EXPRESS\Fuente_SISACT_20091113_24892\Claro.SISACT.SapGeneral\bin\Debug\;D:\Site\SISACT_Express\Claro.SISACT.SapGeneral\bin\Debug\;D:\SISACT_Express FUENTES\Claro.SISACT.SapGeneral\bin\Debug\;D:\jruiz\Fuente_SISACT_Express\Claro.SISACT.SapGeneral\bin\Debug\;D:\SISACT_JHOE\Claro.SISACT.SapGeneral\bin\Debug\;D:\WEB_SISACT\WEB_SISACT\Claro.SISACT.SapGeneral\bin\Debug\;D:\WEB_SISACT\Claro.SISACT.SapGeneral\bin\Debug\;D:\EAI\corporativos\28659-6 mesa portabilidad v1\Claro.SISACT.SapGeneral\bin\Debug\;D:\EAI\corporativos\28659-6 mesa portabilidad v2 paola\Claro.SISACT.SapGeneral\bin\Debug\;D:\MoisesOsorio\2009\07\24_REGULAR_FUENTES\SISACT\28659-6_ROBIN\28659-6 mesa portabilidad v2 paola\Claro.SISACT.SapGeneral\bin\Debug\;D:\Pases_QA\2010\SISACT\30663-2\Fuentes_30663-2\Claro.SISACT.SapGeneral\bin\Debug\;D:\EAI\corporativos\9 - 35367-3 AVM SISACT\WEB_SISACT_EXPRESS\Claro.SISACT.SapGeneral\bin\Debug\;D:\Pablo\Sistemas\SISACT_AVM(RMORI_ULTIMO)\WEB_SISACT_EXPRESS\Claro.SISACT.SapGeneral\bin\Debug\;D:\EAI\corporativos\03 Postventa - ChipRepuesto 38142-2\Claro.SISACT.SapGeneral\bin\Debug\;C:\PP_38696-2_15112010\Claro.SISACT.SapGeneral\bin\Debug\;D:\Manuel\sisact\Migracion\PP_38696-2_15112010\Claro.SISACT.SapGeneral\bin\Debug\;D:\SISACT\POSTVENTA\PASE\WEB_SISACT_POSTVENTA\Claro.SISACT.SapGeneral\bin\Debug\;D:\+[lv!s]+\[1]-EVALUACION_SMS\FUENTES\HVS\WEB_SISACT_POSTVENTA\Claro.SISACT.SapGeneral\bin\Debug\;D:\Johnny\Claro\Paquetes\SISACT SD814397\Otras Fuentes\Fuentes Todo\WEB_SISACT_POSTVENTA\Claro.SISACT.SapGeneral\bin\Debug\;D:\Johnny\Claro\Paquetes\SISACT PQT-170743-TSK-36772\Otras Fuentes\Fuentes Rollback\WEB_SISACT_POSTVENTA\Claro.SISACT.SapGeneral\bin\Debug\;C:\31122014\pase urgencia\WEB_SISACT_POSTVENTA\Claro.SISACT.SapGeneral\bin\Debug\;C:\Juan Carlos\PRODUCCION\WEB_SISACT_POSTVENTA\Claro.SISACT.SapGeneral\bin\Debug\;C:\warner\14082015\postventa_60\harvest\WEB_SISACT_POSTVENTA\Claro.SISACT.SapGeneral\bin\Debug\;C:\warner\28092015\ultimas_Fuentes\WEB_SISACT_POSTVENTA\Claro.SISACT.SapGeneral\bin\Debug\" >
+                <Config
+                    Name = "Debug"
+                    EnableASPDebugging = "false"
+                    EnableASPXDebugging = "false"
+                    EnableUnmanagedDebugging = "false"
+                    EnableSQLServerDebugging = "false"
+                    RemoteDebugEnabled = "false"
+                    RemoteDebugMachine = ""
+                    StartAction = "Project"
+                    StartArguments = ""
+                    StartPage = ""
+                    StartProgram = ""
+                    StartURL = ""
+                    StartWorkingDirectory = ""
+                    StartWithIE = "true"
+                />
+                <Config
+                    Name = "Release"
+                    EnableASPDebugging = "false"
+                    EnableASPXDebugging = "false"
+                    EnableUnmanagedDebugging = "false"
+                    EnableSQLServerDebugging = "false"
+                    RemoteDebugEnabled = "false"
+                    RemoteDebugMachine = ""
+                    StartAction = "Project"
+                    StartArguments = ""
+                    StartPage = ""
+                    StartProgram = ""
+                    StartURL = ""
+                    StartWorkingDirectory = ""
+                    StartWithIE = "true"
+                />
+            </Settings>
+        </Build>
+        <OtherProjectSettings
+            CopyProjectDestinationFolder = ""
+            CopyProjectUncPath = ""
+            CopyProjectOption = "0"
+            ProjectView = "ShowAllFiles"
+            ProjectTrust = "0"
+        />
+    </CSHARP>
+</VisualStudioProject>
+

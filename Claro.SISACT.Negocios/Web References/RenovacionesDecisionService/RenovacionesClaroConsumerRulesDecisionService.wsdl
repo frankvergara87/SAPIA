@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:s0="http://www.ibm.com/rules/decisionservice/RenovacionesClaroConsumerRuleApp/RenovacionesClaroConsumerRules/param" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://www.ibm.com/rules/decisionservice/RenovacionesClaroConsumerRuleApp/RenovacionesClaroConsumerRules" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" targetNamespace="http://www.ibm.com/rules/decisionservice/RenovacionesClaroConsumerRuleApp/RenovacionesClaroConsumerRules" name="RenovacionesClaroConsumerRulesDecisionService" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema xmlns:xom1="http://www.ibm.com/rules/decisionservice/RenovacionesClaroConsumerRuleApp/RenovacionesClaroConsumerRules" targetNamespace="http://www.ibm.com/rules/decisionservice/RenovacionesClaroConsumerRuleApp/RenovacionesClaroConsumerRules/param">
+      <s:import namespace="http://www.ibm.com/rules/decisionservice/RenovacionesClaroConsumerRuleApp/RenovacionesClaroConsumerRules" />
+      <s:element name="solicitudRenovacion">
+        <s:complexType>
+          <s:sequence>
+            <s:element name="solicitudRenovacion" type="xom1:solicitudRenovacion" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="renovacion">
+        <s:complexType>
+          <s:sequence>
+            <s:element name="renovacion" type="xom1:renovacion" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+    <s:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:param="http://www.ibm.com/rules/decisionservice/RenovacionesClaroConsumerRuleApp/RenovacionesClaroConsumerRules/param" targetNamespace="http://www.ibm.com/rules/decisionservice/RenovacionesClaroConsumerRuleApp/RenovacionesClaroConsumerRules" version="1.0">
+      <xs:import namespace="http://www.ibm.com/rules/decisionservice/RenovacionesClaroConsumerRuleApp/RenovacionesClaroConsumerRules/param" />
+      <xs:complexType name="solicitudRenovacion">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="cliente" type="tns:cliente" />
+          <xs:element minOccurs="0" name="linea" type="tns:linea" />
+          <xs:element minOccurs="0" name="ofertaAdquirir" type="tns:ofertaAdquirir" />
+          <xs:element minOccurs="0" name="puntoVenta" type="tns:puntoVenta" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="cliente">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="cantidadLineasActivas" type="xs:int" />
+          <xs:element minOccurs="0" name="cantidadProductosActivos" type="xs:int" />
+          <xs:element minOccurs="0" name="comportamientoPago" type="xs:string" />
+          <xs:element minOccurs="0" name="facturacionPromedioClaro" type="xs:float" />
+          <xs:element minOccurs="0" name="facturacionPromedioProducto" type="xs:float" />
+          <xs:element minOccurs="0" name="segmento" type="xs:string" />
+          <xs:element minOccurs="0" name="tipoCliente" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="linea">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="campana" type="tns:campana" />
+          <xs:element minOccurs="0" name="cantidadBloqueos" type="xs:int" />
+          <xs:element minOccurs="0" name="cantidadMesesBloqueos" type="xs:int" />
+          <xs:element minOccurs="0" name="contrato" type="tns:contrato" />
+          <xs:element minOccurs="0" name="equipo" type="tns:equipo" />
+          <xs:element minOccurs="0" name="modalidadVenta" type="xs:string" />
+          <xs:element minOccurs="0" name="planActual" type="tns:plan" />
+          <xs:element minOccurs="0" name="segmentoDesarrolloCliente" type="xs:string" />
+          <xs:element minOccurs="0" name="tiempoAntiguedad" type="xs:int" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="campana">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="tipoCampana" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="contrato">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="diasPendientes" type="xs:int" />
+          <xs:element minOccurs="0" name="estado" type="xs:string" />
+          <xs:element minOccurs="0" name="plazo" type="xs:int" />
+          <xs:element minOccurs="0" name="tiempoPermanencia" type="xs:int" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="equipo">
+        <xs:sequence>
+          <xs:element name="costo" type="xs:float" />
+          <xs:element name="cuotas" type="xs:int" />
+          <xs:element minOccurs="0" name="gama" type="xs:string" />
+          <xs:element minOccurs="0" name="marca" type="xs:string" />
+          <xs:element minOccurs="0" name="modelo" type="xs:string" />
+          <xs:element name="precioVenta" type="xs:float" />
+          <xs:element minOccurs="0" name="tipoDeco" type="xs:string" />
+          <xs:element minOccurs="0" name="tipoOperacionKit" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="plan">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="cargoFijo" type="xs:float" />
+          <xs:element minOccurs="0" name="descripcion" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="ofertaAdquirir">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="campana" type="tns:campana" />
+          <xs:element minOccurs="0" name="cantidadDecos" type="xs:int" />
+          <xs:element minOccurs="0" name="casoEspecial" type="xs:string" />
+          <xs:element minOccurs="0" name="combo" type="xs:int" />
+          <xs:element minOccurs="0" name="contrato" type="tns:contrato" />
+          <xs:element minOccurs="0" name="controlConsumo" type="xs:int" />
+          <xs:element minOccurs="0" name="grupoProducto" type="xs:string" />
+          <xs:element minOccurs="0" name="kitInstalacion" type="xs:string" />
+          <xs:element minOccurs="0" name="modalidadCedente" type="xs:string" />
+          <xs:element minOccurs="0" name="modalidadPago" type="xs:string" />
+          <xs:element minOccurs="0" name="operadorCedente" type="xs:string" />
+          <xs:element minOccurs="0" name="planSolicitado" type="tns:plan" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="puntoVenta">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="descripcion" type="xs:string" />
+          <xs:element minOccurs="0" name="direccion" type="tns:direccion" />
+          <xs:element minOccurs="0" name="grupo" type="xs:string" />
+          <xs:element minOccurs="0" name="tipoCanal" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="direccion">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="codigoPlano" type="xs:string" />
+          <xs:element minOccurs="0" name="departamento" type="xs:string" />
+          <xs:element minOccurs="0" name="distrito" type="xs:string" />
+          <xs:element minOccurs="0" name="provincia" type="xs:string" />
+          <xs:element minOccurs="0" name="region" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="renovacion">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="codigoResultado" type="xs:int" />
+          <xs:element minOccurs="0" name="mensaje" type="xs:string" />
+          <xs:element minOccurs="0" name="penalidad" type="xs:boolean" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="tiposListaPrecio" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="RenovacionesClaroConsumerRulesRequest">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" form="qualified" name="DecisionID" type="xs:string" />
+            <xs:element ref="param:solicitudRenovacion" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="RenovacionesClaroConsumerRulesResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element form="qualified" name="DecisionID" type="xs:string" />
+            <xs:element ref="param:renovacion" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="RenovacionesClaroConsumerRulesException">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="1" maxOccurs="1" name="exception" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="RenovacionesClaroConsumerRulesRequest">
+    <wsdl:part name="RenovacionesClaroConsumerRulesRequest" element="tns:RenovacionesClaroConsumerRulesRequest" />
+  </wsdl:message>
+  <wsdl:message name="RenovacionesClaroConsumerRulesSoapFault">
+    <wsdl:part name="fault" element="tns:RenovacionesClaroConsumerRulesException" />
+  </wsdl:message>
+  <wsdl:message name="RenovacionesClaroConsumerRulesResponse">
+    <wsdl:part name="RenovacionesClaroConsumerRulesResponse" element="tns:RenovacionesClaroConsumerRulesResponse" />
+  </wsdl:message>
+  <wsdl:portType name="RenovacionesClaroConsumerRulesDecisionService">
+    <wsdl:operation name="RenovacionesClaroConsumerRules">
+      <wsdl:input name="RenovacionesClaroConsumerRulesRequest" message="tns:RenovacionesClaroConsumerRulesRequest" />
+      <wsdl:output name="RenovacionesClaroConsumerRulesResponse" message="tns:RenovacionesClaroConsumerRulesResponse" />
+      <wsdl:fault name="RenovacionesClaroConsumerRulesSoapFault" message="tns:RenovacionesClaroConsumerRulesSoapFault" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="RenovacionesClaroConsumerRuleAppRenovacionesClaroConsumerRulesBinding" type="tns:RenovacionesClaroConsumerRulesDecisionService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document" />
+    <wsdl:operation name="RenovacionesClaroConsumerRules">
+      <soap:operation soapAction="RenovacionesClaroConsumerRules" style="document" />
+      <wsdl:input name="RenovacionesClaroConsumerRulesRequest">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="RenovacionesClaroConsumerRulesResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="RenovacionesClaroConsumerRulesSoapFault">
+        <soap:fault use="literal" namespace="" encodingStyle="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="RenovacionesClaroConsumerRulesDecisionService">
+    <wsdl:port name="RenovacionesClaroConsumerRuleAppRenovacionesClaroConsumerRulesPort" binding="tns:RenovacionesClaroConsumerRuleAppRenovacionesClaroConsumerRulesBinding">
+      <soap:address location="http://172.19.74.231/DecisionService/ws/RenovacionesClaroConsumerRuleApp/1.0/RenovacionesClaroConsumerRules/1.0/v75" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:s1="http://pe/com/claro/eai/services/hlr/siac/ws" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:s0="http://pe/com/claro/eai/services/hlr/schemas/HLRRequest.xsd" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" targetNamespace="http://pe/com/claro/eai/services/hlr/siac/ws" name="HlrSiacWSServiceDefinitions" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <s:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://pe/com/claro/eai/services/hlr/schemas/HLRRequest.xsd" xmlns:s0="http://schemas.xmlsoap.org/wsdl/" xmlns:s2="http://schemas.xmlsoap.org/wsdl/soap/" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://pe/com/claro/eai/services/hlr/schemas/HLRRequest.xsd">
+      <xs:element name="HLRRequest" type="tns:HLRRequestType" />
+      <xs:complexType name="HLRRequestType">
+        <xs:sequence>
+          <xs:element name="items" type="tns:HLRRequestItems" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="HLRRequestItems">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="HLRRequestItem">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="evaluar" type="xs:string" />
+                <xs:element name="tipo" type="xs:string" />
+                <xs:element name="comando" type="xs:string" />
+                <xs:element name="valor" type="xs:string" />
+                <xs:element name="complemento" type="xs:string" />
+                <xs:element name="llave" type="xs:string" />
+                <xs:element name="confirmar" type="xs:string" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="HLRRequestImsi">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="msisdn" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="HLRRequestSIAC">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="msisdn" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:complexType name="HLRResponseLineasType">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="HLRResponseLinea">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="linea" type="xs:string" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="HLRResponseResultadoType">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="HLRResponseResultado">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="retorno" type="xs:string" />
+                <xs:element name="info" type="xs:string" />
+                <xs:element name="lineas" type="tns:HLRResponseLineasType" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="HLRResponseType">
+        <xs:sequence>
+          <xs:element name="resultados" type="tns:HLRResponseResultadoType" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="HLRResponse" type="tns:HLRResponseType" />
+      <xs:element name="HLRResponseImsi">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="retorno" type="xs:string" />
+            <xs:element name="info" type="xs:string" />
+            <xs:element name="imsi" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="HLRResponseSIAC">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="retorno" type="xs:string" />
+            <xs:element name="mensaje" type="xs:string" />
+            <xs:element name="HLRResponseZMIO">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="lineas" type="tns:HLRResponseLineasType" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="HLRResponseZMSO">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="lineas" type="tns:HLRResponseLineasType" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="HLRResponseZMQO">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="lineas" type="tns:HLRResponseLineasType" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="HLRResponseZMGO">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="lineas" type="tns:HLRResponseLineasType" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="HLRResponseZMNO">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="lineas" type="tns:HLRResponseLineasType" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="HLRResponseZMQODispIN">
+              <xs:annotation>
+                <xs:documentation>
+		        		Elemento que contiene los datos de respuesta para una consulta en HLR, 
+		        		usando el Comando "ZMQO:MSISDN=$msisdn:DISP=IN;"
+		        	</xs:documentation>
+              </xs:annotation>
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="lineas" type="tns:HLRResponseLineasType" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </s:schema>
+    <s:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:s0="http://schemas.xmlsoap.org/wsdl/" xmlns:s2="http://schemas.xmlsoap.org/wsdl/soap/" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://pe/com/claro/eai/services/hlr/siac/ws">
+      <xs:import namespace="http://pe/com/claro/eai/services/hlr/schemas/HLRRequest.xsd" />
+      <xs:element name="hlrConsultasSIAC">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:hlr="http://pe/com/claro/eai/services/hlr/schemas/HLRRequest.xsd" ref="hlr:HLRRequestSIAC" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="hlrConsultasSIACResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:hlr="http://pe/com/claro/eai/services/hlr/schemas/HLRRequest.xsd" ref="hlr:HLRResponseSIAC" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </s:schema>
+  </types>
+  <message name="hlrConsultasSIAC">
+    <part name="parameters" element="s1:hlrConsultasSIAC" />
+  </message>
+  <message name="hlrConsultasSIACResponse">
+    <part name="parameters" element="s1:hlrConsultasSIACResponse" />
+  </message>
+  <portType name="HlrSiacWS">
+    <operation name="hlrConsultasSIAC" parameterOrder="parameters">
+      <input message="s1:hlrConsultasSIAC" />
+      <output message="s1:hlrConsultasSIACResponse" />
+    </operation>
+  </portType>
+  <binding name="HlrSiacWSServiceSoapBinding" type="s1:HlrSiacWS">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document" />
+    <operation name="hlrConsultasSIAC">
+      <soap:operation soapAction="" style="document" />
+      <input>
+        <soap:body use="literal" parts="parameters" />
+      </input>
+      <output>
+        <soap:body use="literal" parts="parameters" />
+      </output>
+    </operation>
+  </binding>
+  <service name="HlrSiacWSService">
+    <port name="HlrSiacWSSoapPort" binding="s1:HlrSiacWSServiceSoapBinding">
+      <soap:address location="http://limdeseaiv03.tim.com.pe:8909/HLRSiacWS/HlrSiacWS" />
+    </port>
+  </service>
+</definitions>

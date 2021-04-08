@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:s1="http://pe/com/claro/esb/services/ejecucionmigracion/ws" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:s0="http://pe/com/claro/esb/services/ejecucionmigracion/schema/ejecucionmigracion.xsd" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" targetNamespace="http://pe/com/claro/esb/services/ejecucionmigracion/ws" name="EbsEjecucionMigracionServiceDefinitions" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <s:schema xmlns:tns="http://pe/com/claro/esb/services/ejecucionmigracion/schema/ejecucionmigracion.xsd" xmlns:s0="http://schemas.xmlsoap.org/wsdl/" xmlns:s2="http://schemas.xmlsoap.org/wsdl/soap/" xmlns="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://pe/com/claro/esb/services/ejecucionmigracion/schema/ejecucionmigracion.xsd">
+      <s:element name="consultaLineasRequest">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fechaProgramacion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="telefono" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="idTransaccion" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="lineaType">
+        <s:sequence>
+          <s:element name="coId" type="s:string" />
+          <s:element name="fechaProg" type="s:string" />
+          <s:element name="fechaReg" type="s:string" />
+          <s:element name="fechaEjec" type="s:string" />
+          <s:element name="esBatch" type="s:string" />
+          <s:element name="menError" type="s:string" />
+          <s:element name="codError" type="s:string" />
+          <s:element name="usuarioSistema" type="s:string" />
+          <s:element name="idEAISw" type="s:string" />
+          <s:element name="msisdn" type="s:string" />
+          <s:element name="idBatch" type="s:string" />
+          <s:element name="usuarioAplicacion" type="s:string" />
+          <s:element name="emailUsuarioApp" type="s:string" />
+          <s:element name="xmlEntrada" type="s:string" />
+          <s:element name="nroCuenta" type="s:string" />
+          <s:element name="puntoVenta" type="s:string" />
+          <s:element name="asesor" type="s:string" />
+          <s:element name="codigoInteraccion" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="listaLineasType">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="linea" type="tns:lineaType" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="consultaLineasResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element name="idTransaccion" type="s:string" />
+            <s:element name="resultado" type="s:string" />
+            <s:element name="mensaje" type="s:string" />
+            <s:element name="listaLineas" type="tns:listaLineasType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ejecutarMigracionRequest">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fechaProgramacion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="telefono" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="idTransaccion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="flagNotificar" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+    <s:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:s0="http://schemas.xmlsoap.org/wsdl/" xmlns:s2="http://schemas.xmlsoap.org/wsdl/soap/" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://pe/com/claro/esb/services/ejecucionmigracion/ws">
+      <xs:import namespace="http://pe/com/claro/esb/services/ejecucionmigracion/schema/ejecucionmigracion.xsd" />
+      <xs:element name="consultarMigracionesPendientes">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:ejec="http://pe/com/claro/esb/services/ejecucionmigracion/schema/ejecucionmigracion.xsd" ref="ejec:consultaLineasRequest" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="consultarMigracionesPendientesResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:ejec="http://pe/com/claro/esb/services/ejecucionmigracion/schema/ejecucionmigracion.xsd" ref="ejec:consultaLineasResponse" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="ejecutarMigracion">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:ejec="http://pe/com/claro/esb/services/ejecucionmigracion/schema/ejecucionmigracion.xsd" ref="ejec:ejecutarMigracionRequest" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </s:schema>
+  </types>
+  <message name="consultarMigracionesPendientes">
+    <part name="parameters" element="s1:consultarMigracionesPendientes" />
+  </message>
+  <message name="consultarMigracionesPendientesResponse">
+    <part name="parameters" element="s1:consultarMigracionesPendientesResponse" />
+  </message>
+  <message name="ejecutarMigracion">
+    <part name="parameters" element="s1:ejecutarMigracion" />
+  </message>
+  <portType name="EbsEjecucionMigracion">
+    <operation name="consultarMigracionesPendientes" parameterOrder="parameters">
+      <input message="s1:consultarMigracionesPendientes" />
+      <output message="s1:consultarMigracionesPendientesResponse" />
+    </operation>
+    <operation name="ejecutarMigracion" parameterOrder="parameters">
+      <input message="s1:ejecutarMigracion" />
+    </operation>
+  </portType>
+  <binding name="EbsEjecucionMigracionServiceSoapBinding" type="s1:EbsEjecucionMigracion">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document" />
+    <operation name="consultarMigracionesPendientes">
+      <soap:operation soapAction="" style="document" />
+      <input>
+        <soap:body use="literal" parts="parameters" />
+      </input>
+      <output>
+        <soap:body use="literal" parts="parameters" />
+      </output>
+    </operation>
+    <operation name="ejecutarMigracion">
+      <soap:operation soapAction="" style="document" />
+      <input>
+        <soap:body use="literal" parts="parameters" />
+      </input>
+    </operation>
+  </binding>
+  <service name="EbsEjecucionMigracionService">
+    <port name="EbsEjecucionMigracionSoapPort" binding="s1:EbsEjecucionMigracionServiceSoapBinding">
+      <soap:address location="http://limdeseaiv06.tim.com.pe:8909/EjecucionMigracionWS/EbsEjecucionMigracion" />
+    </port>
+  </service>
+</definitions>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:s0="http://claro.com.pe/eai/businessrulesservices/dth/ventadth/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" targetNamespace="http://claro.com.pe/eai/businessrulesservices/dth/ventadth/" name="VentaDTH" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <s:schema xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://claro.com.pe/eai/businessrulesservices/dth/ventadth/" xmlns:aud="http://claro.com.pe/eai/servicecommons/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://claro.com.pe/eai/businessrulesservices/dth/ventadth/">
+      <xsd:import schemaLocation="http://limdesosbv03.tim.com.pe:7909/Business_Rules_Services/DTH/Inquiry/VentaDTH?SCHEMA%2FUtilities%2Fxsd%2FAudit" namespace="http://claro.com.pe/eai/servicecommons/" />
+      <xsd:element name="reglasVentaDTH">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="txId" type="xsd:string" />
+            <xsd:element name="ipCliente" type="xsd:string" />
+            <xsd:element name="usuario" type="xsd:string" />
+            <xsd:element name="variables" type="tns:variablesType" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="reglasVentaDTHResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="audit" type="aud:AuditType" />
+            <xsd:element name="respuesta" type="xsd:string" />
+            <xsd:element name="riesgos" type="tns:riesgosType" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:complexType name="variablesType">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="variable">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="nombre" type="xsd:string" />
+                <xsd:element name="valor" type="xsd:string" />
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="riesgosType">
+        <xsd:sequence>
+          <xsd:element name="riesgoA" type="xsd:string" />
+          <xsd:element name="riesgoB" type="xsd:string" />
+          <xsd:element name="riesgoC" type="xsd:string" />
+          <xsd:element name="riesgoS" type="xsd:string" />
+          <xsd:element name="riesgoD" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+    </s:schema>
+  </types>
+  <message name="reglasVentaDTHRequest">
+    <part name="parameters" element="s0:reglasVentaDTH" />
+  </message>
+  <message name="reglasVentaDTHResponse">
+    <part name="parameters" element="s0:reglasVentaDTHResponse" />
+  </message>
+  <portType name="VentaDTH">
+    <operation name="reglasVentaDTH">
+      <input message="s0:reglasVentaDTHRequest" />
+      <output message="s0:reglasVentaDTHResponse" />
+    </operation>
+  </portType>
+  <binding name="VentaDTHSOAP" type="s0:VentaDTH">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document" />
+    <operation name="reglasVentaDTH">
+      <soap:operation soapAction="http://claro.com.pe/eai/businessrulesservices/dth/ventadth/reglasVentaDTH" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="VentaDTH">
+    <port name="VentaDTHSOAP" binding="s0:VentaDTHSOAP">
+      <soap:address location="http://limdesosbv03.tim.com.pe:7909/Business_Rules_Services/DTH/Inquiry/VentaDTH" />
+    </port>
+  </service>
+</definitions>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:s1="http://pe/com/claro/esb/services/prepago/activacion/ws" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:s0="http://pe/com/claro/esb/services/prepago/in/cliente/Cliente.xsd" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" targetNamespace="http://pe/com/claro/esb/services/prepago/activacion/ws" name="ActivacionWSServiceDefinitions" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <s:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://pe/com/claro/esb/services/prepago/in/cliente/Cliente.xsd" xmlns:s0="http://schemas.xmlsoap.org/wsdl/" xmlns:s2="http://schemas.xmlsoap.org/wsdl/soap/" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://pe/com/claro/esb/services/prepago/in/cliente/Cliente.xsd">
+      <xs:element name="ClienteRequest">
+        <xs:annotation>
+          <xs:documentation>Datos requeridos para ejecutar transacciones hacia la IN</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="telefono" type="xs:string" />
+            <xs:element name="opcion" type="xs:string" />
+            <xs:element name="usuario" type="xs:string" />
+            <xs:element name="aplicacion" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="ClienteResponse">
+        <xs:annotation>
+          <xs:documentation>Resultado de la ejecucion de las transacciones de cliente</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="resultado" type="xs:string" />
+            <xs:element name="mensaje" type="xs:string" />
+            <xs:element name="transaccion" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </s:schema>
+    <s:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:s0="http://schemas.xmlsoap.org/wsdl/" xmlns:s2="http://schemas.xmlsoap.org/wsdl/soap/" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://pe/com/claro/esb/services/prepago/activacion/ws">
+      <xs:import namespace="http://pe/com/claro/esb/services/prepago/in/cliente/Cliente.xsd" />
+      <xs:element name="ejecutarActivacion">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:cli="http://pe/com/claro/esb/services/prepago/in/cliente/Cliente.xsd" ref="cli:ClienteRequest" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="ejecutarActivacionResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element xmlns:cli="http://pe/com/claro/esb/services/prepago/in/cliente/Cliente.xsd" ref="cli:ClienteResponse" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </s:schema>
+  </types>
+  <message name="ejecutarActivacion">
+    <part name="parameters" element="s1:ejecutarActivacion" />
+  </message>
+  <message name="ejecutarActivacionResponse">
+    <part name="parameters" element="s1:ejecutarActivacionResponse" />
+  </message>
+  <portType name="ActivacionWS">
+    <operation name="ejecutarActivacion" parameterOrder="parameters">
+      <input message="s1:ejecutarActivacion" />
+      <output message="s1:ejecutarActivacionResponse" />
+    </operation>
+  </portType>
+  <binding name="ActivacionWSServiceSoapBinding" type="s1:ActivacionWS">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document" />
+    <operation name="ejecutarActivacion">
+      <soap:operation soapAction="" style="document" />
+      <input>
+        <soap:body use="literal" parts="parameters" />
+      </input>
+      <output>
+        <soap:body use="literal" parts="parameters" />
+      </output>
+    </operation>
+  </binding>
+  <service name="ActivacionWSService">
+    <port name="ActivacionWSSoapPort" binding="s1:ActivacionWSServiceSoapBinding">
+      <soap:address location="http://limdeseaiv03.tim.com.pe:8909/ActivacionBBAWS/ActivacionWS" />
+    </port>
+  </service>
+</definitions>
